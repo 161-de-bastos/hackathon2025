@@ -8,9 +8,8 @@ from .token import pad_sequences
 from .utils.constant import KB_CATEGORIES, kb_file_for
 
 class ToS(Dataset):
-    def __init__(self, df, category, tokenizer, max_len):
+    def __init__(self, df, tokenizer, max_len):
         self.df = df.reset_index(drop=True)
-        self.cat = category
         self.tok = tokenizer
         self.max_len = max_len
 
@@ -23,41 +22,50 @@ class ToS(Dataset):
 
     def __getitem__(self, i):
         row = self.df.iloc[i]
-        label = float(row[self.cat]) if self.cat in row else 0.0
+        y_multi = []
         strong = {}
-        tk = f"{self.cat}_targets"
-        if self.cat in KB_CATEGORIES and tk in row and isinstance(row[tk], str) and row[tk].strip().startswith("["):
-            try:
-                strong[self.cat] = list(json.loads(row[tk]))
-            except Exception:
-                strong[self.cat] = []
+
+        for cat in KB_CATEGORIES:
+            y = float(row.get(cat, 0.0))
+            y_multi.append(y)
+            tk = f"{cat}_targets"
+            if isinstance(row.get(tk), str) and row[tk].strip().startswith("["):
+                try:
+                    strong[cat] = list(json.loads(row[tk]))
+                except Exception:
+                    strong[cat] = []
+            else:
+                strong[cat] = []
+
+        if "label" in row:
+            y_general = float(row["label"])
         else:
-            strong[self.cat] = []
+            y_general = 1.0 if any(v >= 0.5 for v in y_multi) else 0.0
         return {
             "input_ids": torch.tensor(self.seqs[i], dtype=torch.long),
-            "label": torch.tensor(label, dtype=torch.float),
+            "labels_multi": torch.tensor(y_multi, dtype=torch.float),
+            "label_general": torch.tensor(y_general, dtype=torch.float),
             "strong": strong,
         }
 
-def load_kb_bank(category, tokenizer, max_len):
-    if category not in KB_CATEGORIES:
-        return torch.zeros((0, max_len), dtype=torch.long), torch.zeros((0,), dtype=torch.bool)
+def load_kb_bank(tokenizer, max_len):
+    kb_ids, kb_mask = {}, {}
+    for cat in KB_CATEGORIES:
+        p = kb_file_for(cat)
+        lines = []
+        if os.path.exists(p):
+            with open(p,'r',encoding = "utf-8") as f:
+                for ln in f.readlines():
+                    ln = ln.strip()
+                    if ln:
+                        lines.append(ln)
+        if not lines:
+            lines = [""]
 
-    p = kb_file_for(category)
-    lines = []
-    if os.path.exists(p):
-        with open(p,'r',encoding = "utf-8") as f:
-            for ln in f.readlines():
-                ln = ln.strip()
-                if ln:
-                    lines.append(ln)
-    if not lines:
-        lines = [""]
-
-    ids = tokenizer.texts_to_sequences(lines)
-    ids = pad_sequences(ids, maxlen=max_len, padding="post", truncating="post", value=0)
-    kb_ids = torch.tensor(ids, dtype=torch.long)
-    kb_mask = torch.ones(kb_ids.size(0), dtype=torch.bool)
+        ids = tokenizer.texts_to_sequences(lines)
+        ids = pad_sequences(ids, maxlen=max_len, padding="post", truncating="post", value=0)
+        kb_ids[cat] = torch.tensor(ids, dtype=torch.long)
+        kb_mask[cat] = torch.ones(kb_ids.size(0), dtype=torch.bool)
     return kb_ids, kb_mask
 
 def load_kb_texts(category):
@@ -75,10 +83,11 @@ def load_kb_texts(category):
 
 def make_dataloaders(train_ds, val_ds, test_ds, batch_size: int):
     def collate(batch):
-        x = torch.stack([b["input_ids"] for b in batch], 0)  # [B,T]
-        y = torch.stack([b["label"] for b in batch], 0)      # [B]
-        strong = [b["strong"] for b in batch]                # len B
-        return {"input_ids": x, "labels": y, "strong": strong}
+        x = torch.stack([b["input_ids"] for b in batch], 0)
+        y_multi = torch.stack([b["labels_multi"] for b in batch], 0)
+        y_gen = torch.stack([b["label_general"] for b in batch], 0)
+        strong = [b["strong"] for b in batch]
+        return {"input_ids": x, "labels_multi": y_multi, "label_general": y_gen, "strong": strong}
     tr = DataLoader(train_ds, batch_size=batch_size, shuffle=True,  collate_fn=collate)
     va = DataLoader(val_ds,   batch_size=batch_size, shuffle=False, collate_fn=collate) if val_ds else None
     te = DataLoader(test_ds,  batch_size=batch_size, shuffle=False, collate_fn=collate) if test_ds else None

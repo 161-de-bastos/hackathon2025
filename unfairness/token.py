@@ -1,5 +1,4 @@
 from collections import Counter
-import json
 
 class tokenizer:
     def __init__(self, oov_token = "<OOV>", lower = True, num_words = None):
