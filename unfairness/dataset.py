@@ -51,38 +51,10 @@ class ToS(Dataset):
             "raw_text": self._raw_texts[i]
         }
 
-def load_kb_bank(tokenizer, max_len):
-    kb_ids, kb_mask = {}, {}
-    for cat in KB_CATEGORIES:
-        p = kb_file_for(cat)
-        lines = []
-        if os.path.exists(p):
-            with open(p,'r',encoding = "utf-8") as f:
-                for ln in f.readlines():
-                    ln = ln.strip()
-                    if ln:
-                        lines.append(ln)
-        if not lines:
-            lines = [""]
-
-        ids = tokenizer.texts_to_sequences(lines)
-        ids = pad_sequences(ids, maxlen=max_len, padding="post", truncating="post", value=0)
-        kb_ids[cat] = torch.tensor(ids, dtype=torch.long)
-        kb_mask[cat] = torch.ones(kb_ids.size(0), dtype=torch.bool)
-    return kb_ids, kb_mask
-
-def load_kb_texts(category):
-    p = kb_file_for(category)
-    if not os.path.exists(p):
-        return []
-    lines = []
-    if os.path.exists(p):
-        with open(p,'r',encoding = "utf-8") as f:
-            for ln in f.readlines():
-                ln = ln.strip()
-                if ln:
-                    lines.append(ln)
-    return lines
+def _vec_texts(tokenizer, texts, max_len):
+    ids = tokenizer.texts_to_sequences(texts)
+    ids = pad_sequences(ids, maxlen=max_len, padding="post", truncating="post", value=0)
+    return torch.tensor(ids, dtype=torch.long)
 
 def make_dataloaders(train_ds, val_ds, test_ds, batch_size: int):
     def collate(batch):
@@ -96,3 +68,43 @@ def make_dataloaders(train_ds, val_ds, test_ds, batch_size: int):
     va = DataLoader(val_ds,   batch_size=batch_size, shuffle=False, collate_fn=collate) if val_ds else None
     te = DataLoader(test_ds,  batch_size=batch_size, shuffle=False, collate_fn=collate) if test_ds else None
     return tr, va, te
+
+
+def load_kb_bank(tokenizer, max_len, kb_dir):
+    struct = load_kb_struct(kb_dir)
+    texts_dict = kb_texts_only(struct)
+    kb_ids, kb_mask = {}, {}
+
+    for cat in KB_CATEGORIES:
+        ts = texts_dict[cat] if texts_dict[cat] else [""]
+        ids = _vec_texts(tokenizer, ts, max_len)
+        kb_ids[cat] = ids
+        kb_mask[cat] = torch.ones(ids.size(0), dtype=torch.bool)
+    return kb_ids, kb_mask
+
+def _csv_path_for(cat, kb_dir):
+    return os.path.join(kb_dir, f"{cat}_explanations.csv")
+
+def load_kb_struct(kb_dir="local_database/KB"):
+    out = {}
+    for cat in KB_CATEGORIES:
+        p = _csv_path_for(cat, kb_dir)
+        texts, ids, tags = [], [], []
+        if os.path.isfile(p):
+            df = pd.read_csv(p)
+            col_text = "Explanation" if "Explanation" in df.columns else (df.columns[0] if len(df.columns) else None)
+            for _, r in df.iterrows():
+                t = str(r.get(col_text, "")).strip()
+                if not t: 
+                    continue
+                texts.append(t)
+                ids.append(r.get("Id", None))
+                tags.append(r.get("Tag", None))
+        if not texts:
+            texts, ids, tags = [""], [None], [None]
+        out[cat] = {"text": texts, "id": ids, "tag": tags}
+    return out
+
+
+def kb_texts_only(kb_struct):
+    return {cat: kb_struct[cat]["text"] for cat in kb_struct}

@@ -28,35 +28,44 @@ def load_category_from_dataloader(dataloader_cfg_path = "configs/data_loader.jso
             return cfg["configs"][t].get("category", "A")
     return cfg.get("category", "A")
 
-def load_model_and_tokenizer(ckpt_path, category, max_len, map_location="cpu"):
-    import torch
-    from ..token import tokenizer_from_state
-    from ..lightning import LightMemory
-    from ..dataset import load_kb_bank, load_kb_texts
+def load_model_and_tokenizer(
+    ckpt_path,
+    max_len,
+    kb_dir="local_database/KB",
+    map_location="cpu",
+):
 
-    ckpt = torch.load(ckpt_path, map_location=map_location)
+    import torch
+    from ..lightning import LightMemory
+    from ..token import tokenizer_from_state
+    from ..dataset import load_kb_bank, load_kb_struct
+
+    device = torch.device(map_location)
+
+    ckpt = torch.load(ckpt_path, map_location=device)
     tok_state = ckpt.get("tokenizer_state")
     if tok_state is None:
         raise RuntimeError("El checkpoint no contiene tokenizer_state. Re-entrena o guarda uno nuevo.")
-
     tok = tokenizer_from_state(tok_state)
-    hparams = ckpt.get("hyper_parameters", {}).get("hparams", ckpt.get("hyper_parameters", {}))
 
+    dummy_ids = {c: torch.zeros(1, max_len, dtype=torch.long) for c in ("A","CH","CR","LTD","TER")}
+    dummy_msk = {c: torch.ones(1, dtype=torch.bool) for c in ("A","CH","CR","LTD","TER")}
     lit = LightMemory.load_from_checkpoint(
         ckpt_path,
-        vocab_size=tok.vocab_size,   # ← tamaño exactamente igual al entrenado
+        vocab_size=tok.vocab_size,
         pad_idx=0,
-        hparams=hparams,
-        kb_ids=torch.empty(0, dtype=torch.long),
-        kb_mask=torch.empty(0, dtype=torch.bool),
-        map_location=map_location,
+        hparams=ckpt.get("hyper_parameters", {}).get("hparams", ckpt.get("hyper_parameters", {})),
+        kb_ids=dummy_ids,
+        kb_mask=dummy_msk,
+        map_location=device,
     ).eval()
 
-    kb_ids, kb_mask = load_kb_bank(category, tok, max_len=max_len)
-    kb_ids  = kb_ids.to(next(lit.parameters()).device)
-    kb_mask = kb_mask.to(next(lit.parameters()).device)
-
-    lit.kb_ids  = kb_ids
+    kb_ids, kb_mask = load_kb_bank(tok, max_len=max_len, kb_dir=kb_dir)
+    for k in kb_ids:
+        kb_ids[k] = kb_ids[k].to(next(lit.parameters()).device)
+        kb_mask[k] = kb_mask[k].to(next(lit.parameters()).device)
+    lit.kb_ids = kb_ids
     lit.kb_mask = kb_mask
-    kb_texts = load_kb_texts(category)
-    return lit, tok, kb_texts
+
+    kb_struct = load_kb_struct(kb_dir)  # para racionales con Id/Tag
+    return lit, tok, kb_struct
