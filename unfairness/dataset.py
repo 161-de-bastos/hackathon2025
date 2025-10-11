@@ -13,9 +13,11 @@ class ToS(Dataset):
         self.tok = tokenizer
         self.max_len = max_len
 
-        seqs = self.tok.texts_to_sequences(self.df["text"].astype(str).tolist())
+        texts = self.df["text"].astype(str).tolist()
+        seqs = self.tok.texts_to_sequences(texts)
         maxlen = max_len if max_len > 0 else (max((len(s) for s in seqs), default=1))
         self.seqs = pad_sequences(seqs, maxlen=maxlen, padding="post", truncating="post", value=0)
+        self._raw_texts = texts
 
     def __len__(self):
         return len(self.df)
@@ -46,6 +48,7 @@ class ToS(Dataset):
             "labels_multi": torch.tensor(y_multi, dtype=torch.float),
             "label_general": torch.tensor(y_general, dtype=torch.float),
             "strong": strong,
+            "raw_text": self._raw_texts[i]
         }
 
 def load_kb_bank(tokenizer, max_len):
@@ -87,7 +90,8 @@ def make_dataloaders(train_ds, val_ds, test_ds, batch_size: int):
         y_multi = torch.stack([b["labels_multi"] for b in batch], 0)
         y_gen = torch.stack([b["label_general"] for b in batch], 0)
         strong = [b["strong"] for b in batch]
-        return {"input_ids": x, "labels_multi": y_multi, "label_general": y_gen, "strong": strong}
+        raw_texts = [b.get("raw_text", None) for b in batch] 
+        return {"input_ids": x, "labels_multi": y_multi, "label_general": y_gen, "strong": strong, "raw_text": raw_texts}
     tr = DataLoader(train_ds, batch_size=batch_size, shuffle=True,  collate_fn=collate)
     va = DataLoader(val_ds,   batch_size=batch_size, shuffle=False, collate_fn=collate) if val_ds else None
     te = DataLoader(test_ds,  batch_size=batch_size, shuffle=False, collate_fn=collate) if test_ds else None
