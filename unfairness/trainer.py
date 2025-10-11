@@ -41,17 +41,17 @@ def train_one_from_splits(
     test_csv,
     hparams,
     out_dir,
+    kb_dir,
     max_len = 128,
     batch_size = 32,
-    callbacks_config = None
 ):
     tok, ds_tr, ds_va, ds_te = _build_splits_datasets(train_csv, val_csv, test_csv, max_len)
-    kb_ids, kb_mask = load_kb_bank(tok, max_len)
+    kb_ids, kb_mask = load_kb_bank(tok, max_len, kb_dir)
     tr, va, te = make_dataloaders(ds_tr, ds_va, ds_te, batch_size)
 
     lit = LightMemory(vocab_size=tok.vocab_size, pad_idx=0, hparams=hparams, kb_ids=kb_ids, kb_mask=kb_mask)
     lit.attach_tokenizer(tok)
-    trainer, ckpt_cb = _make_trainer(out_dir, callbacks_config or {})
+    trainer, ckpt_cb = _make_trainer(out_dir, {})
 
     trainer.fit(lit, tr, va)
     best_ckpt = ckpt_cb.best_model_path or os.path.join(out_dir, "best.ckpt")

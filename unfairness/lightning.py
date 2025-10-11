@@ -24,8 +24,8 @@ class LightMemory(pl.LightningModule):
             hidden_dim=hparams.get("hidden_dim", 100),
             dropout=hparams.get("dropout", 0.1),
         )
-        self.register_buffer("kb_ids", kb_ids.long(), persistent=False)
-        self.register_buffer("kb_mask", kb_mask.bool(), persistent=False)
+        self.kb_ids  = kb_ids 
+        self.kb_mask = kb_mask
 
         ps = hparams.get("partial_supervision_info", {}).get("value", {})
         self.ps_flag   = bool(ps.get("flag", False))
@@ -38,6 +38,21 @@ class LightMemory(pl.LightningModule):
         self.f1_multi = MultilabelF1Score(num_labels=len(KB_CATEGORIES), average="macro", threshold=0.5)
         self.f1_general = BinaryF1Score()
         self._tokenizer_state = None
+
+    def _sync_kb_device(self):
+        dev = self.device
+        for cat in KB_CATEGORIES:
+            v = self.kb_ids.get(cat, None)
+            if isinstance(v, torch.Tensor):
+                self.kb_ids[cat] = v.to(dev, non_blocking=True)
+            v = self.kb_mask.get(cat, None)
+            if isinstance(v, torch.Tensor):
+                self.kb_mask[cat] = v.to(dev, non_blocking=True)
+
+    def on_fit_start(self):        self._sync_kb_device()
+    def on_validation_start(self): self._sync_kb_device()
+    def on_test_start(self):       self._sync_kb_device()
+    def on_predict_start(self):    self._sync_kb_device()
 
     def forward(self, x):
         return self.model(x, self.kb_ids, self.kb_mask)
@@ -99,7 +114,7 @@ class LightMemory(pl.LightningModule):
             self.log("val_f1_score", f1m, prog_bar=True, on_epoch=True, on_step=False)
             self.log("val_f1_general", f1g, prog_bar=False, on_epoch=True, on_step=False)
         elif stage == "test":
-            self.log("test_f1_multi", f1m, prog_bar=True, on_epoch=True, on_step=False)
+            self.log("test_f1_score", f1m, prog_bar=True, on_epoch=True, on_step=False)
             self.log("test_f1_general", f1g, prog_bar=True, on_epoch=True, on_step=False)
 
         self.log(f"{stage}_loss", loss, prog_bar=True, on_epoch=True, on_step=False)
