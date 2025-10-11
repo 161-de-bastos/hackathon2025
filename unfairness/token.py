@@ -1,4 +1,5 @@
 from collections import Counter
+import json
 
 class tokenizer:
     def __init__(self, oov_token = "<OOV>", lower = True, num_words = None):
@@ -51,3 +52,28 @@ def pad_sequences(sequences, maxlen, padding = "post", truncating = "post", valu
             s = pad + s if padding == "pre" else s + pad
         out.append(s)
     return out
+
+def tokenizer_export_state(tok):
+    return {
+        "config": {
+            "oov_token": tok.oov_token,
+            "lower": tok.lower,
+            "num_words": tok.num_words,
+        },
+        "word_index": dict(tok.word_index),
+        "index_word": {int(k): v for k, v in tok.index_word.items()},
+        "vocab_size": int(tok.vocab_size),
+        "_fitted": bool(getattr(tok, "_fitted", True)),
+    }
+
+def tokenizer_from_state(state):
+    tok = tokenizer(
+        oov_token=state["config"]["oov_token"],
+        lower=state["config"]["lower"],
+        num_words=state["config"]["num_words"],
+    )
+    tok.word_index = dict(state["word_index"])
+    tok.index_word = {int(k): v for k, v in state["index_word"].items()}
+    tok.vocab_size = int(state["vocab_size"])
+    tok._fitted = bool(state.get("_fitted", True))
+    return tok

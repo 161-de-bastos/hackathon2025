@@ -1,4 +1,5 @@
 import json
+import os
 import pandas as pd
 import torch
 from torch.utils.data import Dataset, DataLoader
@@ -44,7 +45,7 @@ def load_kb_bank(category, tokenizer, max_len):
 
     path = kb_file_for(category)
     lines = []
-    if path.exists():
+    if os.path.exists(path):
         for ln in path.read_text(encoding="utf-8").splitlines():
             ln = ln.strip()
             if ln:

@@ -3,6 +3,7 @@ import torch.nn.functional as F
 import pytorch_lightning as pl
 from torchmetrics.classification import BinaryF1Score
 
+from .token import tokenizer_export_state, tokenizer_from_state
 from .model import Memory
 
 class LightMemory(pl.LightningModule):
@@ -22,8 +23,8 @@ class LightMemory(pl.LightningModule):
             hidden_dim=hparams.get("hidden_dim", 100),
             dropout=hparams.get("dropout", 0.1),
         )
-        self.kb_ids = kb_ids
-        self.kb_mask = kb_mask
+        self.register_buffer("kb_ids", kb_ids.long(), persistent=False)
+        self.register_buffer("kb_mask", kb_mask.bool(), persistent=False)
 
         ps = hparams.get("partial_supervision_info", {}).get("value", {})
         self.ps_flag   = bool(ps.get("flag", False))
@@ -34,6 +35,7 @@ class LightMemory(pl.LightningModule):
         self.weight_decay = float(hparams.get("weight_decay", 0.0))
 
         self.f1_metric = BinaryF1Score()
+        self._tokenizer_state = None
 
     def forward(self, x):
         return self.model(x, self.kb_ids, self.kb_mask)
@@ -94,3 +96,16 @@ class LightMemory(pl.LightningModule):
 
     def test_step(self, batch, _):
         self._step(batch, "test")
+
+    def attach_tokenizer(self, tok):
+        self._tokenizer_state = tokenizer_export_state(tok)
+
+    def on_save_checkpoint(self, checkpoint):
+        if self._tokenizer_state is not None:
+            checkpoint["tokenizer_state"] = self._tokenizer_state
+
+    def on_load_checkpoint(self, checkpoint):
+        self._tokenizer_state = checkpoint.get("tokenizer_state", None)
+
+    def get_tokenizer(self):
+        return tokenizer_from_state(self._tokenizer_state) if self._tokenizer_state else None

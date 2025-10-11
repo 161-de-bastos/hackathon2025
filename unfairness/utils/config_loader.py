@@ -27,3 +27,27 @@ def load_category_from_dataloader(dataloader_cfg_path = "configs/data_loader.jso
         if t in cfg["configs"]:
             return cfg["configs"][t].get("category", "A")
     return cfg.get("category", "A")
+
+def load_model_and_tokenizer(ckpt_path, kb_ids, kb_mask, map_location="cpu"):
+    import torch
+    from ..token import tokenizer_from_state
+    from ..lightning import LightMemory
+    
+    ckpt = torch.load(ckpt_path, map_location=map_location)
+    tok_state = ckpt.get("tokenizer_state")
+    if tok_state is None:
+        raise RuntimeError("El checkpoint no contiene tokenizer_state. Re-entrena o guarda uno nuevo.")
+
+    tok = tokenizer_from_state(tok_state)
+    hparams = ckpt.get("hyper_parameters", {}).get("hparams", ckpt.get("hyper_parameters", {}))
+
+    lit = LightMemory.load_from_checkpoint(
+        ckpt_path,
+        vocab_size=tok.vocab_size,   # ← tamaño exactamente igual al entrenado
+        pad_idx=0,
+        hparams=hparams,
+        kb_ids=kb_ids,
+        kb_mask=kb_mask,
+        map_location=map_location,
+    )
+    return lit.eval(), tok

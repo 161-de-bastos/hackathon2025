@@ -49,6 +49,7 @@ def train_one_from_splits(
     tr, va, te = make_dataloaders(ds_tr, ds_va, ds_te, batch_size)
 
     lit = LightMemory(vocab_size=tok.vocab_size, pad_idx=0, hparams=hparams, kb_ids=kb_ids, kb_mask=kb_mask)
+    lit.attach_tokenizer(tok)
     trainer, ckpt_cb = _make_trainer(out_dir, callbacks_config or {})
 
     trainer.fit(lit, tr, va)

@@ -1,5 +1,6 @@
 /configs/*
-/KB/*
+/local_database/*
+/cv_test/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
