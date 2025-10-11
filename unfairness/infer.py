@@ -43,15 +43,13 @@ def predict_with_rationales(
             logits, att_dict = out
             scores_dict = {cat: att_dict[cat] for cat in KB_CATEGORIES}
         else:
-            # muy raro, pero soporta sólo logits
             logits = out
             att_dict = {cat: None for cat in KB_CATEGORIES}
             scores_dict = {cat: None for cat in KB_CATEGORIES}
 
-        probs = logits.sigmoid()  # [B,5]
+        probs = logits.sigmoid() 
         preds = (probs > torch.tensor([thr[c] for c in KB_CATEGORIES], device=probs.device)).to(torch.int)
 
-        # oro (si viene del dataset)
         gold_multi = batch.get("labels_multi", None)
         if gold_multi is not None:
             gold_multi = gold_multi.detach().cpu()
@@ -92,8 +90,6 @@ def predict_with_rationales(
 
                 need_rationales = return_for_all or (pred == 1)
                 if need_rationales and att_w is not None and raw_s is not None and M_kb > 0:
-                    # dimensiones [B, M] para ambas
-                    # si el banco de la red tiene más memorias que kb_list, truncamos a M_kb
                     takeM = min(att_w.size(1), M_kb)
                     scores = raw_s[i, :takeM].detach().cpu()
                     weights = att_w[i, :takeM].detach().cpu()

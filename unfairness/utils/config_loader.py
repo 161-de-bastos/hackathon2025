@@ -67,5 +67,5 @@ def load_model_and_tokenizer(
     lit.kb_ids = kb_ids
     lit.kb_mask = kb_mask
 
-    kb_struct = load_kb_struct(kb_dir)  # para racionales con Id/Tag
+    kb_struct = load_kb_struct(kb_dir)
     return lit, tok, kb_struct

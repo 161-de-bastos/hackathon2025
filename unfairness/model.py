@@ -9,7 +9,7 @@ class SentenceEncoder(nn.Module):
         self.pad_idx = pad_idx
         self.emb = nn.Embedding(vocab_size, embed_dim, padding_idx=pad_idx)
     def forward(self, ids):
-        e = self.emb(ids)                              # [*,T,E]
+        e = self.emb(ids)                           
         mask = (ids != self.pad_idx).float().unsqueeze(-1)
         summed = (e * mask).sum(1)
         denom = mask.sum(1).clamp_min(1.0)
@@ -53,5 +53,5 @@ class Memory(nn.Module):
             logits.append(logit)
             att_out[cat] = w
             scores_out[cat] = s
-        logits = torch.stack(logits, dim=1)  # [B,5]
+        logits = torch.stack(logits, dim=1)
         return logits, att_out, scores_out
