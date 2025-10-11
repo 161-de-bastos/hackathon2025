@@ -4,7 +4,7 @@ import os
 KB_CATEGORIES = ("A", "CH", "CR", "LTD", "TER")
 
 def kb_file_for(cat):
-    return os.path.join("kb", f"{cat}.txt")
+    return os.path.join("local_database","KB", f"{cat}.txt")
 
 def load_json_config(path):
     with open(path, 'r') as f:

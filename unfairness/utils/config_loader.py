@@ -28,11 +28,12 @@ def load_category_from_dataloader(dataloader_cfg_path = "configs/data_loader.jso
             return cfg["configs"][t].get("category", "A")
     return cfg.get("category", "A")
 
-def load_model_and_tokenizer(ckpt_path, kb_ids, kb_mask, map_location="cpu"):
+def load_model_and_tokenizer(ckpt_path, category, max_len, map_location="cpu"):
     import torch
     from ..token import tokenizer_from_state
     from ..lightning import LightMemory
-    
+    from ..dataset import load_kb_bank, load_kb_texts
+
     ckpt = torch.load(ckpt_path, map_location=map_location)
     tok_state = ckpt.get("tokenizer_state")
     if tok_state is None:
@@ -46,8 +47,16 @@ def load_model_and_tokenizer(ckpt_path, kb_ids, kb_mask, map_location="cpu"):
         vocab_size=tok.vocab_size,   # ← tamaño exactamente igual al entrenado
         pad_idx=0,
         hparams=hparams,
-        kb_ids=kb_ids,
-        kb_mask=kb_mask,
+        kb_ids=torch.empty(0, dtype=torch.long),
+        kb_mask=torch.empty(0, dtype=torch.bool),
         map_location=map_location,
-    )
-    return lit.eval(), tok
+    ).eval()
+
+    kb_ids, kb_mask = load_kb_bank(category, tok, max_len=max_len)
+    kb_ids  = kb_ids.to(next(lit.parameters()).device)
+    kb_mask = kb_mask.to(next(lit.parameters()).device)
+
+    lit.kb_ids  = kb_ids
+    lit.kb_mask = kb_mask
+    kb_texts = load_kb_texts(category)
+    return lit, tok, kb_texts

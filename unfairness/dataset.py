@@ -43,21 +43,35 @@ def load_kb_bank(category, tokenizer, max_len):
     if category not in KB_CATEGORIES:
         return torch.zeros((0, max_len), dtype=torch.long), torch.zeros((0,), dtype=torch.bool)
 
-    path = kb_file_for(category)
+    p = kb_file_for(category)
     lines = []
-    if os.path.exists(path):
-        for ln in path.read_text(encoding="utf-8").splitlines():
-            ln = ln.strip()
-            if ln:
-                lines.append(ln)
+    if os.path.exists(p):
+        with open(p,'r',encoding = "utf-8") as f:
+            for ln in f.readlines():
+                ln = ln.strip()
+                if ln:
+                    lines.append(ln)
     if not lines:
-        lines = [""]  # dummy para shape estable
+        lines = [""]
 
     ids = tokenizer.texts_to_sequences(lines)
     ids = pad_sequences(ids, maxlen=max_len, padding="post", truncating="post", value=0)
     kb_ids = torch.tensor(ids, dtype=torch.long)
     kb_mask = torch.ones(kb_ids.size(0), dtype=torch.bool)
     return kb_ids, kb_mask
+
+def load_kb_texts(category):
+    p = kb_file_for(category)
+    if not os.path.exists(p):
+        return []
+    lines = []
+    if os.path.exists(p):
+        with open(p,'r',encoding = "utf-8") as f:
+            for ln in f.readlines():
+                ln = ln.strip()
+                if ln:
+                    lines.append(ln)
+    return lines
 
 def make_dataloaders(train_ds, val_ds, test_ds, batch_size: int):
     def collate(batch):
