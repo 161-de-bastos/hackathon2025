@@ -1,10 +1,11 @@
 import torch
 import torch.nn.functional as F
 import pytorch_lightning as pl
-from torchmetrics.classification import BinaryF1Score
+from torchmetrics.classification import MultilabelF1Score, BinaryF1Score
 
-from .token import tokenizer_export_state, tokenizer_from_state
 from .model import Memory
+from .token import tokenizer_export_state, tokenizer_from_state
+from .utils.constant import KB_CATEGORIES
 
 class LightMemory(pl.LightningModule):
     def __init__(self, 
@@ -23,8 +24,8 @@ class LightMemory(pl.LightningModule):
             hidden_dim=hparams.get("hidden_dim", 100),
             dropout=hparams.get("dropout", 0.1),
         )
-        self.register_buffer("kb_ids", kb_ids.long(), persistent=False)
-        self.register_buffer("kb_mask", kb_mask.bool(), persistent=False)
+        self.kb_ids  = kb_ids 
+        self.kb_mask = kb_mask
 
         ps = hparams.get("partial_supervision_info", {}).get("value", {})
         self.ps_flag   = bool(ps.get("flag", False))
@@ -34,8 +35,24 @@ class LightMemory(pl.LightningModule):
         self.lr = float(hparams.get("learning_rate", 2e-3))
         self.weight_decay = float(hparams.get("weight_decay", 0.0))
 
-        self.f1_metric = BinaryF1Score()
+        self.f1_multi = MultilabelF1Score(num_labels=len(KB_CATEGORIES), average="macro", threshold=0.5)
+        self.f1_general = BinaryF1Score()
         self._tokenizer_state = None
+
+    def _sync_kb_device(self):
+        dev = self.device
+        for cat in KB_CATEGORIES:
+            v = self.kb_ids.get(cat, None)
+            if isinstance(v, torch.Tensor):
+                self.kb_ids[cat] = v.to(dev, non_blocking=True)
+            v = self.kb_mask.get(cat, None)
+            if isinstance(v, torch.Tensor):
+                self.kb_mask[cat] = v.to(dev, non_blocking=True)
+
+    def on_fit_start(self):        self._sync_kb_device()
+    def on_validation_start(self): self._sync_kb_device()
+    def on_test_start(self):       self._sync_kb_device()
+    def on_predict_start(self):    self._sync_kb_device()
 
     def forward(self, x):
         return self.model(x, self.kb_ids, self.kb_mask)
@@ -43,51 +60,66 @@ class LightMemory(pl.LightningModule):
     def configure_optimizers(self):
         return torch.optim.AdamW(self.parameters(), lr=self.lr, weight_decay=self.weight_decay)
 
-    def _strong_hinge(self, att_weights, strong_batch):
-        if not self.ps_flag or att_weights.numel() == 0:
-            return att_weights.sum() * 0.0
-        B, M = att_weights.shape
+    def _strong_hinge(self, att_dict, strong_batch):
+        if not self.ps_flag:
+            any_att = next(iter(att_dict.values()))
+            return any_att.sum() * 0.0
+        
         losses = []
-        for b in range(B):
-            pos = []
-            for _, lst in strong_batch[b].items():
-                pos = lst; break
-            if not pos:
-                continue
-            pos = [i for i in pos if 0 <= i < M]
-            if not pos:
-                continue
-            w = att_weights[b]                                  # [M]
-            pos_mask = torch.zeros(M, dtype=torch.bool, device=w.device); pos_mask[pos] = True
-            neg_mask = ~pos_mask
-            if not neg_mask.any():
-                continue
-            w_pos = w[pos_mask][:, None]                        # [P,1]
-            w_neg = w[neg_mask][None, :]                        # [1,N]
-            margin = self.ps_margin - w_pos + w_neg
-            losses.append(margin.clamp_min(0).mean())
+        for cat, w in att_dict.items():
+            B, M = w.shape
+            for b in range(B):
+                pos = list(strong_batch[b].get(cat, []))
+                if not pos:
+                    continue
+                pos = [i for i in pos if 0 <= i < M]
+                if not pos:
+                    continue
+                mask_pos = torch.zeros(M, dtype=torch.bool, device=w.device); mask_pos[pos] = True
+                mask_neg = ~mask_pos
+                if not mask_neg.any():
+                    continue
+                w_pos = w[b][mask_pos][:, None]
+                w_neg = w[b][mask_neg][None, :]
+                margin = self.ps_margin - w_pos + w_neg
+                losses.append(margin.clamp_min(0).mean())
         if not losses:
-            return att_weights.sum() * 0.0
+            any_att = next(iter(att_dict.values()))
+            return any_att.sum() * 0.0
         return torch.stack(losses).mean() * self.ps_coeff
+    
+    def _step(self, batch, stage):
+        x = batch["input_ids"]
+        y_multi = batch["labels_multi"]
+        y_gen   = batch["label_general"]
+        logits_multi, att, _ = self(x)  
 
-    def _step(self, batch, stage: str):
-        x = batch["input_ids"]          # [B,T]
-        y = batch["labels"].float()     # [B]
-        logits, att, _ = self(x)        # logits:[B], att:[B,M]
-        cls = F.binary_cross_entropy_with_logits(logits, y)
-        loss = cls + self._strong_hinge(att, batch["strong"]) if self.ps_flag else cls
+        loss_cls = F.binary_cross_entropy_with_logits(logits_multi, y_multi)
+        if self.ps_flag:
+            loss = loss_cls + self._strong_hinge(att, batch["strong"])
+        else:
+            loss = loss_cls
 
-        preds = (logits.sigmoid() > 0.5).to(torch.int)
-        f1 = self.f1_metric(preds, y.to(torch.int))
+        probs_multi = torch.sigmoid(logits_multi)
+        preds_multi = (probs_multi > 0.5).float()
+        preds_gen   = (preds_multi.max(dim=1).values > 0.5).float()
 
+        f1m = self.f1_multi(preds_multi, y_multi.to(torch.int))
+        f1g = self.f1_general(preds_gen.to(torch.int), y_gen.to(torch.int))
+
+        if stage == "train":
+            self.log("train_f1_score", f1m, prog_bar=False, on_epoch=True, on_step=False)
+            self.log("train_f1_general", f1g, prog_bar=False, on_epoch=True, on_step=False)
         if stage == "val":
-            self.log("val_f1_score", f1, prog_bar=True, on_epoch=True, on_step=False)
+            self.log("val_f1_score", f1m, prog_bar=True, on_epoch=True, on_step=False)
+            self.log("val_f1_general", f1g, prog_bar=False, on_epoch=True, on_step=False)
         elif stage == "test":
-            self.log("test_f1", f1, prog_bar=True, on_epoch=True, on_step=False)
+            self.log("test_f1_score", f1m, prog_bar=True, on_epoch=True, on_step=False)
+            self.log("test_f1_general", f1g, prog_bar=True, on_epoch=True, on_step=False)
 
         self.log(f"{stage}_loss", loss, prog_bar=True, on_epoch=True, on_step=False)
         return loss
-
+    
     def training_step(self, batch, _):
         return self._step(batch, "train")
 

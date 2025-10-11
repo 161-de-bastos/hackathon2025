@@ -1,62 +1,69 @@
 import torch
 
+from .utils.constant import KB_CATEGORIES
+
 @torch.no_grad()
 def predict_with_rationales(
     lit_module,                       
     dataloader,                       
-    kb_texts,              
+    kb_struct_or_texts,              
     threshold = 0.5,           
-    top_k = 3,                   
-    return_for_all = False,     
+    top_k = 3,                       
     use_scores = True,          
-    device = None,
+    device = None
 ):
     model_device = next(lit_module.parameters()).device
     device = device or model_device
 
+    is_struct = isinstance(kb_struct_or_texts, dict) and all(
+        isinstance(kb_struct_or_texts.get(k, {}), dict) for k in KB_CATEGORIES
+    )
+    if is_struct:
+        kb_texts = {cat: kb_struct_or_texts[cat]["text"] for cat in KB_CATEGORIES}
+    else:
+        kb_texts = {cat: kb_struct_or_texts for cat in KB_CATEGORIES}
+
     out = []
     for batch in dataloader:
         x = batch["input_ids"].to(device, non_blocking=True)
-        logits, att_w, raw_s = lit_module(x)  
-        probs = logits.sigmoid()              
-        preds = (probs > threshold).to(torch.int)  
+        logits, att_w_dict, raw_s_dict = lit_module(x)  # dict por cat
+        probs_multi = logits.sigmoid()
+        preds_multi = (probs_multi > (threshold if isinstance(threshold, (int,float)) else 0.5)).to(torch.int)
 
-        gold = batch.get("labels", None)
-        if gold is not None:
-            gold = gold.detach().cpu()
+        if isinstance(threshold, dict):
+            thr_vec = torch.tensor([threshold[c] for c in KB_CATEGORIES], device=probs_multi.device)
+            preds_multi = (probs_multi > thr_vec.unsqueeze(0)).to(torch.int)
 
         B = x.size(0)
-        M = att_w.size(1) if att_w is not None else 0
-
-        kbN = len(kb_texts)
-        takeM = min(M, kbN)
-
         for i in range(B):
             rec = {
-                "prob": float(probs[i].item()),
-                "pred": int(preds[i].item()),
-                "gold": (float(gold[i].item()) if gold is not None else None),
-                "rationales": [],
+                "text": batch.get("raw_text", [""]*B)[i],
+                "general_prob": float(probs_multi[i].max().item()),
+                "general_pred": int(preds_multi[i].max().item()),
+                "per_category": {},
             }
-
-            need_rationales = return_for_all or (rec["pred"] == 1)
-            if need_rationales and takeM > 0:
-                scores = raw_s[i, :takeM].detach().cpu()
-                weights = att_w[i, :takeM].detach().cpu()
-
-                order = scores.argsort(descending=True) if use_scores else weights.argsort(descending=True)
-                order = order[:top_k].tolist()
-
+            for c_idx, cat in enumerate(KB_CATEGORIES):
+                prob = float(probs_multi[i, c_idx].item())
+                pred = int(preds_multi[i, c_idx].item())
                 rats = []
-                for j in order:
-                    rats.append({
-                        "idx": int(j),
-                        "score_raw": float(scores[j].item()),
-                        "att_weight": float(weights[j].item()),
-                        "text": kb_texts[j],
-                    })
-                rec["rationales"] = rats
+                if att_w_dict is not None and raw_s_dict is not None:
+                    scores  = raw_s_dict[cat][i].detach().cpu()
+                    weights = att_w_dict[cat][i].detach().cpu()
+                    order = scores.argsort(descending=True) if use_scores else weights.argsort(descending=True)
+                    order = order[:top_k].tolist()
+                    kb_list = kb_texts[cat]
+                    for j in order:
+                        item = {
+                            "idx": int(j),
+                            "score_raw": float(scores[j].item()),
+                            "att_weight": float(weights[j].item()),
+                            "text": kb_list[j] if isinstance(kb_list, list) else kb_list.iloc[j],
+                        }
+                        if is_struct:
+                            item["id"]  = kb_struct_or_texts[cat]["id"][j]
+                            item["tag"] = kb_struct_or_texts[cat]["tag"][j]
+                        rats.append(item)
 
+                rec["per_category"][cat] = {"prob": prob, "pred": pred, "rationales": rats}
             out.append(rec)
-
     return out

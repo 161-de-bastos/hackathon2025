@@ -1,6 +1,6 @@
-/configs/*
 /local_database/*
 /cv_test/*
+/translated_from_en/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

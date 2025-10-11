@@ -22,7 +22,6 @@ def _carve_val(train_docs, frac = 0.2):
 
 def run_cross_validation(
     csv_path,
-    category,
     distributed_cfg,
     out_dir,
     k = 5,
@@ -65,7 +64,6 @@ def run_cross_validation(
             kb_dir_unused="local_database/KB",
             hparams=hparams,
             out_dir=fold_dir,
-            category=category,
             max_len=max_len,
             batch_size=batch_size,
             callbacks_config=callbacks_cfg,
@@ -78,7 +76,6 @@ def run_cross_validation(
         return sum(vals)/len(vals) if vals else None
 
     summary = {
-        "category": category,
         "fold_checkpoints": ckpts,
         "per_fold_metrics": per_fold_metrics,
         "avg_val_f1": _avg("val_f1"),
