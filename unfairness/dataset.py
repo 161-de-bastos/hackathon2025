@@ -4,7 +4,7 @@ import torch
 from torch.utils.data import Dataset, DataLoader
 
 from .token import pad_sequences
-from .constant import KB_CATEGORIES, kb_file_for
+from .utils.constant import KB_CATEGORIES, kb_file_for
 
 class ToS(Dataset):
     def __init__(self, df, category, tokenizer, max_len):
