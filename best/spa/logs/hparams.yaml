@@ -1,0 +1,15 @@
+hparams:
+  batch_size: 4
+  dropout: 0.1
+  embedding_dim: 100
+  epochs: 5
+  hidden_dim: 100
+  learning_rate: 0.002
+  partial_supervision_info:
+    value:
+      coefficient: 1.0
+      flag: false
+      margin: 0.5
+  weight_decay: 0.0
+pad_idx: 0
+vocab_size: 20579
