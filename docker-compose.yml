@@ -32,48 +32,36 @@ services:
       interval: 20s
       timeout: 5s
       retries: 5
-
+  
   streamlit:
     build:
       context: ./network/streamlit
     environment:
       - API_URL=http://api:8000
-      - STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
-    networks: [public, internal]
+      - FRONT_TIMEOUT=30
     depends_on:
       api:
         condition: service_healthy
+    networks: [public, internal]
+    restart: unless-stopped
     labels:
       - "traefik.enable=true"
-      - "traefik.http.middlewares.front-auth.basicauth.usersfile=/auth.htpasswd"
-      - "traefik.http.middlewares.front-rl.ratelimit.average=10"
-      - "traefik.http.middlewares.front-rl.ratelimit.burst=20"
-      - "traefik.http.routers.front.middlewares=front-auth,front-rl"
       - "traefik.http.routers.front.rule=PathPrefix(`/`)"
       - "traefik.http.routers.front.entrypoints=web"
       - "traefik.http.services.front.loadbalancer.server.port=8501"
-    volumes:
-      - ./network/reverse-proxy/auth.htpasswd:/auth.htpasswd:ro
-    restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "curl", "-fsS", "http://localhost:8501/_stcore/health"]
-      interval: 20s
-      timeout: 5s
-      retries: 5
-      start_period: 15s
 
   api:
     build: ./network/api
-    networks: [internal]
+    environment:
+      - DL_URL=http://dl:9000
+      - DL_PREDICT_PATH=/predict
+      - API_TIMEOUT=30
+      - API_RETRIES=2
     depends_on:
       dl:
         condition: service_healthy
+    networks: [internal]
     restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "curl", "-fsS", "http://localhost:8000/healthz"]
-      interval: 20s
-      timeout: 5s
-      retries: 5
 
   dl:
     build:

@@ -11,7 +11,7 @@ WORKDIR /app
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir \
       --index-url https://download.pytorch.org/whl/cu124 \
-      "torch==2.4.*+cu124"
+      "torch==2.4.0+cu124"
 
 RUN pip install --no-cache-dir \
       fastapi uvicorn[standard] pydantic>=2 prometheus-client \
