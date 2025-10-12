@@ -4,6 +4,7 @@ import pandas as pd
 from html import escape
 import random
 import math
+import time
 
 # -------------------------------------------------------------------
 # Configuración general
@@ -21,8 +22,8 @@ if "page" not in st.session_state:
     st.session_state.page = 1
 if "filter" not in st.session_state:
     st.session_state.filter = "Todas"
-if "page_view" not in st.session_state:  # ← controla la vista actual
-    st.session_state.page_view = "inicio"
+if "view" not in st.session_state:
+    st.session_state.view = "input"  # input / results
 
 # -------------------------------------------------------------------
 # Función dummy simulando la API FastAPI (/v1/predict)
@@ -82,14 +83,47 @@ div[data-testid="column"]:has(button.active) button {
   color: white !important;
   border: none !important;
 }
+
+/* Loader bonito */
+.loader {
+  margin: 20px auto;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #7a0b0b;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 🔵 Botón azul "Procesar otro texto" */
+.stButton > button.process-btn {
+  background-color: #0066cc !important;
+  color: white !important;
+  border-radius: 6px;
+  padding: 6px 20px;
+  font-weight: 500;
+  width: auto !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
 # -------------------------------------------------------------------
-# PANTALLA 1: Ingreso de texto
+# VISTA 1: Entrada de texto
 # -------------------------------------------------------------------
-if st.session_state.page_view == "inicio":
-    st.title("⚖️ Clasificador de cláusulas: Justas / Injustas")
+if st.session_state.view == "input":
+
+    # Encabezado centrado con emoji y subtítulo
+    st.markdown("""
+    <div style="text-align:center; margin-top:30px;">
+        <div style="font-size:80px;">⚖️</div>
+        <h1 style="margin-bottom:5px;">Detector de Cláusulas Injustas</h1>
+        <p style="color:gray; font-size:1.1rem;">Luchamos por tus derechos</p>
+    </div>
+    """, unsafe_allow_html=True)
 
     st.subheader("Texto de entrada")
     demo = """As such, the Services may change from time to time, at our discretion.
@@ -101,40 +135,38 @@ We may remove content or terminate users without liability to you."""
     if st.button("🔍 Analizar texto", type="primary", use_container_width=True):
         st.session_state.focus_idx = None
         st.session_state.page = 1
-        with st.spinner("Analizando texto..."):
+        st.session_state.filter = "Todas"
+
+        with st.spinner("🧠 Analizando el texto... por favor espera unos segundos..."):
+            st.markdown("<div class='loader'></div>", unsafe_allow_html=True)
+            time.sleep(2.5)  # Simula tiempo de espera
             payload = fake_predict(txt)
             st.session_state.results = payload.get("sentences", [])
-        if not st.session_state.results:
-            st.info("No se detectaron oraciones en el texto.")
-        else:
-            st.session_state.page_view = "resultados"
-            st.rerun()
+            st.session_state.view = "results"
+        st.rerun()
 
 # -------------------------------------------------------------------
-# PANTALLA 2: Resultados
+# VISTA 2: Resultados
 # -------------------------------------------------------------------
-elif st.session_state.page_view == "resultados":
+elif st.session_state.view == "results":
     st.title("📊 Resultados del análisis")
-
-    back_col, _ = st.columns([1, 3])
-    with back_col:
-        if st.button("↩️ Procesar otro texto", use_container_width=True):
-            st.session_state.page_view = "inicio"
-            st.session_state.results = []
-            st.session_state.focus_idx = None
-            st.rerun()
 
     left, right = st.columns([2, 1], gap="large")
 
-    # ------------------- COLUMNA IZQUIERDA -------------------
     with left:
+        # 🔵 Botón azul arriba a la izquierda
+        col_btn, _ = st.columns([1, 4])
+        with col_btn:
+            if st.button("🔁 Procesar otro texto", key="btn_new", use_container_width=False):
+                st.session_state.view = "input"
+                st.rerun()
+
         st.subheader("Resultados por oración")
 
         # --- Filtros horizontales ---
         col1, col2, col3 = st.columns(3)
         for name, label in zip(["Todas", "Justas", "Injustas"], ["Todas", "Justas 🟢", "Injustas 🔴"]):
             with eval(f"col{['Todas','Justas','Injustas'].index(name)+1}"):
-
                 if st.button(label, use_container_width=True, key=f"f_{name}",
                              type=("primary" if st.session_state.filter == name else "secondary")):
                     st.session_state.filter = name
@@ -200,7 +232,6 @@ elif st.session_state.page_view == "resultados":
                 mime="text/csv"
             )
 
-    # ------------------- COLUMNA DERECHA -------------------
     with right:
         st.subheader("Detalles de la oración")
         if st.session_state.focus_idx is None:

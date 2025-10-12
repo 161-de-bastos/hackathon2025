@@ -1,4 +1,3 @@
-import os
 import streamlit as st
 import pandas as pd
 from html import escape
@@ -6,14 +5,14 @@ import random
 import math
 import time
 
-# -------------------------------------------------------------------
+# ---------------------------------------------------------------
 # Configuración general
-# -------------------------------------------------------------------
+# ---------------------------------------------------------------
 st.set_page_config(page_title="Detector de Cláusulas Injustas", layout="wide")
 
-# -------------------------------------------------------------------
+# ---------------------------------------------------------------
 # Estado de sesión
-# -------------------------------------------------------------------
+# ---------------------------------------------------------------
 if "results" not in st.session_state:
     st.session_state.results = []
 if "focus_idx" not in st.session_state:
@@ -25,35 +24,73 @@ if "filter" not in st.session_state:
 if "view" not in st.session_state:
     st.session_state.view = "input"  # input / results
 
-# -------------------------------------------------------------------
-# Función dummy simulando la API FastAPI (/v1/predict)
-# -------------------------------------------------------------------
-def fake_predict(text: str):
-    sentences = [s.strip() for s in text.replace("\n", ". ").split(".") if s.strip()]
-    simulated_results = []
-    for i, s in enumerate(sentences):
+# ---------------------------------------------------------------
+# Fake model → genera datos dummy en formato JSON realista
+# ---------------------------------------------------------------
+def fake_model_json(text):
+    sentences = [s.strip() for s in text.split(".") if s.strip()]
+    json_data = []
+    for s in sentences:
         label = random.choice([0, 1])
-        prob = round(random.uniform(0.4, 0.95), 3)
-        similar_text = None
+        prob = round(random.uniform(0.01, 0.99), 6)
+        rationales = []
         if label == 1:
-            similar_text = random.choice([
-                "El servicio puede cambiar unilateralmente.",
-                "El proveedor puede terminar sin previo aviso.",
-                "El usuario no tiene derecho a reembolso.",
-                "La empresa puede modificar las condiciones sin consentimiento."
-            ])
-        simulated_results.append({
-            "idx": i,
+            rationales = [{
+                "idx": 1,
+                "score_raw": round(random.uniform(10, 25), 3),
+                "att_weight": 1.0,
+                "text": random.choice([
+                    "El proveedor puede cambiar unilateralmente el contrato.",
+                    "El usuario no tiene derecho a reembolso.",
+                    "La empresa puede terminar el servicio sin aviso.",
+                    "El cliente renuncia a acciones legales."
+                ]),
+                "id": "unfair_clause",
+                "tag": "a2"
+            }]
+        json_data.append({
             "text": s,
+            "general_prob": prob,
+            "general_pred": label,
+            "per_category": {
+                "A": {
+                    "prob": prob,
+                    "pred": label,
+                    "rationales": rationales
+                }
+            }
+        })
+    return json_data
+
+
+# ---------------------------------------------------------------
+# Convierte el JSON en formato para la app
+# ---------------------------------------------------------------
+def parse_json_results(json_data):
+    results = []
+    for i, item in enumerate(json_data):
+        text = item.get("text", "")
+        label = 1 if item.get("general_pred", 0) == 1 else 0
+        prob = float(item.get("general_prob", 0))
+        similar_text = None
+        for cat in item.get("per_category", {}).values():
+            rats = cat.get("rationales", [])
+            if rats:
+                similar_text = rats[0].get("text")
+                break
+        results.append({
+            "idx": i,
+            "text": text,
             "label": label,
             "prob": prob,
             "similar_text": similar_text
         })
-    return {"sentences": simulated_results}
+    return {"sentences": results}
 
-# -------------------------------------------------------------------
+
+# ---------------------------------------------------------------
 # Estilos visuales
-# -------------------------------------------------------------------
+# ---------------------------------------------------------------
 st.markdown("""
 <style>
 h1, h2, h3, h4 { color: #7a0b0b; }
@@ -111,12 +148,11 @@ div[data-testid="column"]:has(button.active) button {
 </style>
 """, unsafe_allow_html=True)
 
-# -------------------------------------------------------------------
-# VISTA 1: Entrada de texto
-# -------------------------------------------------------------------
-if st.session_state.view == "input":
 
-    # Encabezado centrado con emoji y subtítulo
+# ---------------------------------------------------------------
+# VISTA 1: Entrada de texto
+# ---------------------------------------------------------------
+if st.session_state.view == "input":
     st.markdown("""
     <div style="text-align:center; margin-top:30px;">
         <div style="font-size:80px;">⚖️</div>
@@ -127,34 +163,31 @@ if st.session_state.view == "input":
 
     st.subheader("Texto de entrada")
     demo = """As such, the Services may change from time to time, at our discretion.
-We may stop (permanently or temporarily) providing the Services or any features.
+We may stop providing the Services or any features.
 We also retain the right to create limits on use at our sole discretion.
 We may remove content or terminate users without liability to you."""
     txt = st.text_area("Pega el texto a analizar", value=demo, height=180)
 
     if st.button("🔍 Analizar texto", type="primary", use_container_width=True):
-        st.session_state.focus_idx = None
-        st.session_state.page = 1
-        st.session_state.filter = "Todas"
-
-        with st.spinner("🧠 Analizando el texto... por favor espera unos segundos..."):
+        with st.spinner("🧠 Analizando el texto..."):
             st.markdown("<div class='loader'></div>", unsafe_allow_html=True)
-            time.sleep(2.5)  # Simula tiempo de espera
-            payload = fake_predict(txt)
-            st.session_state.results = payload.get("sentences", [])
+            time.sleep(2)
+            json_data = fake_model_json(txt)
+            payload = parse_json_results(json_data)
+            st.session_state.results = payload["sentences"]
             st.session_state.view = "results"
         st.rerun()
 
-# -------------------------------------------------------------------
-# VISTA 2: Resultados
-# -------------------------------------------------------------------
+
+# ---------------------------------------------------------------
+# VISTA 2: Resultados (idéntica a la original)
+# ---------------------------------------------------------------
 elif st.session_state.view == "results":
     st.title("📊 Resultados del análisis")
 
     left, right = st.columns([2, 1], gap="large")
 
     with left:
-        # 🔵 Botón azul arriba a la izquierda
         col_btn, _ = st.columns([1, 4])
         with col_btn:
             if st.button("🔁 Procesar otro texto", key="btn_new", use_container_width=False):
@@ -172,7 +205,6 @@ elif st.session_state.view == "results":
                     st.session_state.filter = name
                     st.session_state.page = 1
 
-        # --- Aplicar filtro ---
         filtered = st.session_state.results
         if st.session_state.filter == "Justas":
             filtered = [x for x in filtered if x["label"] == 0]
@@ -200,12 +232,11 @@ elif st.session_state.view == "results":
             if st.button("Siguiente ➡️", disabled=st.session_state.page >= total_paginas):
                 st.session_state.page += 1
 
-        # --- Paginación efectiva ---
+        # --- Mostrar oraciones ---
         start = (st.session_state.page - 1) * n_por_pagina
         end = start + n_por_pagina
         page_items = filtered[start:end]
 
-        # --- Render de chips ---
         if page_items:
             for item in page_items:
                 idx = item["idx"]
@@ -217,12 +248,10 @@ elif st.session_state.view == "results":
         else:
             st.info("No hay oraciones que coincidan con el filtro.")
 
-        # --- Tabla + Exportación con scroll ---
         with st.expander("📄 Ver tabla y exportar"):
             df = pd.DataFrame(st.session_state.results)
-            st.markdown("""
-                <div style='overflow-x:auto; overflow-y:auto; max-height:400px; border:1px solid #ddd; border-radius:8px;'>
-            """, unsafe_allow_html=True)
+            st.markdown("""<div style='overflow-x:auto; overflow-y:auto; max-height:400px; border:1px solid #ddd; border-radius:8px;'>""",
+                        unsafe_allow_html=True)
             st.dataframe(df, use_container_width=True, hide_index=True)
             st.markdown("</div>", unsafe_allow_html=True)
             st.download_button(
@@ -241,7 +270,6 @@ elif st.session_state.view == "results":
             if sel:
                 label_txt = "Injusta (1)" if sel["label"] == 1 else "Justa (0)"
                 icon = "🔴" if sel["label"] == 1 else "🟢"
-
                 st.markdown("<div class='detail-card'>", unsafe_allow_html=True)
                 st.markdown(f"**{icon} Oración #{sel['idx']}**")
                 st.write(sel["text"])
