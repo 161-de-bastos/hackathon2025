@@ -8,21 +8,24 @@ networks:
 volumes:
   prometheus-data:
   grafana-data:
-  letsencrypt:
 
 services:
-  # Reverse proxy público
   traefik:
     image: traefik:v3.1
-    command: ["--api.dashboard=true", "--providers.docker=true", "--providers.file.directory=/etc/traefik","--ping=true","--ping.entrypoint=web"]
+    command:
+      - "--providers.docker=true"
+      - "--providers.file.directory=/etc/traefik"
+      - "--entrypoints.web.address=:80"
+      - "--ping=true"
+      - "--ping.entrypoint=web"
+
+      - "--api.dashboard=true"
     ports:
-      - "80:80"
-      - "443:443"
+      - "127.0.0.1:80:80"   
     volumes:
       - ./network/reverse-proxy/traefik.yml:/etc/traefik/traefik.yml:ro
-      - letsencrypt:/letsencrypt
       - /var/run/docker.sock:/var/run/docker.sock:ro
-    networks: [public]
+    networks: [public, internal]
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://localhost:80/ping"]
@@ -30,49 +33,65 @@ services:
       timeout: 5s
       retries: 5
 
-  # Front-end (público vía Traefik)
   streamlit:
-    context: ./network/streamlit
+    build:
+      context: ./network/streamlit
+    environment:
+      - API_URL=http://api:8000
+      - STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
     networks: [public, internal]
     depends_on:
       api:
         condition: service_healthy
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.front.rule=Host(`${TRAEFIK_DOMAIN}`)"
+      - "traefik.http.middlewares.front-auth.basicauth.usersfile=/auth.htpasswd"
+      - "traefik.http.middlewares.front-rl.ratelimit.average=10"
+      - "traefik.http.middlewares.front-rl.ratelimit.burst=20"
+      - "traefik.http.routers.front.middlewares=front-auth,front-rl"
+      - "traefik.http.routers.front.rule=PathPrefix(`/`)"
       - "traefik.http.routers.front.entrypoints=web"
-      - "traefik.http.routers.front-secure.rule=Host(`${TRAEFIK_DOMAIN}`)"
-      - "traefik.http.routers.front-secure.entrypoints=websecure"
-      - "traefik.http.routers.front-secure.tls.certresolver=le"
       - "traefik.http.services.front.loadbalancer.server.port=8501"
+    volumes:
+      - ./network/reverse-proxy/auth.htpasswd:/auth.htpasswd:ro
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8501/_stcore/health"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
 
-  # API (sólo red interna)
   api:
     build: ./network/api
     networks: [internal]
     depends_on:
       dl:
         condition: service_healthy
-    # No puertos publicados; Prometheus entra por la red internal
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8000/healthz"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
 
-  # DL/MANN (CUDA, sólo red interna)
   dl:
     build:
       context: ./network/dl
       args:
-        GIT_REF: main         # o un tag/commit SHA
+        GIT_REF: main
         REPO_URL: https://github.com/161-de-bastos/hackathon2025.git
     environment:
-      - MANN_ENTRYPOINT=hackathon2025.api.mann_infer:infer  # ajústalo
+      - MANN_ENTRYPOINT=hackathon2025.api.mann_infer:infer
       - REPO_DIR=/app/hackathon2025
     networks: [internal]
     gpus: all
-    # Ejemplo: monta pesos/artefactos en RO
-    # volumes:
-    #   - /nvme/models/mann:/models:ro
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:9000/healthz"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
 
   # ---- MONITOREO ----
   prometheus:
@@ -92,25 +111,24 @@ services:
   grafana:
     image: grafana/grafana:11.2.0
     environment:
-      - GF_SECURITY_ADMIN_USER=${GRAFANA_ADMIN_USER}
-      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_ADMIN_PASSWORD}
+      - GF_SECURITY_ADMIN_USER=${GRAFANA_ADMIN_USER:-admin}
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_ADMIN_PASSWORD:-admin}
     volumes:
       - grafana-data:/var/lib/grafana
     networks: [public, internal]
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.grafana.rule=Host(`grafana.${TRAEFIK_DOMAIN}`)"
-      - "traefik.http.routers.grafana.entrypoints=web"
-      - "traefik.http.routers.grafana-secure.rule=Host(`grafana.${TRAEFIK_DOMAIN}`)"
-      - "traefik.http.routers.grafana-secure.entrypoints=websecure"
-      - "traefik.http.routers.grafana-secure.tls.certresolver=le"
-      - "traefik.http.services.grafana.loadbalancer.server.port=3000"
+      - "traefik.http.routers.graf.rule=PathPrefix(`/grafana`)"
+      - "traefik.http.routers.graf.entrypoints=web"
+      - "traefik.http.middlewares.graf-strip.stripprefix.prefixes=/grafana"
+      - "traefik.http.routers.graf.middlewares=graf-strip"
+      - "traefik.http.services.graf.loadbalancer.server.port=3000"
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://localhost:3000/api/health"]
-      interval: 20s
+      interval: 30s
       timeout: 5s
-      retries: 10 
+      retries: 10
 
   cadvisor:
     image: gcr.io/cadvisor/cadvisor:v0.49.1
@@ -141,8 +159,6 @@ services:
   dcgm-exporter:
     image: nvidia/dcgm-exporter:3.3.7-3.5.0-ubuntu22.04
     networks: [internal]
-    # Requiere acceso a GPU/NVML
-    deploy: {}        # ignorado por compose, pero mantenido para Swarm si migras
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://localhost:9400/metrics"]
