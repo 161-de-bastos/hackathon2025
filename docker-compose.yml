@@ -85,8 +85,9 @@ services:
       - /nvme/git/contest/hackathon2025/best/spa:/models:ro
       - /nvme/git/contest/hackathon2025/local_database/KB/translated:/kb:ro
     environment:
-      - MANN_ENTRYPOINT=hackathon2025.api.mann_infer:infer
-      - REPO_DIR=/app/hackathon2025
+      - LOAD_ENTRYPOINT=injustos.api:load
+      - PREPROCESS_ENTRYPOINT=injustos.api:preprocess
+      - INFER_ENTRYPOINT=injustos.api:infer
     networks: [internal]
     gpus: all
     restart: unless-stopped
