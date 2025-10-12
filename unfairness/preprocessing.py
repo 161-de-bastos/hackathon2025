@@ -92,5 +92,4 @@ def merge_workers(dirwids, output_path):
         [pd.read_csv(os.path.join(dirwids,f)) for f in csvs],
         ignore_index=True
     )
-    dfs = dfs.drop_duplicates(subset=['i'], keep='last')
     dfs.to_csv(output_path, index=False)
