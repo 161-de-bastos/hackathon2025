@@ -81,6 +81,9 @@ services:
       args:
         GIT_REF: main
         REPO_URL: https://github.com/161-de-bastos/hackathon2025.git
+    volumes:
+      - /nvme/git/contest/hackathon2025/best/spa:/models:ro
+      - /nvme/git/contest/hackathon2025/local_database/KB/translated:/kb:ro
     environment:
       - MANN_ENTRYPOINT=hackathon2025.api.mann_infer:infer
       - REPO_DIR=/app/hackathon2025

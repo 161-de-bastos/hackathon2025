@@ -54,3 +54,50 @@ def cross_validate(
         max_len=max_len,
         batch_size=batch_size,
     )
+
+def load():
+    import torch
+    from .utils.config_loader import load_model_and_tokenizer
+    CKPT     = "/models/spa.ckpt"
+    KB_DIR   = "/kb"
+    MAX_LEN  = 128
+    DEVICE   = "cuda" if torch.cuda.is_available() else "cpu"
+
+    lit, tok, kb_struct = load_model_and_tokenizer(
+        ckpt_path=CKPT,
+        max_len=MAX_LEN,
+        kb_dir=KB_DIR,
+        map_location=DEVICE,
+    )
+    lit.eval()
+    return lit, tok, kb_struct
+
+def preprocess(txt):
+    from .preprocessing import sentencizer
+    idxin, sents = sentencizer(txt)
+    return idxin, sents
+
+
+def infer(sents, lit, tok, kb_struct):
+    from .infer import infer_texts
+    import torch
+    MAX_LEN  = 128
+    BATCH    = 64
+    THRESH   = 0.5          
+    TOP_K    = 3
+    DEVICE   = "cuda" if torch.cuda.is_available() else "cpu"
+
+    results = infer_texts(
+        lit_module = lit,
+        tokenizer = tok,
+        kb_struct = kb_struct,
+        texts = sents,
+        max_len = MAX_LEN,
+        batch_size = BATCH,   
+        threshold=THRESH,
+        top_k=TOP_K,          
+        use_scores=True,
+        device = DEVICE
+    )
+
+    return results
