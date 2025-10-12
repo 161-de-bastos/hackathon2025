@@ -16,6 +16,7 @@ fonttools==4.60.1
 frozenlist==1.8.0
 fsspec==2025.9.0
 idna==3.10
+-e git+https://github.com/161-de-bastos/hackathon2025.git@ad6061f6ce000a531978fcce139461769a152044#egg=injustos
 Jinja2==3.1.6
 joblib==1.5.2
 kiwisolver==1.4.9
