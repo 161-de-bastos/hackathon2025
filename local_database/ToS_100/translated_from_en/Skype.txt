@@ -1,0 +1,516 @@
+LEA DETENIDAMENTE ANTES DE DESCARGAR EL SOFTWARE O UTILIZAR LOS PRODUCTOS O LOS SITIOS WEB DE SKYPE
+Puntos clave
+Es importante que lea en su totalidad y comprenda este documento.
+Sin embargo, hay algunos puntos clave que debemos enfatizar:
+SIN ACCESO A SERVICIOS DE EMERGENCIA: El Software no reemplaza su teléfono fijo o móvil común.
+En particular, salvo en las circunstancias muy limitadas establecidas en el párrafo 5.6 de estos Términos (aplicables únicamente al Software de comunicaciones por Internet de Skype), el Software no le permite realizar llamadas de emergencia a servicios de emergencia.
+Debe hacer arreglos de comunicación alternativos para asegurarse de poder realizar llamadas de emergencia si es necesario.
+CONSULTAR RESTRICCIONES DE USO: En algunos países existen restricciones en el uso del Software.
+Es su responsabilidad asegurarse de que esté legalmente autorizado a utilizar el Software en el lugar donde se encuentra.
+SIN PROPIEDAD DE NÚMEROS: Si Skype le asigna un Número de Skype (anteriormente conocido como “Número en línea”) o un Número de Skype To Go, usted no es propietario del número ni tiene derecho a conservarlo para siempre.
+Es posible que Skype necesite cambiar o retirar el número que se le ha asignado de vez en cuando.
+No transferirá ni intentará transferir su número de Skype o su número de Skype To Go a nadie más.
+Debe asegurarse de cumplir con los requisitos de asignación que se muestran al comprar un número de Skype, ya que de no hacerlo podría resultar en el retiro del número.
+Véase también el párrafo 19.1.
+EL CRÉDITO DE SKYPE SE INACTIVA DESPUÉS DE 180 DÍAS: Si compra crédito de Skype, tenga en cuenta que se vuelve inactivo después de 180 días de inactividad.
+Consulte también el párrafo 9.2.
+CLÁUSULA DE ARBITRAJE Y RENUNCIA A DEMANDA COLECTIVA: Si vive en EE. UU. y selecciona Pago por teléfono móvil (consulte el párrafo 20), una cláusula de arbitraje vinculante y una renuncia a demanda colectiva afectan sus derechos a resolver una disputa con Skype, sus filiales corporativas u otros terceros, incluidos los proveedores de telefonía móvil.
+Lea atentamente el párrafo 20.3.
+1.
+SU ACUERDO CON SKYPE
+1.1 Las aplicaciones de software de comunicaciones por Internet de Skype ("Software de comunicaciones por Internet"), otras aplicaciones de software de la marca "Skype" (en conjunto, el "Software de Skype"), las aplicaciones de software de la marca "Qik" ("Software Qik") y la documentación asociada (ya sea en forma impresa o electrónica), incluidas las mejoras, modificaciones, mejoras, correcciones, actualizaciones, mejoras y versiones futuras de las mismas ("Actualizaciones") y ya sea que estén disponibles de forma gratuita o mediante pago (colectivamente). el “Software”) son licenciados (no vendidos) por Skype Software Sàrl.
+1.2 Skype Software Sàrl le proporciona las funciones y productos que están disponibles a través del Software de forma gratuita (excluidos los productos o funciones disponibles de forma gratuita únicamente a modo de prueba) (“Productos gratuitos”).
+1.3 Skype Communications Sàrl le proporciona cualquier producto o característica adicional del Software Skype o el Software Qik, u otros productos de la marca “Skype” o “Qik”, por los que usted paga (incluidos los productos o características disponibles de forma gratuita a modo de prueba únicamente) (“Productos de pago”).
+1.4 “Sitios web de Skype” significa www.skype.com, www.qik.com (ambos operados por Skype Communications Sàrl) y cualquier otro sitio web autorizado por Skype que enlace con estos Términos.
+1.5 "Sophare Her Unfel Weram Communications WOULL proporcionó una rara vez, 23 - 5 2165 Luxemburgo Aver Lizies (
+“Productos” significa colectivamente los Productos Gratuitos y los Productos Pagados;
+“usted” o “su” significa usted, el titular registrado de la Cuenta de Usuario (como se describe en el párrafo 6.1) y licenciatario según estos Términos.
+1.6 Su acuerdo con Skype se compone de los términos y condiciones establecidos en este documento, junto con las políticas de uso justo descritas en este documento y los Términos adicionales mencionados en el párrafo 14 (colectivamente, los "Términos").
+En la medida de cualquier inconsistencia entre las políticas de uso justo o cualquier Términos adicionales y este documento, este documento tendrá prioridad.
+2.
+ACEPTACIÓN DE LOS TÉRMINOS
+2.1 Para descargar y/o utilizar el Software, los Productos y/o los Sitios web de Skype, primero debe aceptar estos Términos.
+Usted acepta estos Términos (a) cuando hace clic para aceptar o aceptar los Términos; o (b) cuando descarga y/o utiliza el Software, los Productos y/o los Sitios web de Skype.
+Le recomendamos que imprima una copia de estos Términos para sus registros.
+Estos Términos permanecen vigentes desde la fecha de aceptación hasta que usted o Skype los rescindan de conformidad con el párrafo 11.
+2.2 No puede aceptar estos Términos si: (a) no tiene derecho legal a utilizar el Software, los Productos y/o los Sitios web de Skype en el país en el que se encuentra o reside o (b) si no es mayor de edad para celebrar un acuerdo vinculante con Skype.
+2.3 En algunos países, los Productos pueden ser proporcionados por el socio local de Skype.
+De ser así, ese socio local puede pedirle que acepte sus propios términos de servicio (“términos locales”).
+Si hay alguna inconsistencia entre esos términos locales y estos Términos, entonces los términos locales regirán en la medida de esa inconsistencia.
+3.
+CAMBIOS A LOS TÉRMINOS
+3.1 Skype puede realizar cambios a estos Términos de vez en cuando.
+Skype publicará los cambios en www.skype.com/go/tou.
+Los cambios a las políticas de uso justo y/o a los Términos adicionales se publicarán en el sitio web de Skype correspondiente.
+Los cambios entrarán en vigor cuando se publiquen.
+Revise los Términos periódicamente.
+Usted comprende y acepta que su aceptación expresa de los Términos o su uso del Software, los Productos y/o los Sitios web de Skype después de la fecha de publicación constituirá su aceptación de los Términos actualizados.
+Si no está de acuerdo con los Términos modificados, puede terminar su relación con Skype de acuerdo con el párrafo 11 a continuación.
+4.
+LICENCIA
+4.1 Licencia.
+Sujeto a su cumplimiento de estos Términos, se le otorga una licencia limitada, no exclusiva, no sublicenciable, no asignable y gratuita para descargar e instalar el Software en una computadora personal, teléfono móvil u otro dispositivo; y utilizar personalmente el Software a través de su cuenta de usuario individual de Skype o Qik (según corresponda) (“Cuenta de usuario”).
+Para evitar dudas, (a) los administradores de TI que trabajan en nombre de una empresa pueden descargar e instalar el Software de Skype en computadoras personales u otros dispositivos utilizados por el personal de dicha empresa; y (b) se le permite utilizar el Software en una universidad u otra institución educativa, o en el trabajo.
+Skype se reserva todos los derechos que no se le otorgan expresamente en virtud de estos Términos.
+4.2 Restricciones.
+Usted no puede y acepta no hacerlo:
+(a) sublicenciar, vender, asignar, alquilar, arrendar, exportar, importar, distribuir o transferir o de otro modo otorgar derechos a cualquier tercero sobre el Software;
+(b) emprender, provocar, permitir o autorizar la modificación, creación de trabajos derivados o mejoras, traducción, ingeniería inversa, descompilación, desensamblaje, descifrado, emulación, piratería, descubrimiento o intento de descubrimiento del código fuente o protocolos del Software o cualquier parte o características del mismo (excepto en la medida permitida por la ley);
+(c) eliminar, ocultar o alterar cualquier aviso de derechos de autor u otros avisos de propiedad incluidos en el Software;
+(d) utilizar el Software o hacer que el Software (o cualquier parte del mismo) se utilice dentro de terceros o para proporcionar productos o servicios comerciales a terceros.
+Lo anterior no le impedirá utilizar el Software para sus propias comunicaciones comerciales, sujeto al párrafo 4.1 anterior;
+(e) excepto para fines de descarga e instalación, utilizar el Software excepto a través de su Cuenta de Usuario.
+4.3 Tecnología de terceros.
+Si utiliza software precargado, integrado, combinado, distribuido, utilizado o descargado en productos, hardware, aplicaciones de software, programas o dispositivos de terceros (“Tecnología de terceros”), acepta y reconoce que: (a) es posible que deba celebrar un acuerdo de licencia independiente con el tercero propietario o licenciante correspondiente para el uso de dicha tecnología de terceros; (b) es posible que no se pueda acceder a algunos Productos y/o funciones a través de la Tecnología de terceros y (c) Skype no puede garantizar que el Software siempre esté disponible en o en conexión con dicha Tecnología de terceros.
+4.4 Avisos de terceros.
+El Software puede incluir código de terceros que Skype, no el tercero, le otorga bajo licencia en virtud de este acuerdo.
+Los avisos, si los hubiera, sobre el código de terceros se incluyen únicamente para su información.
+Los scripts de terceros, vinculados, llamados o referenciados desde el Software, son licenciados por los terceros propietarios de dicho código, no por Skype.
+5.
+USO DEL SOFTWARE Y PRODUCTOS Y SITIOS WEB DE SKYPE
+5.1 Equipo: Para utilizar el Software y los Productos necesitará una conexión de banda ancha a Internet.
+Usted es responsable de proporcionar todo el equipo necesario para acceder a Internet o permitir comunicaciones, como auriculares, micrófonos y cámaras web.
+5.2 Uso de su equipo: El software de comunicaciones por Internet puede utilizar las capacidades de procesamiento, la memoria y el ancho de banda de la computadora (u otro dispositivo aplicable) que esté utilizando, con el fin limitado de facilitar la comunicación y establecer la conexión entre los usuarios del software de comunicaciones por Internet.
+Si su uso del Software de comunicaciones por Internet depende del uso de un procesador y ancho de banda propiedad de un tercero o controlado por él, usted reconoce y acepta que su licencia para usar el Software de comunicaciones por Internet está sujeta a que usted obtenga el consentimiento del tercero correspondiente para dicho uso.
+Usted declara y garantiza que al aceptar estos Términos, ha obtenido dicho consentimiento.
+5.3 Actualizaciones del Software: Skype puede verificar automáticamente su versión del Software de Skype.
+Es posible que deba ingresar una versión actualizada de estos Términos para poder descargar o aprovechar cualquier Actualización.
+Skype no tiene obligación de poner a disposición ninguna Actualización.
+Sin embargo, Skype puede (a) solicitarle que descargue e instale Actualizaciones; o (b) descargar e instalar Actualizaciones de Skype automáticamente de vez en cuando, a menos que haya elegido (a través de la configuración de su cliente de Skype) no recibir Actualizaciones automáticas.
+Microsoft Corporation o sus afiliados y subsidiarias también pueden descargar automáticamente actualizaciones del Software de Skype para Windows, si usted ha elegido recibir Actualizaciones de Microsoft.
+Estas actualizaciones son necesarias para mantener la compatibilidad del software, proporcionar actualizaciones de seguridad o correcciones de errores, u ofrecer nuevas características, funcionalidades o versiones.
+Usted acepta recibir dichas actualizaciones de Skype para continuar usando el Software de Skype y acepta dichas Actualizaciones sujetas a estos Términos.
+5.4 Suspensión, mejora técnica y mantenimiento: De vez en cuando, Skype puede necesitar realizar mantenimiento o actualizar el Software, los Productos o los Sitios web de Skype o la infraestructura subyacente que le permite utilizar el Software, los Productos o los Sitios web de Skype.
+Esto puede requerir que Skype suspenda o limite temporalmente su uso de algunos o todos los Software, Productos o Sitios web de Skype hasta el momento en que se pueda completar este mantenimiento y/o actualización.
+En la medida de lo posible y a menos que se requiera una intervención urgente, Skype publicará la hora y fecha de dicha suspensión o limitación en el sitio web de Skype con antelación.
+No tendrá derecho a reclamar daños y perjuicios por dicha suspensión o limitación del uso de cualquier Software, Producto o Sitio web de Skype.
+5.5 Sin acceso a servicios de emergencia: Ni los Productos ni el Software están destinados a respaldar o realizar llamadas de emergencia a ningún tipo de hospitales, agencias de aplicación de la ley, unidades de atención médica o cualquier otro tipo de servicios que conecten a un usuario con el personal de los servicios de emergencia o los puntos de respuesta de seguridad pública (“Servicios de emergencia”).
+Existen diferencias importantes entre los servicios telefónicos tradicionales y los Productos.
+Usted reconoce y acepta que: (i) Skype no está obligado a ofrecer acceso a Servicios de emergencia según ninguna norma, reglamento o ley local y/o nacional aplicable; (ii) es su responsabilidad comprar, por separado de los Productos, servicios telefónicos tradicionales inalámbricos (móviles) o de línea fija que ofrecen acceso a Servicios de Emergencia, y (iii) el Software y los Productos no reemplazan su servicio telefónico principal.
+Obtenga más información sobre cómo llamar al 112, el número de emergencia exclusivo para la UE en www.skype.com/go/emergency.
+5.6 Llamadas de emergencia limitadas (solo software de comunicaciones por Internet y no aplicable al software Qik)
+5.6.1 En un número muy limitado de países, y solo para plataformas y versiones definidas del Software de Comunicaciones por Internet, Skype intentará proporcionar llamadas de emergencia limitadas como una característica independiente, pero no puede ofrecer ningún compromiso a este respecto.
+Haga clic aquí para obtener una lista de países (“Países habilitados”) y versiones de software y otras plataformas (“Versiones habilitadas”) que permiten llamadas de emergencia limitadas de Skype.
+Las llamadas de emergencia de Skype no están disponibles para otros países, versiones o plataformas.
+Debe mantener disponibles los servicios telefónicos tradicionales inalámbricos (móviles) o de línea fija para sus llamadas a los Servicios de Emergencia y utilizar las llamadas de emergencia limitadas de Skype solo como último recurso.
+En particular, tenga en cuenta también que:
+(i) un corte de energía, una falla de la batería o una falla en la conexión a Internet pueden provocar una falla en la llamada de Skype, incluida su llamada a los Servicios de Emergencia.
+Además, cualquiera de las limitaciones de calidad establecidas en el párrafo 5.9 a continuación puede afectar la conexión exitosa de la llamada.
+(ii) cuando esté disponible, una llamada de emergencia realizada utilizando el software de comunicaciones por Internet en un país habilitado puede no recibir la misma prioridad de red que una llamada realizada utilizando servicios telefónicos tradicionales inalámbricos (móviles) o de línea fija.
+(iii) si su llamada de emergencia está conectada, deberá informarle al operador de Servicios de Emergencia que habla con el lugar donde se encuentra físicamente para que la organización de emergencia correcta pueda responder a su emergencia y sepa dónde encontrarlo.
+Si no proporciona esta información cuando se le solicite, reconoce que es posible que su llamada de emergencia no se complete y que no podrá obtener acceso a los servicios de emergencia requeridos utilizando el software de comunicaciones por Internet.
+Skype no tendrá ninguna responsabilidad por su llamada de emergencia fallida en tales circunstancias.
+(iv) aparte de los Países Habilitados y las Versiones Habilitadas, Skype no proporciona llamadas de emergencia limitadas en ningún país o para o junto con cualquier Producto o utilizando cualquier plataforma, dispositivo, servicio o sistema operativo (incluido cualquier producto, plataforma, dispositivo, servicio o sistema operativo desarrollado por terceros que utilicen las API de Skype, cualquiera de los kits de desarrollo de software de Skype o de otro modo).
+5.6.2 En los países habilitados, debe configurar la funcionalidad limitada de llamadas de emergencia estableciendo su ubicación predeterminada para llamadas de emergencia en la página Configuración de llamadas de su software de comunicaciones por Internet de escritorio (si está utilizando una versión 4.1 para Windows (o posterior) o la versión 2.8 para Mac OS X (o posterior)).
+Es su responsabilidad asegurarse de que esta información de ubicación sea correcta y se mantenga actualizada si su dirección física cambia.
+Skype no admite llamadas de emergencia en la mayoría de los países del mundo.
+Cuando se admitan llamadas de emergencia limitadas, Skype no le cobrará por realizar una llamada de emergencia y no es necesario tener un saldo de crédito de Skype.
+Sin embargo, si su país no admite llamadas de emergencia limitadas, no debe intentar ni aceptar realizar llamadas de emergencia utilizando su software de comunicaciones por Internet.
+Si, con su permiso, otro usuario utiliza su Cuenta de usuario, es su responsabilidad informar a ese usuario de las circunstancias limitadas en las que están disponibles las llamadas de emergencia limitadas.
+5.7 Contenido de las comunicaciones: Skype no es la fuente, no verifica ni respalda ni asume ninguna responsabilidad por el contenido de las comunicaciones realizadas utilizando el Software.
+Al utilizar el Software, usted acepta que cualquier contenido que envíe puede transmitirse al destinatario de su comunicación.
+El contenido de las comunicaciones es enteramente responsabilidad de la persona de quien se originó dicho contenido.
+Por lo tanto, puede estar expuesto a contenido ofensivo, ilegal, perjudicial para menores, obsceno, indecente o de otro modo objetable.
+El contenido de las comunicaciones puede estar protegido por derechos de propiedad intelectual, que son titularidad de terceros.
+Usted es responsable del contenido que elige comunicar y al que accede mediante el Software.
+En particular, usted es responsable de asegurarse de no enviar material que (i) tenga derechos de autor, esté protegido por secretos comerciales o esté sujeto de otro modo a derechos de propiedad de terceros, incluidos derechos de privacidad y publicidad, a menos que sea el propietario de dichos derechos o tenga permiso de su legítimo propietario (ii) una falsedad o tergiversación (iii) ofensiva, ilegal, perjudicial para menores, obscena, difamatoria, calumniosa, amenazante, pornográfica, acosador, odioso, racial o étnicamente ofensivo, o que fomente conductas que se considerarían un delito penal, dé lugar a responsabilidad civil, viole cualquier ley o sea de otro modo objetable; (iv) un anuncio o solicitud de negocios; o (v) hacerse pasar por otra persona.
+Skype se reserva el derecho (pero no tendrá obligación) de revisar el contenido con el fin de hacer cumplir estos Términos.
+Skype puede, a su entera discreción, bloquear, impedir la entrega o eliminar de otro modo el contenido de las comunicaciones como parte de su esfuerzo por proteger el Software, los Productos o sus clientes, o hacer cumplir de otro modo estos Términos.
+Además, Skype puede, a su entera discreción, eliminar dicho contenido y/o rescindir estos Términos y su Cuenta de usuario si utiliza cualquier contenido que infrinja estos Términos.
+5.8 Aviso y eliminación Si Skype recibe una notificación de que cualquier material que usted publique, cargue, edite, aloje, comparta y/o publique en el sitio web de Skype o a través del Software (excluyendo sus comunicaciones privadas) ("Envío del usuario") es inapropiado, infringe cualquier derecho de un tercero, o si Skype desea eliminar su Envío del usuario por cualquier motivo, Skype se reserva el derecho de eliminar automáticamente dicho Envío del usuario por cualquier motivo inmediatamente o dentro de dicho plazo. los plazos que Skype decida periódicamente a su entera discreción.
+El Envío del usuario se retirará sin ninguna admisión de responsabilidad y sin perjuicio de cualquier derecho, recurso o defensa, todos los cuales están expresamente reservados.
+Usted reconoce y acepta que Skype no tiene obligación de devolver dicho Envío de usuario en ningún momento.
+Si los Envíos del usuario infringen, o si cree que los Envíos del usuario infringen cualquiera de sus derechos (incluidos los derechos de propiedad intelectual) o son ilegales, comuníquese con nosotros de inmediato siguiendo nuestro procedimiento de notificación y eliminación.
+Haga clic aquí para ver el Aviso y el Procedimiento de Eliminación.
+Skype se reserva el derecho de solicitar la verificación de su identidad y de buscar más información para verificar su queja.
+Usted acepta que es el único responsable de las consecuencias resultantes de su queja (que incluyen, entre otros, la eliminación o el bloqueo del Envío del usuario) y reconoce y acepta que cualquier queja puede usarse en procedimientos judiciales.
+Cualquier información falsa, engañosa o inexacta proporcionada por usted puede dar lugar a responsabilidad civil y penal.
+5.9 Calidad: Skype no puede garantizar que el Software, los Productos o los Sitios web de Skype funcionen siempre sin interrupciones, demoras o errores.
+Una serie de factores pueden afectar la calidad de sus comunicaciones y el uso del Software, los Productos (según los Productos utilizados) o los Sitios web de Skype, y pueden provocar fallas en sus comunicaciones, incluidos, entre otros: su red local, firewall, su proveedor de servicios de Internet, la Internet pública, la red telefónica pública conmutada y su suministro de energía.
+Skype no asume ninguna responsabilidad por cualquier interrupción, interrupción o retraso causado por cualquier falla o insuficiencia de cualquiera de estos elementos o cualquier otro elemento sobre el cual no tengamos control.
+5.10 Cambios en los Productos: Skype mejora constantemente el Software y los Productos y es posible que también necesite cambiar características técnicas de vez en cuando para cumplir con las regulaciones aplicables.
+En consecuencia, usted reconoce y acepta que los Productos y la funcionalidad del Software pueden variar de vez en cuando.
+Los requisitos técnicos para el uso de Productos y Software y las descripciones de funciones están disponibles en el sitio web de Skype.
+Si no está de acuerdo con algún cambio en el Software y los Productos, puede terminar su relación con Skype de acuerdo con el párrafo 11.
+Es posible que necesite actualizar a una nueva versión para poder disfrutar de los beneficios de determinados Productos.
+Además, reconoce y acepta que ciertos Productos pueden estar sujetos a límites de uso o restricciones geográficas, que pueden variar de vez en cuando.
+Consulte el sitio web de Skype para obtener detalles sobre las restricciones de uso más actualizadas que se aplican a los Productos que está utilizando.
+5.11 Ideas no solicitadas Skype no considera ni acepta propuestas o ideas no solicitadas, incluidas, entre otras, ideas para nuevos productos, tecnologías, promociones, nombres de productos, comentarios sobre productos y mejoras de productos ("Comentarios no solicitados").
+Si envía comentarios no solicitados a Skype a través del sitio web de Skype o de otro modo, reconoce y acepta que Skype no tendrá ninguna obligación de confidencialidad con respecto a los comentarios no solicitados.
+5.12 Informes Ciertas partes de los sitios web de Skype o del Software pueden solicitar sugerencias por escrito o informes de problemas, como el uso de nuestro formulario de contacto o formulario de informe de problemas (“Informes”).
+Lea atentamente los términos específicos que rigen esos Informes.
+Los Informes se considerarán propiedad de Skype.
+Skype será propietario exclusivo de todos los derechos ahora conocidos o existentes en el futuro sobre los Informes en todo el universo a perpetuidad y tendrá derecho a utilizar los Informes para cualquier propósito, comercial o de otro tipo, sin compensación para el proveedor de los Informes.
+Cualquier Informe que envíe a Skype no será tratado como confidencial y Skype no será responsable de ninguna divulgación de los Informes.
+5.13 Vinculación Puede vincularse al sitio web de Skype desde otro sitio web de su propiedad, siempre que lo haga de manera justa y legal y no dañe nuestra reputación ni se aproveche de ella.
+No debe establecer un vínculo de tal manera que sugiera cualquier forma de asociación, aprobación o respaldo por parte de Skype cuando no exista ninguno.
+No puede enmarcar el Sitio en ningún otro sitio.
+Skype proporciona una función de reproductor flash integrable de la marca Qik que usted puede incorporar en su sitio web personal y no comercial para utilizarlo al acceder a los materiales del sitio web de Skype de la marca Qik.
+Skype puede revocar el permiso para vincularse a los sitios web de Skype en cualquier momento a su entera discreción y le notificará al respecto.
+6.
+TUS OBLIGACIONES
+6.1 Cuenta de usuario.
+Antes de utilizar por primera vez el software Skype y el software Qik, se le pedirá que cree una cuenta de usuario y elija una identificación de usuario y una contraseña.
+Le recomendamos que elija una contraseña que sea difícil de adivinar y que esté compuesta por letras, números y símbolos.
+Sólo puede utilizar el Software a través de su Cuenta de Usuario.
+Usted es el único responsable de todas las actividades realizadas a través de su Cuenta de Usuario.
+Para evitar el uso no autorizado, deberá mantener su contraseña confidencial y no compartirla con ningún tercero ni utilizarla para acceder a sitios web o servicios de terceros.
+Si sospecha que alguien más conoce su contraseña, deberá cambiarla inmediatamente para proteger la seguridad de su Cuenta de Usuario.
+Es su responsabilidad asegurarse de no responder a ninguna solicitud no solicitada de detalles de tarjetas de crédito, contraseñas u otros datos.
+Skype no asume ninguna responsabilidad por su incumplimiento de las obligaciones establecidas en este párrafo 6.1.
+6.2 Uso legal: Debe utilizar el Software, los Productos y los Sitios web de Skype de acuerdo con las leyes del lugar donde se encuentra.
+En algunos países existen restricciones sobre la descarga y el uso del Software, los Productos y/o los Sitios web de Skype.
+Es su responsabilidad asegurarse de que esté legalmente autorizado a utilizar el Software, los Productos y/o los Sitios web de Skype donde se encuentre.
+6.3 Uso prohibido: No podrá:
+(a) interceptar o monitorear, dañar o modificar cualquier comunicación que no esté destinada a usted;
+(b) utilizar cualquier tipo de araña, virus, gusano, troyano, bomba de tiempo o cualquier otro código o instrucción diseñada para distorsionar, eliminar, dañar, emular o desensamblar el Software, los Productos, los Sitios web de Skype, las comunicaciones o los protocolos;
+(c) enviar comunicaciones no solicitadas (también denominadas “SPAM”, “SPIM” o “SPIT”) o cualquier comunicación no permitida por la ley aplicable o utilizar el Software, los Productos o los Sitios web de Skype con fines de phishing o pharming o suplantar o tergiversar la afiliación con otra persona o entidad;
+(d) exponer a terceros a material que sea ofensivo, perjudicial para menores, indecente o de cualquier otro modo objetable;
+(e) utilizar el Software, los Productos o los Sitios web de Skype para causar o intentar causar vergüenza o angustia, o amenazar, acosar o invadir la privacidad de cualquier tercero; o
+(f) usar (incluso como parte de su ID de usuario y/o foto de perfil) cualquier material o contenido que esté sujeto a derechos de propiedad de terceros, a menos que tenga una licencia o permiso del propietario de dichos derechos; o
+(g) recopilar o recolectar cualquier información de identificación personal, incluidos nombres de cuentas, del Software, los Productos o los Sitios web de Skype;
+(h) impactar o intentar impactar la disponibilidad del Software, los Productos o los Sitios web de Skype, por ejemplo, con un ataque de denegación de servicio (DOS) o de denegación de servicio distribuido (DDoS);
+(i) utilizar o iniciar cualquier sistema automatizado, incluidos, entre otros, robots, arañas o lectores fuera de línea que accedan al Software, los Productos o los Sitios web de Skype.
+Sin perjuicio de lo anterior, usted acepta que Skype otorga a los operadores de motores de búsqueda públicos permiso para utilizar arañas para copiar materiales del sitio web de Skype con el único fin de crear índices de búsqueda de los materiales disponibles públicamente, pero no cachés ni archivos de dichos materiales.
+Skype se reserva el derecho de revocar estas excepciones en cualquier momento.
+6.4 Envíos de usuarios Tenga respeto al participar en cualquier función de los sitios web o el software de Skype, como foros, blogs, funciones de correo electrónico, alojamiento, intercambio y/o publicación de vídeos o cualquier otra función de los sitios web de Skype o del software de Skype que le permita publicar, cargar, editar, alojar, compartir y/o publicar contenido.
+Usted reconoce y acepta que: (i) al utilizar los sitios web y/o el software de Skype, puede estar expuesto a contenido que puede considerar ofensivo o indecente y lo hace bajo su propio riesgo; (ii) usted es el único responsable, y Skype no tiene ninguna responsabilidad ante usted ni ante ningún tercero, por los Envíos de usuario que usted cree, envíe, publique o publique en los Sitios web de Skype o a través del Software; (iii) Skype no garantiza ninguna confidencialidad con respecto a los Envíos de usuario, ya sea que estén publicados o no. (iv) Skype no es responsable de ningún Envío de usuario al que usted pueda tener acceso a través del uso de los Sitios web o el Software de Skype y todos los Envíos de usuario son responsabilidad de la persona de quien se originaron dichos Envíos de usuario.
+Skype no respalda ningún Envío de usuario ni ninguna opinión, recomendación o consejo expresado en el mismo, y renuncia expresamente a toda responsabilidad en relación con los Envíos de usuario.
+En relación con sus Envíos de usuario, usted declara y garantiza que
+(i) poseer o tener las licencias, derechos, consentimientos y permisos necesarios para usar y autorizar a Skype a usar todos los derechos de autor, marcas comerciales, secretos comerciales, patentes y otros derechos de propiedad intelectual o de propiedad en y para todos los Envíos de usuario de acuerdo con estos Términos; y
+(ii) usted tiene el consentimiento por escrito, la liberación y/o el permiso de todas y cada una de las personas individuales identificables en el Envío del usuario para usar el nombre y/o la imagen de todas y cada una de dichas personas en el Envío del usuario, para permitir la inclusión y el uso del mismo en la forma contemplada en estos Términos.
+No deberá copiar, publicar ni utilizar texto, fotografías, imágenes, música, sonidos, imágenes ni ningún otro contenido de ningún tercero o fuente ("Contenido de terceros") sin el permiso específico del propietario.
+Dicho Contenido de Terceros puede estar protegido por leyes de propiedad intelectual y los propietarios de los derechos de propiedad intelectual sobre dicho contenido pueden oponerse a su uso.
+No debe utilizar ningún Contenido de terceros sin obtener primero el permiso del propietario de los derechos de propiedad intelectual de dicho contenido.
+Sin perjuicio de los derechos u obligaciones regidos por los Términos adicionales (según se definen a continuación), si en cualquier momento decide cargar o publicar Envíos de usuarios en los Sitios web de Skype o a través del Software (excluidos los Informes y el contenido de sus comunicaciones), otorga automáticamente a Skype una licencia no exclusiva, mundial, irrevocable, libre de regalías, perpetua, sublicenciable y transferible de todos los derechos para usar, editar, modificar, incluir, incorporar, adaptar, registrar, presentar públicamente, mostrar, transmitir y reproducir los Envíos del usuario, incluidas, entre otras, todas las marcas comerciales asociadas con los mismos, en relación con los Sitios web de Skype y el Software y los Productos de Skype, incluso con el fin de promover o redistribuir parte o la totalidad de los Sitios web de Skype y/o el Software o los Productos, en todos y cada uno de los medios actualmente conocidos o ideados en el futuro.
+Por el presente, también otorga a cada usuario del sitio web de Skype y/o del software o los productos de Skype una licencia no exclusiva para acceder a sus envíos de usuario a través del sitio web de Skype y/o el software o los productos y para usar, copiar, distribuir, preparar trabajos derivados, mostrar, realizar y transmitir dichos envíos de usuario únicamente según lo permitido a través de la funcionalidad de los sitios web de Skype y/o el software o los productos y de conformidad con estos Términos de uso.
+Además, usted renuncia a los llamados "derechos morales" sobre los Envíos del usuario, en la medida permitida por la ley aplicable.
+No puede enviar ni publicar a través del sitio web o el software de Skype ningún Envío de usuario que sea calumnioso, difamatorio, pornográfico, acosador, odioso, una invasión de la privacidad, obsceno, abusivo, ilegal, racista, ofensivo, perjudicial para un menor o una infracción de cualquier derecho de propiedad intelectual o un secreto comercial de un tercero, o que de otro modo viole los derechos de cualquier tercero o dé lugar a responsabilidad civil o penal.
+Además, no puede enviar ni publicar Envíos de usuario que contengan falsedades o tergiversaciones, solicitar fondos o servicios, contener publicidad, materiales promocionales, correo basura, spam, cartas en cadena o cualquier forma de solicitud, hacerse pasar por otros o incluir programas que contengan virus o cualquier otro programa diseñado para afectar la funcionalidad de cualquier computadora.
+Usted acepta no solicitar, con fines comerciales, a ningún usuario del sitio web o software de Skype con respecto a sus Envíos de usuario.
+Usted acepta no eludir, deshabilitar ni interferir de otro modo con las funciones relacionadas con la seguridad del sitio web o el software de Skype ni con las funciones que impiden o restringen el uso de cualquier contenido del mismo.
+6.5 Su información: De vez en cuando, Skype puede solicitarle información con el fin de suministrarle el Software o los Productos.
+Deberá asegurarse de que dicha información sea completa, actualizada y precisa.
+6.6 Prohibida la reventa.
+El Software y los Productos son para su uso individual.
+No revenderá ni comercializará el Software y/o los Productos a ningún tercero.
+6.7 Restricciones de exportación: El Software puede estar sujeto a reglas internacionales que rigen la exportación de software.
+Deberá cumplir con todas las leyes nacionales e internacionales aplicables al Software, así como con las restricciones de usuario final, uso final y destino emitidas por gobiernos nacionales u organismos similares, y restricciones en países embargados.
+En los EE. UU., el software de comunicaciones por Internet está controlado según ECCN 5D992 de las Regulaciones de Administración de Exportaciones ("EAR") bajo el Número de registro de cifrado ("ERN") R100351 y, por lo tanto, no puede exportarse ni reexportarse desde los EE. UU. ni descargarse por ninguna persona en ningún país controlado por razones antiterroristas según las EAR, que incluyen Irán, Corea del Norte, Cuba, Siria y Sudán.
+Además, el software de comunicaciones por Internet no puede exportarse ni reexportarse desde los EE. UU. ni descargarse por ninguna persona o entidad sujeta a sanciones de los EE. UU., independientemente de su ubicación.
+Consulte www.bis.doc.gov/ComplianceAndEnforcement/ListsToCheck.htm y EAR Parte 736.
+Skype pone el Software a su disposición para su descarga únicamente con la condición de que usted certifique que no es dicha persona o entidad y que la descarga no viola las regulaciones de sanciones y control de exportaciones de EE. UU.
+7.
+DERECHOS DE PROPIEDAD
+7.1 El Software, los Productos y los Sitios web de Skype contienen información confidencial y de propiedad exclusiva que está protegida por leyes y tratados de propiedad intelectual.
+7.2 El contenido y la compilación del contenido incluido en los sitios web de Skype (excluidos los Envíos de usuario), como sonidos, texto, gráficos, logotipos, íconos, imágenes, clips de audio, descargas digitales y software, son propiedad de Skype, sus afiliados o licenciantes y están protegidos por las leyes de derechos de autor internacionales y de los Estados Unidos.
+Dicho contenido protegido por derechos de autor no se puede reproducir sin el permiso expreso de Skype.
+Puede descargar y hacer un uso personal y no comercial de los Envíos de usuario en www.qik.com que se muestran con un enlace de "descarga" o similar.
+Skype se reserva todos los derechos no otorgados expresamente en los sitios web de Skype.
+7.3 Skype y/o sus licenciantes conservan la propiedad exclusiva del Software, los Productos y los Sitios web de Skype y toda la propiedad intelectual contenida en ellos (estén o no registradas y en cualquier parte del mundo).
+No tomará ninguna medida para poner en peligro, limitar o interferir con los derechos de propiedad intelectual de Skype en el Software, los Productos y/o los Sitios web de Skype.
+7.4 “Skype”, las marcas comerciales y los logotipos asociados y el logotipo “S” son marcas comerciales de Skype.
+Skype ha registrado y presentado solicitudes para registrar sus marcas comerciales en muchos países del mundo.
+Las marcas comerciales y la imagen comercial de Skype no se pueden utilizar en relación con ningún producto o servicio que no sea de Skype, de ninguna manera que pueda causar confusión entre los clientes o de cualquier manera que menosprecie o desacredite a Skype.
+Todas las demás marcas comerciales que no son propiedad de Skype ni de ninguna de sus empresas relacionadas que aparecen en este sitio son propiedad de sus respectivos dueños.
+No se le permite ni deberá registrar ni utilizar ningún nombre comercial, marca comercial, logotipo, nombre de dominio ni ningún otro nombre o signo que incorpore propiedad intelectual de Skype (en su totalidad o en parte) o que sea similar hasta el punto de crear confusión.
+Consulte también las Pautas de marcas comerciales de Skype para obtener más detalles sobre el uso de sus marcas.
+8.
+CARGOS
+8.1 Llamadas a teléfonos y números de tarifa premium con crédito de Skype:
+(i) Llamadas a teléfonos fijos y móviles: los cargos pagaderos por llamadas a teléfonos (fuera de una suscripción) consisten en una tarifa de conexión (que se cobra una vez, por llamada) y una tarifa por minuto según lo establecido en www.skype.com/go/allrates.
+Todas las llamadas se desconectarán y requerirán volver a marcar después de 4 horas de duración y se cobrará una tarifa de conexión adicional al volver a marcar.
+(ii) Números con tarifa premium: Los cargos a pagar por llamar a números con tarifa premium consisten en una tarifa por minuto disponible en www.skype.com/go/rates-premium.
+No se paga tarifa de conexión.
+(iii) Skype puede cambiar las tarifas para llamar a teléfonos y números de tarifa premium en cualquier momento sin previo aviso publicando dicho cambio en www.skype.com/go/allrates.
+La nueva tarifa se aplicará a su próxima compra después de que se hayan publicado las nuevas tarifas.
+Consulte las tarifas más recientes antes de realizar su llamada.
+Si no aceptas las nuevas tarifas no realices tu llamada.
+(iv) La duración de una llamada se basará en incrementos de un minuto.
+Las fracciones de minutos se redondearán al minuto siguiente.
+La tarifa de conexión, en su caso, se cobrará al inicio de la llamada.
+Al final de una llamada, los cargos de fracciones de céntimos se redondearán al céntimo entero más cercano; por ejemplo, un precio total de llamada de 0,034 € se redondeará a 0,04 €.
+Durante la llamada, los cargos incurridos se deducirán automáticamente del saldo de crédito de Skype en su cuenta de usuario.
+8.2 Cargos por otros Productos Pagados: Los cargos por otros Productos Pagados se le confirmarán antes de completar una compra en Skype.
+Skype puede cambiar los cargos pagaderos por la compra de dichos Productos en cualquier momento sin previo aviso.
+Puede elegir si acepta o no los nuevos cargos antes de completar su próxima compra del Producto correspondiente.
+Los nuevos cargos se aplicarán a su próxima compra después de que se hayan publicado.
+8.3 Ofertas promocionales: De vez en cuando, Skype puede ofrecer Productos de pago de forma gratuita durante un período de prueba.
+Skype se reserva el derecho de cobrarle por dichos Productos (a la tarifa normal) en caso de que Skype determine (a su discreción razonable) que usted está abusando de los términos de la oferta, incluso si está utilizando algún servicio, proxy u otros dispositivos o dirección IP anónima que nos impida localizarlo.
+8.4 Impuestos: Skype puede cobrar el IVA u otros impuestos indirectos a la tasa adecuada (según las normas fiscales aplicables) en el momento de la compra de Crédito de Skype.
+Generalmente se aplica el IVA del 15 % en Luxemburgo si usted se encuentra en la UE y los Productos se compran y utilizan en la UE.
+Se aplica el 8% de IVA suizo si se encuentra en Suiza.
+Es posible que se apliquen otros impuestos locales en ciertos países.
+Cuando compra un vale o una tarjeta prepaga, según el país, se puede aplicar el 15 % de IVA luxemburgués, el IVA local u otros impuestos que se pueden deducir del valor del vale o la tarjeta prepago al canjearlo.
+Usted renuncia explícitamente a cualquier derecho de reembolso del IVA por parte de Skype si el monto del IVA finalmente pagadero por este último a las autoridades tributarias fuera, por cualquier motivo, inferior al monto del IVA que se le cobró en el momento de la compra.
+Su saldo de crédito de Skype se muestra sin incluir dichos impuestos.
+Los territorios de la UE que se detallan a continuación están fuera del alcance del IVA de la UE según la Directiva 2006/112/CE del Consejo sobre el sistema común del IVA, según enmendada.
+El sitio web de Skype no permite a los usuarios de dichos territorios aprovechar esta exención del IVA y, por lo tanto, no proporcionamos los Productos en dichos territorios: Monte Athos, Islas Canarias, Departamentos franceses de ultramar, Islas Aland, Islas del Canal, Isla Heligoland, Büsingen/Territorio de Buesingen, Ceuta, Melilla, Livigno, Campione d'Italia y Aguas italianas del lago Lugano.
+8.5 Cargos de terceros: El uso del Software en aplicaciones móviles utilizará parte de la asignación de datos disponible en el paquete de datos al que se ha suscrito con su operador de red móvil.
+El uso fuera del país puede generar costos significativamente más altos que el uso regular, y usted es el único responsable de mantenerse informado y pagar los posibles cargos de roaming y otros cargos aplicables que cobre su operador de red móvil.
+9.
+PAGO
+9.1 Crédito de Skype.
+Puede pagar determinados productos de pago utilizando crédito de Skype.
+Puede comprar crédito de Skype utilizando cualquier método de pago que Skype ponga a su disposición periódicamente.
+El crédito de Skype que compre se acreditará en su cuenta de usuario en el momento de la compra (o, si utiliza un vale de crédito de Skype, en el momento en que canjee ese vale).
+9.2 Crédito de Skype inactivo.
+Si no utiliza su crédito de Skype durante un período de 180 días (incluido el crédito de Skype que le haya asignado un administrador de Skype Manager), Skype colocará su crédito de Skype en estado inactivo.
+Puede reactivar el crédito de Skype siguiendo el enlace de reactivación en Mi cuenta en https://secure.skype.com/account/credit-reactivate.
+El crédito de Skype reactivado no es reembolsable.
+Si se encuentra en Japón y compra Crédito de Skype desde el sitio web de Skype, este párrafo no se aplica a usted y su Crédito de Skype vencerá a los 6 meses de la fecha de compra.
+No se le permite utilizar ningún Crédito de Skype a partir de la fecha de vencimiento.
+9.3 Otros métodos de pago.
+Skype no garantiza que podrá utilizar su saldo de crédito de Skype para comprar todos los Productos.
+Cuando no se pueda utilizar el crédito de Skype para pagar un Producto, Skype pondrá a su disposición otro método de pago.
+Skype se reserva el derecho de eliminar o modificar los métodos de pago disponibles a su exclusivo criterio.
+9.4 Pagos Recurrentes.
+Cuando compra Productos mediante suscripción (mensual, cada 3 meses o anualmente (según corresponda)), reconoce y acepta que se trata de un pago recurrente y que los pagos se realizarán a Skype mediante el método que haya elegido en los intervalos recurrentes elegidos por usted, hasta que usted o Skype cancelen la suscripción a ese Producto.
+9.5 Recarga Automática.
+(a) La función de Recarga Automática se habilitará automáticamente cuando compre Crédito de Skype, a menos que desmarque la casilla correspondiente.
+Su saldo de Crédito de Skype se recargará con el mismo monto y mediante el mismo método de pago elegido cuando se registre por primera vez en la Recarga Automática, a menos que posteriormente cambie el monto accediendo a su Cuenta de Usuario.
+Por ejemplo, si compra 10 euros de crédito de Skype con su tarjeta de crédito, el importe de la recarga cargado a su tarjeta de crédito también será de 10 euros de crédito de Skype.
+En el futuro, se cargará el mismo importe a su tarjeta de crédito cada vez que el saldo de su cuenta de Skype descienda por debajo del umbral establecido por Skype de vez en cuando.
+Si no desea habilitar la recarga automática, desmarque la casilla.
+(b) Si compró una suscripción con un método de pago que no sea tarjeta de crédito, PayPal o Moneybookers (Skrill) y ha habilitado la Recarga automática, su saldo de Crédito de Skype se recargará con el monto necesario para comprar su próxima suscripción recurrente.
+(c) Puede desactivar la Recarga Automática en cualquier momento accediendo a su Cuenta de Usuario.
+10.
+POLÍTICA DE REEMBOLSO
+10.1 Cuando compre Productos de pago directamente desde Skype, tendrá derecho a un período de cancelación de quince (15) días (un “Período de reflexión”) a menos que haya hecho uso de los Productos de pago de alguna manera, en cuyo caso el Período de reflexión se extinguirá y su compra no podrá cancelarse ni reembolsarse.
+10.2 Fuera del Período de reflexión, solo las suscripciones son reembolsables a menos que se utilicen o hayan caducado.
+10.3 El gasto de Crédito de Skype, la asignación de un Número de Skype o el uso de cualquier aspecto de una suscripción equivale al "uso" de un Producto Pagado.
+Por el presente, usted acepta expresamente que los Números de Skype se puedan asignar antes de que finalice el Período de reflexión.
+10.4 El Período de reflexión y los reembolsos no se aplican a los Productos pagados que (i) se compran a través de un socio externo de Skype (comuníquese directamente con el socio, quien puede decidir a su exclusivo criterio si pagar o no un reembolso), (ii) no se adquieren directamente en línea de Skype (por ejemplo, vales o tarjetas prepagas) (iii) se pagan en efectivo utilizando métodos de pago de terceros (como una billetera de pago en efectivo) y (iv) se pagan y asignado a su cuenta de Skype por un administrador de Skype Manager.
+Tampoco se aplican a la membresía de Skype Developer.
+10.5 Si cree que Skype le ha cobrado por error, debe comunicarse con Skype dentro de los 90 días posteriores a dicho cargo.
+No se realizarán reembolsos por cargos con más de 90 días de antigüedad.
+10.6 Skype se reserva el derecho de rechazar una solicitud de reembolso si cree razonablemente (i) que usted está intentando explotar injustamente esta política de reembolso, por ejemplo, realizando solicitudes de reembolso repetitivas con respecto al mismo Producto; (ii) si incumple estos Términos o (iii) si Skype sospecha razonablemente que está utilizando nuestros Productos o Software de manera fraudulenta o que su Cuenta de Usuario está siendo utilizada por un tercero de manera fraudulenta.
+10.7 Esta política de reembolso no afecta sus derechos legales.
+11.
+TERMINAR TU RELACIÓN CON SKYPE
+11.1 Puede terminar su relación con Skype en cualquier momento y sin recurrir a los tribunales solicitando el cierre de su Cuenta de usuario, dejando de utilizar el Software, los Productos y/o los Sitios web de Skype y cancelando cualquier pago recurrente.
+11.2 Skype puede terminar su relación con usted, o puede terminar o suspender su uso del Software, las Cuentas de Usuario, los Productos o los Sitios web de Skype en cualquier momento y sin recurrir a los tribunales:
+(a) si usted incumple estos Términos;
+(b) si Skype sospecha razonablemente que usted está utilizando el Software, los Productos y/o los Sitios web de Skype para infringir la ley o infringir derechos de terceros;
+(c) si Skype sospecha razonablemente que usted está intentando explotar injustamente o hacer un uso indebido de la política de reembolso o de cualquiera de nuestras políticas.
+(d) si Skype sospecha razonablemente que usted está utilizando nuestros Productos, Software y/o Sitios web de Skype de manera fraudulenta o que su Cuenta de Usuario está siendo utilizada por un tercero de manera fraudulenta;
+(e) si compró crédito de Skype a un revendedor no autorizado;
+(f) con respecto a un Producto en particular, con un aviso de treinta (30) días si Skype decide dejar de ofrecer ese Producto;
+(g) inmediatamente, si es necesario debido a un cambio en las leyes/regulaciones por parte de un regulador o autoridad con un mandato legal, o por cualquiera de los socios de Skype;
+(h) con un aviso de treinta (30) días si Skype decide dejar de ofrecer el Software a los usuarios de su jurisdicción en general.
+11.3 Skype efectuará dicha terminación impidiendo su acceso a su Cuenta de Usuario, el Software, los Productos y/o los Sitios web de Skype (según corresponda).
+Nos reservamos el derecho de cancelar Cuentas de Usuario que hayan estado inactivas durante más de un (1) año.
+11.4 Consecuencias de la terminación: Al terminar su relación con Skype: (a) todas las licencias y derechos para usar el Software, los Productos y/o los Sitios web de Skype terminarán inmediatamente; (b) dejará inmediatamente de utilizar el Software, los Productos y/o los Sitios web de Skype; y (c) eliminará inmediatamente el Software de todos los discos duros, redes y otros medios de almacenamiento y destruirá todas las copias del Software que se encuentren en su posesión o bajo su control.
+12.
+EXCLUSIÓN DE GARANTÍAS, LIMITACIÓN DE RESPONSABILIDAD E INDEMNIZACIÓN
+12.1 A los efectos de este párrafo 12, "Skype" incluye sus empresas subsidiarias y entidades legales afiliadas y todos sus directores, funcionarios, agentes, otorgantes de licencias y empleados.
+12.2 Sin garantías: EN LA MEDIDA MÁXIMA PERMITIDA POR LA LEY: EL SOFTWARE, LOS PRODUCTOS Y LOS SITIOS WEB DE SKYPE SE PROPORCIONAN “TAL CUAL” Y SE UTILIZAN BAJO SU PROPIO RIESGO SIN GARANTÍA DE NINGÚN TIPO; SKYPE NO OFRECE NINGUNA GARANTÍA, RECLAMACIÓN O DECLARACIÓN Y EXPRESAMENTE RECHAZA TODAS DICHAS GARANTÍAS DE CUALQUIER TIPO, YA SEA EXPRESA, IMPLÍCITA O LEGAL, CON RESPECTO AL SOFTWARE, LOS PRODUCTOS Y/O LOS SITIOS WEB DE SKYPE, INCLUYENDO, SIN LIMITACIÓN, GARANTÍAS O CONDICIONES DE CALIDAD, RENDIMIENTO, NO INFRACCIÓN, COMERCIABILIDAD O IDONEIDAD PARA UN USO PARA UN PROPÓSITO PARTICULAR.
+ADEMÁS, SKYPE NO DECLARA NI GARANTIZA QUE EL SOFTWARE, LOS PRODUCTOS Y/O LOS SITIOS WEB DE SKYPE SIEMPRE ESTARÁN DISPONIBLES, ACCESIBLES, ININTERRUMPIDOS, OPORTUNOS, SEGUROS, EXACTOS, COMPLETOS Y LIBRES DE ERRORES O FUNCIONARÁN SIN PÉRDIDA DE PAQUETES, NI SKYPE GARANTIZA CUALQUIER CONEXIÓN O TRANSMISIÓN DESDE INTERNET, O CUALQUIER CALIDAD DE LLAMADAS REALIZADAS A TRAVÉS DEL SOFTWARE.
+12.3 Nada en estos Términos excluirá o restringirá la responsabilidad de Skype por (a) muerte o lesiones personales, (b) pérdida resultante de incumplimiento intencional o negligencia grave de Skype, (c) fraude o tergiversación deliberada, o (d) cualquier responsabilidad que no pueda limitarse o excluirse por la ley aplicable.
+12.4 Sin responsabilidad: USTED RECONOCE Y ACEPTA QUE SKYPE NO TENDRÁ NINGUNA RESPONSABILIDAD, YA SEA POR CONTRATO, AGRAVIO (INCLUYENDO NEGLIGENCIA) O CUALQUIER OTRA TEORÍA DE RESPONSABILIDAD, Y YA SEA QUE LA POSIBILIDAD DE DICHOS DAÑOS O PÉRDIDAS HA SIDO NOTIFICADA A SKYPE, EN RELACIÓN CON O QUE SURJAN DE SU USO DE SITIOS WEB DE SKYPE O EL SOFTWARE DE COMUNICACIONES POR INTERNET U OTRO SOFTWARE QUE SE PROPORCIONA DE FORMA GRATUITA.
+SU ÚNICO DERECHO O SOLUCIÓN CON RESPECTO A CUALQUIER PROBLEMA O INSATISFACCIÓN CON DICHO SOFTWARE Y/O SITIOS WEB DE SKYPE ES DESINSTALAR INMEDIATAMENTE DICHO SOFTWARE Y DEJAR DE UTILIZAR DICHO SOFTWARE Y/O SITIOS WEB DE SKYPE.
+12.5 Limitación de responsabilidad: Sujeto a los párrafos 12.3 y 12.4 anteriores, Skype no será responsable ante usted, ya sea por contrato, agravio (incluida negligencia) o cualquier otra teoría de responsabilidad, y ya sea que se haya notificado o no a Skype la posibilidad de dichos daños o pérdidas, por:
+(a) cualquier daño indirecto, especial, incidental o consecuente; o
+(b) cualquier pérdida de ingresos, negocios, ganancias reales o anticipadas, oportunidades, buena voluntad o reputación (ya sea directa o indirecta); o
+(c) cualquier daño o corrupción de datos (ya sea directo o indirecto);
+(d) cualquier reclamación, daño o pérdida (ya sea directa o indirecta) que surja de o esté relacionada con:
+(i) su incapacidad para utilizar el Software para comunicarse con los Servicios de Emergencia;
+(ii) su falta de hacer arreglos adicionales para acceder a los Servicios de Emergencia de acuerdo con el párrafo 5.5 anterior;
+(iii) las limitaciones del servicio establecidas en el párrafo 5.6;
+(iv) su falta de proporcionar información precisa de ubicación física a un operativo de Servicios de Emergencia; o
+(v) conducta de operadores de Servicios de Emergencia y centros de llamadas de terceros a los que usted pueda estar conectado.
+(e) cualquier reclamación, daño o pérdida (ya sea directa o indirecta) que surja de o esté relacionada con:
+(i) cualquier producto o servicio proporcionado por un tercero según sus propios términos de servicio, incluido, entre otros, Skype WiFi;
+(ii) cualquier tecnología de terceros;
+(iii) cualquier sitio web de terceros.
+12.6 Sujeto a los párrafos 12.3 - 12.5 anteriores, la responsabilidad total de Skype hacia usted en virtud o en conexión con estos Términos (ya sea por contrato, agravio (incluida negligencia) o cualquier otra teoría de responsabilidad)) NO EXCEDERÁ EN CONJUNTO LA CANTIDAD PAGADA POR USTED POR LOS PRODUCTOS EN EL PERÍODO DE 12 MESES INMEDIATAMENTE ANTERIOR A LA FECHA DEL EVENTO QUE DA LUGAR AL RECLAMACIÓN CORRESPONDIENTE, SUJETA A UN MÁXIMO DE CINCO MIL EUROS EN TODOS LOS CASOS.
+12.7 Si un tercero presenta un reclamo contra Skype en relación con, o que surja de (i) su incumplimiento de estos Términos; (ii) su incumplimiento de cualquier ley o regulación aplicable; (iii) su infracción o violación de los derechos de terceros (incluidos los derechos de propiedad intelectual); (iv) sus Envíos de usuario o (v) su queja en relación con cualquier Envío de usuario, indemnizará y eximirá a Skype de toda responsabilidad por todos los daños, responsabilidades, pérdidas, costos y gastos (incluidos honorarios y costos legales razonables) relacionados con dicho reclamo.
+13.
+SITIOS WEB, PRODUCTOS Y SERVICIOS DE TERCEROS
+13.1 Los terceros pueden ofrecer productos o servicios a través del Software y/o los sitios web de Skype, incluidos juegos, aplicaciones, imágenes, tonos de timbre o avatares.
+Si bien Skype no asume ninguna responsabilidad por dichos productos o servicios, si encuentra algún problema con el pago o la descarga, el uso o la instalación de dichos productos o servicios, Skype hará todos los esfuerzos comercialmente razonables para ayudarlo o resolver los problemas.
+Los productos o servicios de terceros pueden estar sujetos a los términos y la política de privacidad del proveedor externo que usted deberá aceptar al momento de la descarga o instalación.
+Debe revisar dichos términos antes de realizar cualquier compra o utilizar cualquier producto o servicio de terceros y Skype no será responsable de no hacerlo.
+13.2 Usted reconoce y acepta que la información y los precios de productos de terceros que se muestran en los sitios web de Skype con respecto a productos y servicios de terceros son proporcionados a Skype por el comerciante externo correspondiente (“Comerciante”).
+El Comerciante tiene la capacidad de cambiar su precio o cancelar la disponibilidad de su producto en cualquier momento.
+Skype no participa en ninguna transacción entre usted y ningún Comerciante cuyos productos y/o servicios estén listados en los Sitios web de Skype.
+Skype no controla, no es responsable y no garantiza: (i) el precio, la calidad, el rendimiento, la disponibilidad o los términos y condiciones de compra de los productos o servicios proporcionados por el Comerciante; (ii) cualquier transacción de pago, entrega, devolución o actividad posventa relacionada con los productos o servicios adquiridos en los sitios web de los Comerciantes; (iii) la disponibilidad de los sitios web del Comerciante; (iv) la integridad, veracidad o exactitud de cualquier publicidad u otros materiales en los sitios web de los Comerciantes o disponibles en ellos, ni ninguna lista u otro contenido sobre dichos productos y servicios mostrados en los Sitios web de Skype; (v) enlaces a los sitios web de los Comerciantes que aparecen en los sitios web de Skype.
+Cualquier pregunta, queja o reclamo relacionado con cualquier producto o servicio proporcionado por un Comerciante debe dirigirse al Comerciante correspondiente.
+13.3 El Software y los sitios web de Skype pueden incluir hipervínculos a otros sitios web de terceros.
+Skype no es responsable de dichos sitios web de terceros ni de la disponibilidad de dichos sitios web y no respalda ningún contenido o material de dichos sitios web de terceros.
+El uso de cada uno de estos sitios web de terceros está sujeto a los términos y condiciones publicados en el sitio web correspondiente.
+14.
+TÉRMINOS ADICIONALES
+14.1 La etiqueta de Skype proporciona pautas sobre cómo usar Skype y cómo tratar a los demás miembros de la comunidad de Skype de manera adecuada y respetuosa.
+Lea atentamente estas pautas que forman parte de los Términos.
+14.2 Si desea utilizar el software de comunicaciones por Internet en relación con cualquier transmisión, debe cumplir con los TOS de transmisión en http://www.skype.com/legal/broadcast.
+14.3 Kits de desarrollo de software y API.
+Los kits de desarrollo de software proporcionados a través de Skype Developer en el sitio web de Skype (incluido "SkypeKit") y el uso de cualquier interfaz de programa de aplicación ("API") expuesta o puesta a disposición por Skype están sujetos a sus propios términos de licencia, en cuyo caso dichos términos de licencia regirán su uso de ese software.
+Si utiliza cualquiera de dichos kits de desarrollo de software o API (según corresponda), acepta que ha leído y cumplirá con los términos de licencia aplicables, que están disponibles en http://developer.skype.com/.
+14.4 El aviso de software gratuito y de código abierto de Qik se incorpora al presente documento como referencia.
+15.
+SU INFORMACIÓN CONFIDENCIAL Y SU PRIVACIDAD
+Skype se compromete a respetar su privacidad y la confidencialidad de su información personal.
+Procesaremos su información personal, los datos de tráfico y el contenido de sus comunicaciones de acuerdo con nuestra Política de Privacidad: http://www.skype.com/go/privacy.
+16.
+SOLO PARA USUARIOS GUBERNAMENTALES
+El Software y la Documentación son “software informático comercial” y “documentación de software informático comercial”, respectivamente, tal como se utilizan dichos términos en el párrafo 12.212 del Reglamento Federal de Adquisiciones de los Estados Unidos.
+Cualquier uso, duplicación o divulgación del Software o la Documentación por parte del Gobierno de los EE. UU. o en su nombre está sujeto a las restricciones establecidas en este Acuerdo.
+17.
+CÓMO CONTACTAR A SKYPE
+17.1 Para comunicarse con Skype en relación con el Software de Skype o los Productos de la marca “Skype”, envíe una solicitud de soporte a support.skype.com.
+17.2 Para comunicarse con Skype en relación con el Software Qik o los Productos de la marca "Qik", envíe una solicitud de soporte a support.qik.com.
+17.3 Si se comunica con Skype por cualquier medio que no sea el establecido en los párrafos 17.1 o 17.2, es posible que no se reconozca su solicitud.
+18.
+MISCELÁNEAS
+18.1 Usted acepta el uso de comunicaciones electrónicas para celebrar contratos, realizar pedidos y crear otros registros y la entrega electrónica de avisos, políticas y cambios a los mismos y registros de transacciones con Skype.
+18.2 Para su comodidad, Skype puede proporcionarle una traducción de la versión en inglés de estos Términos.
+En caso de cualquier inconsistencia entre una versión no inglesa de estos Términos y la versión en inglés, la versión en inglés regirá su relación con Skype.
+18.3 Estos Términos constituyen el acuerdo completo entre usted y Skype con respecto a su uso del Software, los Productos y/o los Sitios web de Skype y reemplazan cualquier acuerdo anterior entre usted y Skype con respecto al Software, los Productos y/o los Sitios web de Skype.
+18.4 Si cualquier tribunal u organismo administrativo de jurisdicción competente o un árbitro determina que alguna disposición de estos Términos (o parte de ella) es ilegal, inválida o inaplicable, dicha disposición (o parte de ella) se eliminará de los Términos sin afectar la legalidad, validez o aplicabilidad del resto de los Términos.
+El párrafo 20.3(i) dice qué sucede si se determina que partes del párrafo 20.3 (arbitraje y renuncia a demanda colectiva) son ilegales, inválidas o inaplicables.
+El párrafo 20.3(i) prevalece sobre este párrafo si es incompatible con él.
+18.5 El hecho de que Skype no ejerza, o se retrase en el ejercicio, un derecho o recurso legal proporcionado por estos Términos o por la ley no constituirá una renuncia al derecho o recurso de Skype.
+Si Skype renuncia a un incumplimiento de estos Términos, esto no funcionará como una renuncia a un incumplimiento posterior de los Términos.
+18.6 No puede ceder estos Términos ni ningún derecho u obligación contenidos en ellos.
+Skype puede, sin previo aviso, ceder estos Términos o cualquier derecho u obligación contenidos en ellos a cualquier tercero.
+18.7 Este párrafo 18, junto con los párrafos 4.2, 12, 20.3 y cualquier otra disposición expresada o claramente destinada a sobrevivir u operar en caso de terminación, seguirá vigente después de la terminación de los Términos.
+18.8 Usted reconoce y acepta que si Skype no puede proporcionar el Software, los Productos y/o los Sitios web de Skype como resultado de un evento de fuerza mayor, Skype no incumplirá ninguna de sus obligaciones hacia usted en virtud de estos Términos.
+Un evento de fuerza mayor significa cualquier evento fuera del control de Skype.
+18.9 Estos Términos distintos del párrafo 20.3 se regirán e interpretarán de conformidad con las leyes de Luxemburgo y estarán sujetos a la jurisdicción de los tribunales del distrito de Luxemburgo.
+El párrafo 20.3 se rige por la Ley Federal de Arbitraje de los Estados Unidos.
+18.10 AVISO AVC/H.264: Si el software se utiliza para realizar videollamadas (i) entre una computadora personal y un dispositivo que no es una computadora personal o (ii) entre dispositivos que no son computadoras personales, se puede usar el códec AVC/H.264 para facilitar la funcionalidad de video, en cuyo caso se aplica el siguiente aviso: LA FUNCIONALIDAD DE VIDEO AVC EN ESTE PRODUCTO TIENE LICENCIA BAJO LA LICENCIA DE CARTERA DE PATENTES AVC PARA EL USO PERSONAL Y NO COMERCIAL DE UN EL CONSUMIDOR (i) CODIFICAR VIDEO DE CUMPLIMIENTO CON EL ESTÁNDAR AVC (“VIDEO AVC”) Y/O (ii) DECODIFICAR VIDEO AVC QUE FUE CODIFICADO POR UN CONSUMIDOR QUE REALIZA UNA ACTIVIDAD PERSONAL Y NO COMERCIAL Y/O SE OBTUVO DE UN PROVEEDOR DE VIDEO CON LICENCIA PARA PROPORCIONAR VIDEO AVC.
+NO SE CONCEDE NI SE IMPLICA NINGUNA LICENCIA PARA NINGÚN OTRO USO.
+SE PUEDE OBTENER INFORMACIÓN ADICIONAL DE MPEG LA, L.L.C. VER www.mpegla.com.
+19.
+TÉRMINOS ESPECÍFICOS DEL PRODUCTO
+19.1 Números de Skype (anteriormente conocidos como “Números en línea”) y números de Skype To Go
+(a) Disponibilidad y uso.
+Cuando le proporcionamos un número de Skype o un número de Skype To Go, usted acepta que:
+(i) usted no es propietario del número ni tiene derecho a conservarlo para siempre;
+(ii) el número que se le proporciona está sujeto a las reglas de numeración y prácticas regulatorias aplicables;
+(iii) cumplirá de forma continua con cualquier requisito específico de asignación de números que le informemos, o cualquier instrucción razonable que Skype o los socios de Skype puedan darle con respecto al uso de los números y los Productos;
+(iv) no transferirá ni intentará transferir su número a ningún tercero.
+En particular, usted es responsable del cumplimiento de cualquier requisito relacionado con la residencia o la ubicación; y
+(v) nos proporcionará información precisa, completa y actualizada cuando la solicitemos y nos informará cuando dicha información cambie.
+Skype se reserva el derecho de cambiar los términos relacionados con los números de Skype y/o los números de Skype To Go, lo que incluye, entre otros, imponer o modificar cualquier requisito de residencia y/o exigir el suministro de información adicional del usuario para el acceso continuo a dichos números.
+En ciertos países, es posible que un socio de Skype le proporcione un número en lugar de Skype, y es posible que deba celebrar un acuerdo por separado con dicho socio.
+(b) Otros cambios en los números.
+Si Skype necesita retirar o cambiar el número que se le ha puesto a su disposición, Skype hará todos los esfuerzos comercialmente razonables para notificarle por correo electrónico, indicando la fecha de entrada en vigor del cambio y, cuando sea posible, su nuevo número.
+Si no desea aceptar este nuevo número, tiene derecho a cancelar su número.
+19.2 Cuenta de usuario en Skype Manager
+(a) No se le permite pertenecer a más de un Skype Manager al mismo tiempo.
+(b) Cualquier número de Skype adquirido antes del 21 de julio de 2009 y asignado a usted por un administrador de Skype Manager será recuperado por el administrador de Skype Manager, si abandona la cuenta de Skype Manager por cualquier motivo.
+El derecho a utilizar el número y la cancelación de dicho derecho recae en el administrador de Skype Manager a su entera discreción y no en usted.
+(c) Datos personales y de tráfico – Socios.
+Como miembro de una cuenta de Skype Manager, usted reconoce y acepta que el administrador de Skype Manager puede, si está de acuerdo, ver información detallada sobre la actividad en su cuenta de usuario, incluida la hora, fecha, duración y número de destino de las llamadas y SMS realizados y detalles de sus compras y descargas.
+Puede retirar su acuerdo en cualquier momento cambiando la configuración de su Cuenta de Usuario.
+Si proporciona datos personales, incluido su nombre y cargo, para que se incluyan en el directorio de Skype Manager, reconoce que otros miembros de ese Skype Manager pueden ver dichos datos.
+19.3 Suscripciones
+(a) Política de uso justo.
+En Skype, queremos que todos nuestros clientes obtengan los mejores planes de llamadas, conocidos como "suscripciones", al precio más bajo posible.
+Esta Política de uso justo ("FUP") está diseñada para evitar el fraude y el abuso de nuestras suscripciones por parte de un pequeño número de usuarios.
+Sujeto a este FUP, las suscripciones ilimitadas de Skype permiten llamadas ilimitadas a teléfonos fijos en los países de suscripción correspondientes (excluidos números especiales, premium, de servicio y no geográficos).
+También se pueden incluir llamadas ilimitadas a móviles cuando así se indique en el momento de la compra.
+Todas las llamadas se desconectarán y será necesario volver a marcarlas después de 2 horas de duración.
+Las suscripciones de Skype son para uso individual únicamente (comunicaciones personales o comerciales) de acuerdo con nuestros Términos de uso y este FUP (“Uso legítimo”).
+La siguiente es una lista no exhaustiva de prácticas que no se considerarían Uso Legítimo:
+(i) Utilizar suscripciones para operaciones de telemercadeo u centros de llamadas;
+(ii) Reventa de minutos de suscripción;
+(iii) Compartir suscripciones entre usuarios ya sea a través de una PBX, centro de llamadas, computadora o cualquier otro medio;
+(iv) Llamar a números (ya sea de forma individual, secuencial o automática) para generar ingresos para usted o para otros como resultado de simplemente realizar la llamada, que no sean para sus comunicaciones comerciales individuales (y sujeto al párrafo 4.1 de los Términos de uso); y
+(v) Patrones de llamadas inusuales que no concuerdan con el uso normal de una suscripción individual, por ejemplo, llamadas regulares de corta duración o llamadas a varios números en un corto período de tiempo.
+Otras prácticas pueden ser relevantes para determinar el Uso legítimo y Skype se reserva el derecho de tener en cuenta cualquier actividad ilegal, prohibida, anormal o inusual al tomar su determinación.
+Skype puede, a su discreción, terminar su relación con usted o suspender su suscripción inmediatamente si determina que está utilizando su suscripción en contra de este FUP o de los Términos de uso de Skype.
+Cuando sea razonable, Skype le notificará sobre el uso inadecuado antes de la suspensión o cancelación de su suscripción y, si corresponde, Skype puede ofrecerle una suscripción alternativa.
+(b) Skype se reserva el derecho de retirar o cambiar las suscripciones en cualquier momento.
+Si Skype cambia los Productos incluidos en su suscripción, le notificará por correo electrónico indicando los cambios y su fecha de vigencia.
+Si no desea aceptar estos cambios, tiene derecho a cancelar su suscripción, con efecto a partir de la fecha en que los cambios deban entrar en vigor.
+(c) La suscripción “Unlimited World Extra” tiene una duración mínima fija de 2 años a partir de la fecha de compra.
+No se le permite rescindirlo antes de que expire el plazo mínimo de 2 años, excepto en caso de incumplimiento por parte de Skype de los Términos.
+Esta suscripción se factura mensualmente como pago recurrente.
+19.4 SkypeWiFi
+Skype WiFi lo proporciona uno de los socios WiFi de Skype.
+Su uso de Skype WiFi está sujeto a los términos de servicio de ese socio.
+Antes de iniciar una sesión WiFi de Skype en un punto de acceso WiFi específico, se le notificará la identidad del proveedor de WiFi y sus términos de servicio.
+Tendrás que leer sus términos de servicio, a los que aceptas estar sujeto al continuar con la sesión WiFi de Skype.
+Puede pagar Skype WiFi utilizando su saldo de Crédito de Skype, y su uso del Crédito de Skype está sujeto a estos Términos de servicio.
+19.5 SMS
+Cada mensaje SMS tiene un límite de 160 caracteres.
+Si escribe un mensaje más largo, se dividirá en varios mensajes SMS y se le cobrará por cada mensaje enviado.
+Si envía mensajes SMS a más de una persona, se le cobrará por cada SMS enviado a cada destinatario.
+Si Skype no puede (por cualquier motivo) enviar su SMS, continuará intentando enviar el mensaje durante un máximo de 24 horas, después de lo cual el cargo del SMS se reembolsará automáticamente a su saldo de crédito de Skype si la entrega no se realiza correctamente.
+19.6 Videollamadas grupales
+(a) Se aplica una política de uso justo en www.skype.com/go/terms.gvc.fairusage y se incorpora al presente documento como referencia.
+Skype se reserva el derecho de cambiar la política de uso justo en cualquier momento.
+Los cambios entrarán en vigor cuando se publiquen en el sitio web de Skype.
+Su uso continuado de una Suscripción Premium de Skype después de su publicación en el sitio web de Skype constituirá su aceptación de estar sujeto a los términos y condiciones de la política de uso justo revisada.
+(b) Número de Participantes.
+La cantidad de participantes permitidos en una videollamada grupal varía de 3 a un máximo de 10, sujeto a los requisitos del sistema.
+Puede encontrar más detalles en www.skype.com/go/skypepremium.
+(c) Conversión de audio.
+Si una Suscripción de Skype Premium o Pase de un día vence durante una videollamada grupal, o ha excedido el límite de uso justo, o el propietario de la Suscripción de Skype Premium abandona la llamada (y no hay ningún otro participante en la llamada que posea una Suscripción de Skype Premium), entonces la llamada se convertirá de video a audio.
+(d) Versiones de software.
+Si un participante de una videollamada grupal no tiene una versión del software de comunicaciones por Internet que admita videollamadas grupales, la llamada será una llamada de audio solo para ese participante.
+Para obtener detalles sobre los requisitos del sistema para videollamadas grupales, consulte www.skype.com/go/skypepremium.requirements.
+(e) Chat en vivo.
+La atención al cliente por chat en vivo está disponible como parte de la suscripción Premium de Skype.
+Este soporte está disponible las 24 horas del día, todos los días y solo en inglés.
+19.7 Política de uso justo de Qik Premium
+Qik Premium está sujeto a una política de uso justo de 15 GB de almacenamiento de video por usuario por mes y cada video no puede tener más de 90 minutos de duración.
+Una vez que se hayan alcanzado estos límites, no podrá cargar ningún video nuevo en ese mes ni continuar grabando más allá de la marca de 90 minutos.
+Skype se reserva el derecho de cambiar la política de uso justo en cualquier momento.
+Los cambios entrarán en vigor cuando se publiquen en el sitio web de Skype.
+Su uso continuado de Qik Premium después de su publicación en el sitio web de Skype constituirá su aceptación de estar sujeto a los términos y condiciones de la política de uso justo revisada.
+19.8 Mensajería de vídeo por Skype (“Mensajería de vídeo”)
+Si no es suscriptor de Skype Premium, la cantidad de mensajes de video que puede enviar es limitada y estará sujeta a una fecha de vencimiento.
+Política de uso legítimo: este FUP está diseñado para prevenir el fraude y el abuso de la mensajería de video.
+La mensajería de vídeo es únicamente para uso personal, individual y no comercial, y debe cumplir con estos Términos en todo momento (“Uso legítimo”).
+Skype se reserva el derecho de tener en cuenta cualquier actividad ilegal, prohibida, anormal o inusual al determinar si su actividad no constituye un uso legítimo.
+Skype puede, a su discreción, terminar su relación con usted o suspender su cuenta inmediatamente si determina que está utilizando mensajes de video en contra de este FUP o estos Términos.
+20.
+PAGAR POR MÓVIL
+20.1 Esta sección se aplica si selecciona un sistema de pago de terceros que le permite pagar el Crédito de Skype y ciertos Productos de Pago a través de su factura de teléfono móvil, cuando corresponda (“Pago por Móvil”).
+20.2 Al seleccionar o utilizar Pago por Móvil:
+(a) Usted autoriza a su proveedor de telefonía móvil a cobrar las tarifas correspondientes directamente a su factura de teléfono móvil; y
+(b) Usted declara que es la persona o entidad responsable de la cuenta de teléfono móvil asociada con el número de teléfono móvil que proporciona cuando utiliza Pay by Mobile, o que está autorizado por esa persona o entidad para incurrir en dichos cargos.
+20.3 ARBITRAJE VINCULANTE Y RENUNCIA A DEMANDA COLECTIVA PARA CUENTAS DE ESTADOS UNIDOS.
+Si selecciona Pay by Mobile y su cuenta de teléfono móvil está registrada con un proveedor de telefonía móvil en los EE. UU. o reside en los EE. UU., se aplican los siguientes términos adicionales:
+(a) El párrafo 20.3 se aplica a cualquier disputa que surja entre usted y Skype o cualquier tercero, incluidos los operadores de telefonía móvil y las afiliadas corporativas de Skype (colectivamente, la “Parte en disputa” o las “Partes en disputa”) en relación con su uso de Pay by Mobile, EXCEPTO QUE NO INCLUYA UNA DISPUTA RELACIONADA CON LA CUMPLIMIENTO O LA VALIDEZ DE SU INTELECTUAL, DE SKYPE O DE CUALQUIERA DE NUESTROS LICENCIANTES. DERECHOS DE PROPIEDAD.
+Disputa, a los efectos del párrafo 20.3, significa cualquier disputa, acción u otra controversia ya sea en contrato, garantía, agravio, estatuto, reglamento, ordenanza o cualquier otra base legal o equitativa.
+A la disputa se le dará el significado más amplio posible permitido por la ley.
+(b) En caso de una disputa, debe proporcionar a Skype u otra Parte en disputa un Aviso de disputa, que es una declaración escrita del nombre, dirección e información de contacto de la parte que la presenta, los hechos que dieron lugar a la disputa y la reparación solicitada.
+Debe enviar cualquier Aviso de disputa a Skype o su filial corporativa a la atención: Departamento Legal, Microsoft Corporation One Microsoft Way Redmond, WA 98052-7329.
+y a cualquier otra Parte en Disputa en su lugar principal de negocios en los EE. UU., marcado como ATTN: Departamento Legal.
+La Parte Disputada enviará cualquier Notificación de Disputa a su dirección si la tiene, o en caso contrario a su dirección de correo electrónico registrada.
+Usted y la Parte en Disputa intentarán resolver cualquier disputa mediante negociación informal dentro de los 60 días a partir de la fecha de envío del Aviso de Disputa, después de lo cual usted o la Parte en Disputa podrán comenzar el arbitraje.
+(c) También puede litigar cualquier disputa en un tribunal de reclamos menores en su condado de residencia, si la disputa cumple con todos los requisitos para ser escuchada en el tribunal de reclamos menores.
+Puede litigar en un tribunal de reclamos menores, haya negociado informalmente o no primero.
+(d) Arbitraje vinculante.
+Si usted y una Parte en disputa no resuelven ninguna disputa mediante negociación informal o en un tribunal de reclamos menores, cualquier otro esfuerzo para resolver la disputa se llevará a cabo exclusivamente mediante arbitraje vinculante regido por la Ley Federal de Arbitraje de los Estados Unidos (“FAA”).
+Usted está renunciando al derecho de litigar (o participar como parte o miembro del grupo) todas las disputas en los tribunales ante un juez o jurado.
+En cambio, todas las disputas se resolverán ante un árbitro neutral, cuya decisión será definitiva, excepto por un derecho limitado de apelación según la FAA.
+Cualquier tribunal con jurisdicción sobre las partes podrá hacer cumplir el laudo del árbitro.
+(e) Renuncia a demanda colectiva.
+Cualquier procedimiento para resolver o litigar cualquier disputa en cualquier foro se llevará a cabo únicamente de forma individual.
+Ni usted ni una Parte en Disputa buscarán que ninguna disputa sea escuchada como una demanda colectiva, una demanda de un fiscal general privado o en cualquier otro procedimiento en el que cualquiera de las partes actúe o se proponga actuar en calidad de representante.
+Ningún arbitraje o procedimiento se combinará con otro sin el consentimiento previo por escrito de todas las partes de todos los arbitrajes o procedimientos afectados.
+(f) Cualquier arbitraje será realizado por la Asociación Estadounidense de Arbitraje (la “AAA”) conforme a sus Reglas de Arbitraje Comercial.
+Si es un individuo y utiliza el Software o los Productos para uso personal o doméstico, o si el valor de la disputa es de $75 000 USD o menos, sea o no un individuo o cómo los use, también se aplicarán sus Procedimientos complementarios para disputas relacionadas con el consumidor.
+Para obtener más información, consulte adr.org o llame al +1-800-778-7879.
+En una disputa que involucre $75,000 USD o menos, Skype le reembolsará de inmediato los costos de presentación y pagará los honorarios de la AAA y del árbitro.
+Usted y Skype aceptan los términos que rigen los procedimientos, tarifas e incentivos en go.microsoft.com/fwlink/?linkid=275219.
+Para comenzar el arbitraje, envíe el formulario disponible en go.microsoft.com/fwlink/?linkid=275627 a la AAA.
+Usted acepta iniciar el arbitraje únicamente en su condado de residencia, en el condado de Santa Clara, California, o en el lugar principal de negocios de otra Parte en disputa en los EE. UU.
+Skype y otras Partes en Disputa acuerdan iniciar el arbitraje únicamente en su condado de residencia.
+(g) En la medida permitida por la ley, cualquier reclamo o disputa relacionada con su uso de Pay by Mobile debe presentarse dentro de un año en un tribunal de reclamos menores (párrafo 20.3(c)) o en arbitraje (párrafo 20.3(d)).
+El período de un año comienza cuando se pudo presentar por primera vez el reclamo o disputa.
+Si dicha reclamación o disputa no se presenta dentro de un año, quedará permanentemente prohibida.
+(h) Rechazar cambios futuros en el arbitraje.
+Puede rechazar cualquier cambio que Skype realice en el párrafo 20.3 (que no sean cambios de dirección) enviándonos un aviso dentro de los 30 días posteriores al cambio por correo postal de EE. UU. a la dirección indicada en el párrafo 20.3(b).
+Si lo hace, se aplicará la versión más reciente del párrafo 20.3 antes del cambio que rechazó.
+(i) Si se determina que la renuncia a la demanda colectiva en el párrafo 20.3(e) es ilegal, inválida o inaplicable en cuanto a todas o algunas partes de una disputa, entonces el párrafo 20.3 no se aplicará a esas partes.
+En cambio, esas partes se separarán y procederán ante un tribunal de justicia, y las partes restantes procederán en arbitraje.
+Si se determina que cualquier otra disposición del párrafo 20.3 es ilegal, inválida o inaplicable, esa disposición se eliminará y el resto del párrafo 20.3 permanecerá en pleno vigor y efecto.
+USTED RECONOCE EXPRESAMENTE QUE HA LEÍDO ESTOS TÉRMINOS Y ENTIENDE LOS DERECHOS, OBLIGACIONES, TÉRMINOS Y CONDICIONES AQUÍ ESTABLECIDOS.
+AL HACER CLIC EN EL BOTÓN ACEPTAR Y/O CONTINUAR INSTALANDO EL SOFTWARE O UTILIZAR EL SOFTWARE, LOS PRODUCTOS Y/O LOS SITIOS WEB DE SKYPE, USTED ACEPTA EXPRESAMENTE ESTAR OBLIGADO POR SUS TÉRMINOS Y CONDICIONES Y CONCEDE A SKYPE LOS DERECHOS ESTABLECIDOS AQUÍ.

@@ -1,6 +1,7 @@
-/local_database/*
 /cv_test/*
 /translated_from_en/*
+.hide/
+.minenv/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

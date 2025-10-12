@@ -1,0 +1,28 @@
+﻿Unnamed: 0,Id,Tag,Explanation
+0,fraude_abuso_ilegal,ter2,"ya que el contrato o el acceso pueden rescindirse cuando el usuario haya estado involucrado en actividades ilegales o ilícitas, incluido un comportamiento fraudulento, abusivo, indebido o de otro modo perjudicial, o por razones de seguridad o prevención del fraude."
+1,incumplimiento,ter2,"ya que el contrato o el acceso pueden rescindirse cuando el usuario no cumple con sus términos, o los estándares de la comunidad, o el espíritu de los ToS o los términos de la comunidad, incluido el comportamiento inapropiado, el uso de trampas u otras prácticas no permitidas para mejorar su situación en el servicio, la obtención de ganancias no permitidas del servicio, o la interferencia con el disfrute del servicio por parte de otros usuarios o los pone en riesgo de otra manera, o es investigado bajo cualquier sospecha de mala conducta."
+2,sin_terrenos,ter3,ya que la cláusula menciona que el contrato o acceso puede rescindirse pero no indica las causales de rescisión.
+3,información errónea,ter2,"ya que en la cláusula se menciona el contrato o el acceso podrá resolverse cuando el usuario haya facilitado datos falsos, no actualizados o incompletos."
+4,infringir_tp_rights,ter2,"ya que el contrato o acceso podrá rescindirse en casos de infracción de derechos ajenos, incluidos los derechos de autor u otros derechos de propiedad intelectual, incluida la rescisión por infractores reincidentes."
+5,múltiple,ter2,"ya que el contrato o acceso podrá rescindirse en los casos de que un solo usuario posea o controle múltiples cuentas, o el uso múltiple de una sola cuenta."
+6,cred_seguridad,ter2,ya que el contrato o acceso podrá rescindirse cuando el usuario no mantenga la seguridad de las credenciales de inicio de sesión y/o se produzca una violación de seguridad.
+7,latente,ter2,ya que el contrato o acceso podrá rescindirse cuando la cuenta haya permanecido inactiva durante un tiempo determinado.
+8,usuario_bad_rep,ter2,ya que el contrato o acceso puede rescindirse cuando el usuario no mantenga un nivel de reputación prescrito.
+9,referencia,ter2,ya que el contrato o el acceso puede rescindirse pero se refiere a causales formuladas en otra parte.
+10,violación_de_contenido,ter2,ya que el contrato o acceso puede rescindirse cuando el usuario haya ingresado contenido en el servicio que infrinja o se considere que infringe los derechos de otros o viola los términos del servicio.
+11,pagos,ter2,"ya que el contrato o el acceso pueden rescindirse cuando el usuario no haya cumplido con sus obligaciones de pago, o haya retirado pagos, p.e. mediante devolución de cargo"
+12,violación_de_derechos_gen,ter2,ya que la cláusula establece con carácter general que el contrato o acceso podrá resolverse cuando el usuario haya vulnerado los derechos del prestador del servicio o de otras entidades.
+13,sobre_cuota,ter2,"ya que el contrato o acceso podrá resolverse cuando el usuario haya violado los límites de tiempo, almacenamiento u otros límites del servicio."
+14,insolvencia,ter2,"ya que el contrato o acceso podrá resolverse cuando una de las partes haya sido declarada insolvente, en quiebra, tenga designado síndico o funcionario similar, o esté pendiente de procedimiento respecto de cualquiera de estos casos."
+15,cerrar,ter2,ya que el contrato o acceso podrá resolverse cuando el servicio se corte o deje de estar disponible por cualquier otro motivo.
+16,sin_consentimiento,ter2,"ya que el contrato o acceso puede rescindirse cuando falta o se retira el consentimiento del usuario, o cuando el usuario se opone de otro modo a los términos, política o cualquier cambio de los mismos."
+17,sexo_de,ter2,"ya que el contrato o acceso podrá rescindirse cuando el usuario sea un delincuente sexual registrado, o haya participado o intentado realizar una conducta sexual con menores, o haya estado involucrado con pornografía infantil"
+18,libertad condicional,ter2,ya que el contrato o el acceso pueden rescindirse cuando el usuario haya incurrido en una violación de la libertad condicional o la libertad condicional
+19,viabilidad_elegibilidad,ter2,"ya que el contrato o acceso podrá resolverse cuando la prestación del servicio al usuario ya no sea económicamente viable, o cuando el usuario no sea elegible para el servicio."
+20,disputar,ter2,ya que el contrato o acceso podrá resolverse cuando el usuario entre en conflicto con el prestador o titular del servicio.
+21,razones_legales,ter2,"ya que el contrato o el acceso pueden rescindirse para cumplir con requisitos legales, o como resultado de una solicitud presentada por las autoridades, o por razones legales ampliamente especificadas"
+22,razones_tecnológicas,ter2,ya que la cláusula establece ampliamente que el contrato o el acceso pueden rescindirse por razones técnicas
+23,cualquier_razón,ter3,"ya que la cláusula establece con carácter general que el contrato o acceso puede rescindirse por cualquier motivo, sin causa o deja lugar a otros motivos que no están especificados."
+24,fuerza_mayor,ter2,"ya que la cláusula establece con carácter general que el contrato o acceso podrá resolverse en caso de fuerza mayor, caso fortuito u otros imprevistos de naturaleza similar."
+25,exposición_proveedores,ter2,"ya que el contrato o acceso puede rescindirse cuando las acciones o contenidos del usuario generen un riesgo de exposición legal, o daño a la reputación del proveedor"
+26,proteger_derechos,ter2,ya que la cláusula establece con carácter general que el contrato o acceso podrá rescindirse para proteger los derechos y/o intereses del prestador del servicio o de un tercero.

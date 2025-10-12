@@ -1,54 +1,185 @@
-version: "3.8"
-
-services:
-  model_server:
-    build:
-      context: ./model_server
-    container_name: model_server_gpu
-    env_file:
-      - .env
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - capabilities: [gpu]
-    networks:
-      - appnet
-
-  fastapi:
-    build:
-      context: ./fastapi
-    container_name: fastapi_proxy
-    env_file:
-      - .env
-    environment:
-      - MODEL_SERVER_URL=${MODEL_SERVER_URL}
-      - API_SECRET_KEY=${API_SECRET_KEY}
-    depends_on:
-      - model_server
-    ports:
-      - "${FASTAPI_HOST_PORT}:8000"
-    restart: unless-stopped
-    networks:
-      - appnet
-
-  streamlit:
-    build:
-      context: ./streamlit
-    container_name: streamlit_ui
-    env_file:
-      - .env
-    environment:
-      - API_URL=${API_URL}
-      - API_SECRET_KEY=${API_SECRET_KEY}
-    depends_on:
-      - fastapi
-    ports:
-      - "${STREAMLIT_HOST_PORT}:8501"
-    restart: unless-stopped
-    networks:
-      - appnet
+version: "3.9"
 
 networks:
-  appnet:
-    driver: bridge
+  public:
+  internal:
+    internal: true
+
+volumes:
+  prometheus-data:
+  grafana-data:
+
+services:
+  traefik:
+    image: traefik:v3.1
+    command:
+      - "--providers.docker=true"
+      - "--providers.file.directory=/etc/traefik"
+      - "--entrypoints.web.address=:80"
+      - "--ping=true"
+      - "--ping.entrypoint=web"
+      - --providers.docker.network=public
+      - "--api.dashboard=true"
+    ports:
+      - "127.0.0.1:80:80"   
+    volumes:
+      - ./network/reverse-proxy/traefik.yml:/etc/traefik/traefik.yml:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    networks: [public, internal]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:80/ping"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+  
+  streamlit:
+    build:
+      context: ./network/streamlit
+    environment:
+      - API_URL=http://api:8000
+      - FRONT_TIMEOUT=30
+    depends_on:
+      api:
+        condition: service_healthy
+    networks: [public, internal]
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.front.rule=PathPrefix(`/`)"
+      - "traefik.http.routers.front.entrypoints=web"
+      - "traefik.http.services.front.loadbalancer.server.port=8501"
+
+  api:
+    build: ./network/api
+    environment:
+      - DL_URL=http://dl:9000
+      - DL_PREDICT_PATH=/predict
+      - API_TIMEOUT=30
+      - API_RETRIES=2
+    depends_on:
+      dl:
+        condition: service_healthy
+    networks: [internal]
+    restart: unless-stopped
+
+  dl:
+    build:
+      context: ./network/dl
+      args:
+        GIT_REF: main
+        REPO_URL: https://github.com/161-de-bastos/hackathon2025.git
+    volumes:
+      - /nvme/git/contest/hackathon2025/best/spa:/models:ro
+      - /nvme/git/contest/hackathon2025/local_database/KB/translated:/kb:ro
+    environment:
+      - LOAD_ENTRYPOINT=malvaditos.api:load
+      - PREPROCESS_ENTRYPOINT=malvaditos.api:preprocess
+      - INFER_ENTRYPOINT=malvaditos.api:infer
+    networks: [internal]
+    gpus: all
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:9000/healthz"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+
+  # ---- MONITOREO ----
+  prometheus:
+    image: prom/prometheus:v2.55.0
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.retention=15d"
+      - "--web.external-url=/prometheus"
+      - "--web.route-prefix=/prometheus"
+    volumes:
+      - ./network/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus-data:/prometheus
+    networks: [internal, public]
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.prom.rule=PathPrefix(`/prometheus`)"
+      - "traefik.http.routers.prom.entrypoints=web"
+      - "traefik.http.routers.prom.priority=100"
+      # NO StripPrefix aquí
+      - "traefik.http.services.prom.loadbalancer.server.port=9090"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:9090/-/healthy"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+
+  grafana:
+    image: grafana/grafana:11.2.0
+    environment:
+      - GF_SECURITY_ADMIN_USER=${GRAFANA_ADMIN_USER}
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_ADMIN_PASSWORD}
+      - GF_SERVER_SERVE_FROM_SUB_PATH=true
+      - GF_SERVER_ROOT_URL=%(protocol)s://%(domain)s/grafana/
+    networks: [public, internal]
+    labels:
+      - "traefik.enable=true"
+      # router por path
+      - "traefik.http.routers.grafana.rule=PathPrefix(`/grafana`)"
+      - "traefik.http.routers.grafana.entrypoints=web"
+      - "traefik.http.routers.grafana-secure.rule=PathPrefix(`/grafana`)"
+      - "traefik.http.routers.grafana-secure.entrypoints=websecure"
+      - "traefik.http.routers.grafana.priority=100"
+    # NO StripPrefix aquí
+      - "traefik.http.services.grafana.loadbalancer.server.port=3000"
+      - "traefik.http.routers.grafana-secure.tls=true"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 10
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.49.1
+    networks: [internal, public]
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.cadv.rule=PathPrefix(`/cadvisor`)"
+      - "traefik.http.routers.cadv.entrypoints=web"
+      - "traefik.http.routers.cadv.priority=100"
+      - "traefik.http.middlewares.cadv-stripprefix.stripprefix.prefixes=/cadvisor"
+      - "traefik.http.routers.cadv.middlewares=cadv-stripprefix"
+      - "traefik.http.services.cadv.loadbalancer.server.port=8080"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:8080/metrics"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+
+  node-exporter:
+    image: prom/node-exporter:v1.8.2
+    networks: [internal]
+    pid: host
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:9100/metrics"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+
+  dcgm-exporter:
+    image: nvidia/dcgm-exporter:3.3.7-3.5.0-ubuntu22.04
+    networks: [internal]
+    restart: unless-stopped
+    cap_add:
+    - SYS_ADMIN
+    gpus: all
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:9400/metrics"]
+      interval: 30s
+      timeout: 5s
+      retries: 5

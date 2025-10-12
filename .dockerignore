@@ -1,0 +1,32 @@
+# VCS / editor
+.git
+.gitignore
+*.swp
+*.swo
+.vscode
+.idea
+
+# Python comunes
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+.venv
+venv/
+env/
+
+# Artefactos
+dist/
+build/
+*.egg-info/
+
+# Datos temporales
+*.log
+*.tmp
+*.cache
+.DS_Store
+
+# Notebooks / data pesados (ajusta a tu repo)
+notebooks/
+data/

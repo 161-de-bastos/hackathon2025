@@ -1,0 +1,229 @@
+TÉRMINOS DE SERVICIO DE ZOOM
+EFECTIVO: 13 de abril de 2022
+IMPORTANTE, LEA DETENIDAMENTE: SU USO Y ACCESO AL SITIO WEB Y LOS PRODUCTOS Y SERVICIOS Y SOFTWARE ASOCIADO (COLECTIVAMENTE, LOS “SERVICIOS”) DE ZOOM VIDEO COMMUNICACIONES, INC.
+Y SUS AFILIADOS (“ZOOM”) ESTÁ CONDICIONADO AL CUMPLIMIENTO Y ACEPTACIÓN DE ESTOS TÉRMINOS, QUE INCLUYEN SU ACUERDO A RECLAMACIONES DE ARBITRAJE.
+POR FAVOR REVISAR DETENIDAMENTE ANTES DE ACEPTAR.
+AL HACER CLIC O MARCAR EL BOTÓN/CUADRO “ACEPTO”, ACCEDER AL SITIO WEB DE ZOOM O UTILIZAR LOS SERVICIOS DE ZOOM, USTED ACEPTA ESTAR OBLIGADO POR ESTOS TÉRMINOS DE SERVICIO Y TODOS LOS ANEXOS, FORMULARIOS DE PEDIDO Y POLÍTICAS INCORPORADAS (EL “ACUERDO” O “TOS”).
+LOS SERVICIOS DE ZOOM NO ESTÁN DISPONIBLES PARA PERSONAS QUE NO SON LEGALMENTE ELEGIBLES PARA ESTAR OBLIGADOS POR ESTOS TÉRMINOS DE SERVICIO.
+Zoom proporcionará los Servicios y usted podrá acceder y utilizar los Servicios, de conformidad con este Acuerdo.
+Zoom puede proporcionar cualquiera de los Servicios a continuación a través de cualquiera de sus Afiliados.
+Si solicita Servicios a través de una página de registro en línea o un formulario de pedido (cada uno de ellos, un "Formulario de pedido"), el Formulario de pedido puede contener términos y condiciones adicionales e información sobre los Servicios que está solicitando.
+A menos que se establezca expresamente lo contrario en dichos términos y condiciones adicionales aplicables al Servicio específico que Usted elija utilizar, esos términos adicionales se incorporan por el presente a este Acuerdo en relación con su uso de ese Servicio.
+Requisitos del sistema.
+El uso de los Servicios requiere uno o más dispositivos compatibles, acceso a Internet (se pueden aplicar tarifas) y cierto software (se pueden aplicar tarifas), y puede requerir la obtención de actualizaciones o mejoras de vez en cuando.
+Debido a que el uso de los Servicios implica hardware, software y acceso a Internet, su capacidad para acceder y utilizar los Servicios puede verse afectada por el desempeño de estos factores.
+Se recomienda acceso a Internet de alta velocidad.
+Usted reconoce y acepta que dichos requisitos del sistema, que pueden cambiar de vez en cuando, son su responsabilidad.
+DEFINICIONES.
+Las siguientes definiciones se aplicarán en este Acuerdo, y cualquier referencia al singular incluye una referencia al plural y viceversa.
+Las definiciones específicas de los servicios se encuentran en la Descripción de servicios ubicada en www.zoom.us/services-description.
+“Afiliado” significa, con respecto a una Parte, cualquier entidad que directa o indirectamente controle, esté controlada o esté bajo control común con esa Parte.
+Para los fines de este Acuerdo, “control” significa un interés económico o de voto de al menos el cincuenta por ciento (50%) o, en ausencia de dicho interés económico o de voto, el poder de dirigir o causar la dirección de la administración y establecer las políticas de dicha entidad.
+“Usuario final” significa un Anfitrión o Participante (como se define en la Descripción de los Servicios) que utiliza los Servicios.
+“Plazo de suscripción inicial” significa el plazo de suscripción inicial para un Servicio como se especifica en un Formulario de pedido.
+“Fecha de vigencia del servicio” significa la fecha en que comienza un Plazo de suscripción inicial según lo especificado en un Formulario de pedido.
+“Plazo de Renovación” significa el plazo de renovación de suscripción para un Servicio que comienza después del Plazo de Suscripción Inicial u otro Plazo de Renovación según se especifica en un Formulario de Pedido.
+“Impuestos y tarifas” e “Impuestos o tarifas” significan todos los impuestos sobre ventas, uso, ambientales o regulatorios, IVA, tarifas, aranceles (incluidos derechos de aduana), cargos, recargos o evaluaciones aplicables aplicados a la prestación de Servicios al Cliente (sin incluir cualquier impuesto sobre la renta impuesto a Zoom).
+“IVA” significa cualquier impuesto al valor agregado y cualquier otro impuesto de naturaleza similar, ya sea impuesto en un Estado miembro de la Unión Europea en sustitución de dicho impuesto, o aplicado además de él, o impuesto en otro lugar, cualquier impuesto sobre bienes y servicios, PIS/COFINS, cualquier impuesto indirecto similar o cualquier impuesto análogo al mismo impuesto en conexión con, o relacionado de otro modo con, los Servicios prestados por Zoom al Cliente.
+“Sus datos” significa información proporcionada a Zoom para que Zoom pueda cumplir con los términos del Acuerdo y brindar acceso a los Servicios (por ejemplo, nombre de la empresa, dirección de facturación, número de identificación del contribuyente, número de registro de IVA, nombre de contacto e información).
+Usted es el único responsable de la exactitud de Sus datos y Zoom no tiene responsabilidad alguna por los errores y omisiones en Sus datos.
+SERVICIOS.
+Zoom proporcionará los Servicios como se describe en el Formulario de pedido y las actualizaciones estándar de los Servicios que Zoom pone a disposición de manera general durante el plazo.
+oom puede, a su entera discreción, suspender los Servicios o modificar las características de los Servicios de vez en cuando sin previo aviso.
+Servicios Beta.
+Zoom podrá, de vez en cuando, ofrecer acceso a servicios clasificados como versión Beta.
+El acceso y uso de las versiones Beta puede estar sujeto a acuerdos adicionales.
+Zoom no garantiza que alguna vez una versión Beta estará disponible de manera general y se reserva el derecho de descontinuar o modificar una versión Beta en cualquier momento sin previo aviso.
+Las versiones Beta se proporcionan TAL CUAL, pueden contener errores u otros defectos, y el uso de una versión Beta es bajo su propio riesgo.
+USO DE LOS SERVICIOS Y SUS RESPONSABILIDADES.
+Sólo podrá utilizar los Servicios de conformidad con los términos de este Acuerdo.
+Usted es el único responsable del uso de los Servicios por parte de usted y de sus usuarios finales y deberá cumplir y garantizar el cumplimiento de todas las leyes relacionadas con el uso de los servicios por parte de usted y de cada usuario final, incluidas, entre otras, las leyes relacionadas con la grabación, la propiedad intelectual, la privacidad y el control de exportaciones.
+El uso de los Servicios es nulo donde esté prohibido.
+Información de registro.
+Es posible que se le solicite que proporcione información sobre usted mismo para poder registrarse y/o utilizar ciertos Servicios.
+Usted acepta que dicha información será precisa.
+También es posible que se le solicite que elija un nombre de usuario y una contraseña.
+Usted es totalmente responsable de mantener la seguridad de su nombre de usuario y contraseña y acepta no revelarlos a ningún tercero.
+Tu contenido.
+Usted acepta que es el único responsable del contenido ("Contenido") enviado o transmitido por Usted o mostrado o cargado por Usted al utilizar los Servicios y del cumplimiento de todas las Leyes relativas al Contenido, incluidas, entre otras, las Leyes que le exigen obtener el consentimiento de un tercero para utilizar el Contenido y proporcionar avisos apropiados sobre los derechos de terceros.
+Usted declara y garantiza que tiene derecho a cargar el Contenido en Zoom y que dicho uso no viola ni infringe ningún derecho de ningún tercero.
+Bajo ninguna circunstancia Zoom será responsable de ningún modo por (a) Contenido que se transmita o vea mientras se utilizan los Servicios, (b) errores u omisiones en el Contenido, o (c) cualquier pérdida o daño de cualquier tipo incurrido como resultado del uso, acceso o denegación de acceso al Contenido.
+Aunque Zoom no es responsable de ningún Contenido, Zoom puede eliminar cualquier Contenido, en cualquier momento sin previo aviso, si Zoom tiene conocimiento de que viola alguna disposición de este Acuerdo o cualquier ley.
+Usted conserva los derechos de autor y cualquier otro derecho que ya tenga sobre el Contenido que envía, publica o muestra en los Servicios o a través de ellos.
+Grabaciones.
+Usted es responsable del cumplimiento de todas las leyes de grabación.
+El anfitrión puede optar por grabar reuniones de Zoom y seminarios web de Zoom.
+Al utilizar los Servicios, usted otorga su consentimiento a Zoom para almacenar grabaciones de cualquiera o todas las reuniones o seminarios web de Zoom a los que se una, si dichas grabaciones se almacenan en nuestros sistemas.
+Recibirá una notificación (visual o de otro tipo) cuando la grabación esté habilitada.
+Si no acepta que lo graben, puede optar por abandonar la reunión o el seminario web.
+Uso prohibido.
+Usted acepta que no utilizará ni permitirá que ningún Usuario final utilice los Servicios para: (i) modificar, desensamblar, descompilar, preparar trabajos derivados, realizar ingeniería inversa o intentar obtener acceso al código fuente de los Servicios; (ii) utilizar los Servicios de manera consciente o negligente de una manera que abuse, interfiera o interrumpa las redes de Zoom, Sus cuentas o los Servicios; (iii) participar en actividades que sean ilegales, fraudulentas, falsas o engañosas, (iv) transmitir a través de los Servicios cualquier material que pueda infringir la propiedad intelectual u otros derechos de terceros; (v) crear o comparar un producto o servicio competitivo, o copiar cualquier característica, función o gráfico de los Servicios; o (vi) utilizar los Servicios para comunicar cualquier mensaje o material que sea acosador, calumnioso, amenazante, obsceno, indecente, que viole los derechos de propiedad intelectual de cualquier parte o que de otro modo sea ilegal, que dé lugar a responsabilidad civil o que constituya o fomente una conducta que podría constituir un delito penal, según cualquier ley o reglamento aplicable; (vii) cargar o transmitir cualquier software, Contenido o código que dañe o pretenda dañar, deshabilitar, destruir o afectar negativamente el rendimiento de los Servicios de cualquier manera o que dañe o pretenda dañar o extraer información o datos de otro hardware, software o redes de Zoom u otros usuarios de los Servicios; (viii) participar en cualquier actividad o utilizar los Servicios de cualquier manera que pueda dañar, deshabilitar, sobrecargar, perjudicar o interferir o interrumpir de otro modo los Servicios, o cualquier servidor o red conectado a los Servicios o los sistemas de seguridad de Zoom. (
+ix) utilizar los Servicios en violación de cualquier política de Zoom o de una manera que viole la ley aplicable, incluidas, entre otras, las leyes y regulaciones antispam, control de exportaciones, privacidad y antiterrorismo, y leyes que requieren el consentimiento de los sujetos de las grabaciones de audio y video, y usted acepta que es el único responsable del cumplimiento de dichas leyes y regulaciones.
+Limitaciones de uso.
+No puede reproducir, revender ni distribuir los Servicios ni ningún informe o dato generado por los Servicios para ningún propósito, a menos que se le haya permitido específicamente hacerlo en virtud de un acuerdo independiente con Zoom.
+No puede ofrecer ni permitir que terceros utilicen los Servicios adquiridos por Usted, mostrarlos en ningún sitio web o publicar de otro modo los Servicios o cualquier Contenido obtenido de un Servicio (que no sea el Contenido creado por Usted) ni generar ingresos de los Servicios ni utilizar los Servicios para el desarrollo, producción o comercialización de un servicio o producto sustancialmente similar a los Servicios.
+RESPONSABILIDAD HACIA LOS USUARIOS FINALES.
+Usted es responsable de las actividades de todos los Usuarios finales que acceden o utilizan los Servicios a través de su cuenta y acepta garantizar que dicho Usuario final cumpla con los términos de este Acuerdo y cualquier política de Zoom.
+Zoom no asume ninguna responsabilidad por violaciones.
+Si tiene conocimiento de alguna violación de este Acuerdo en relación con el uso de los Servicios por parte de cualquier persona, comuníquese con Zoom en trust@zoom.us.
+Zoom puede investigar cualquier queja e infracción que llegue a su conocimiento y puede tomar cualquier (o ninguna) acción que considere apropiada, incluyendo, entre otras, emitir advertencias, eliminar el contenido o cancelar cuentas y/o perfiles de usuario.
+Bajo ninguna circunstancia Zoom será responsable de ninguna manera por los datos u otro contenido visto mientras se utilizan los Servicios, incluidos, entre otros, errores u omisiones en dichos datos o contenido, o cualquier pérdida o daño de cualquier tipo incurrido como resultado del uso, acceso o denegación de acceso a cualquier dato o contenido.
+OBLIGACIONES DE ZOOM PARA CONTENIDOS.
+Zoom mantendrá medidas de seguridad físicas y técnicas razonables para evitar la divulgación o el acceso no autorizados al Contenido, de acuerdo con los estándares de la industria.
+Zoom le notificará si tiene conocimiento de un acceso no autorizado al Contenido.
+Zoom no accederá, verá ni procesará el Contenido excepto (a) según lo dispuesto en este Acuerdo y en la Declaración de Privacidad de Zoom; (b) según lo autorice o indique usted, (c) según sea necesario para cumplir con sus obligaciones en virtud de este Acuerdo; o (d) según lo exija la Ley.
+Zoom no tiene otras obligaciones con respecto al Contenido.
+ELEGIBILIDAD.
+Usted afirma que tiene al menos 16 años de edad y que, por lo demás, es plenamente capaz y competente para celebrar los términos, condiciones, obligaciones, afirmaciones, representaciones y garantías establecidos en este Acuerdo, y para acatar y cumplir con este Acuerdo.
+Su acceso puede cancelarse sin previo aviso si creemos que es menor de 16 años o que de otro modo no es elegible.
+USO PREVISTO; RESTRICCIÓN DE USO POR NIÑOS.
+Los Servicios están destinados al uso comercial.
+Puede optar por utilizar los Servicios para otros fines, sujeto a los términos y limitaciones de este Acuerdo.
+Zoom no está diseñado para que lo utilicen personas menores de 16 años, a menos que sea a través de un Suscriptor escolar (como se define ese término en la Descripción de servicios) que utilice Zoom para Educación (K-12).
+CARGOS Y CANCELACIÓN.
+Usted acepta que Zoom puede cargar a Su tarjeta de crédito u otro mecanismo de pago seleccionado por Usted y aprobado por Zoom (“Su Cuenta”) todos los montos adeudados por los Servicios.
+Todos los pagos que usted nos haga en virtud de este Acuerdo se harán libres de cualquier deducción o retención, según lo exija la ley.
+Si se requiere dicha deducción o retención (incluidos, entre otros, retenciones de impuestos nacionales o transfronterizos) en cualquier pago, usted pagará los montos adicionales que sean necesarios para que el monto neto que recibamos sea igual al monto entonces adeudado y pagadero según este Acuerdo.
+Le proporcionaremos los formularios de impuestos que se soliciten razonablemente para reducir o eliminar el monto de cualquier retención o deducción de impuestos con respecto a los pagos realizados en virtud de este Acuerdo.
+Zoom puede cambiar los precios en cualquier momento, incluido el cambio de un servicio gratuito a un servicio pago y el cobro de Servicios que anteriormente se ofrecían de forma gratuita; siempre que, sin embargo, Zoom le proporcione un aviso previo y la oportunidad de cancelar Su Cuenta si Zoom cambia el precio de un Servicio al que está suscrito y no le cobrará por un Servicio previamente gratuito a menos que se le haya notificado las tarifas aplicables y haya aceptado pagar dichas tarifas.
+Usted acepta que, en caso de que Zoom no pueda cobrar las tarifas adeudadas a Zoom por los Servicios a través de Su Cuenta, Zoom puede tomar cualquier otra medida que considere necesaria para cobrarle dichas tarifas y que Usted será responsable de todos los costos y gastos incurridos por Zoom en relación con dicha actividad de cobro, incluidos los honorarios de cobro, los costos judiciales y los honorarios de abogados.
+Además, acepta que Zoom puede cobrar intereses al menos entre el 1,5 % mensual o el monto más alto permitido por la ley sobre cualquier monto no pagado a su vencimiento.
+Puede cancelar su suscripción en cualquier momento.
+Si cancela, no se le facturarán ningún término de servicio adicional y el servicio continuará hasta el final del Plazo de suscripción actual.
+Si cancela, no recibirá un reembolso por ningún servicio ya pagado.
+IMPUESTOS.
+A menos que se indique lo contrario, todos los precios y tarifas mostrados por Zoom excluyen impuestos y tarifas regulatorias, servicios, tarifas de servicio, tarifas de instalación, tarifas de suscripción o cualquier otra tarifa o cargo asociado con Su Cuenta.
+Cuando corresponda, se cobrarán impuestos y tarifas regulatorias en las facturas emitidas por Zoom de acuerdo con las leyes y regulaciones locales.
+Zoom, a su entera discreción, calculará el monto de los Impuestos adeudados.
+Los impuestos y tarifas regulatorias cobrados pueden cambiar sin previo aviso.
+Facturas con IVA.
+Si lo exige la ley, Zoom le emitirá una factura con IVA o un documento que la autoridad fiscal correspondiente tratará como una factura con IVA.
+Usted acepta que esta factura pueda ser emitida electrónicamente.
+Exenciones de impuestos.
+Si está exento de cualquier impuesto o tarifa, proporcionará a Zoom todos los certificados de exención de impuestos correspondientes y/u otra documentación satisfactoria para las autoridades fiscales aplicables para fundamentar dicho estado de exención.
+Zoom se reserva el derecho de revisar y validar la documentación de exención de impuestos.
+En caso de que la documentación de exención de impuestos no sea válida, Zoom se reserva el derecho de cobrarle los impuestos aplicables.
+Pago de Impuestos y Tasas.
+Pagará a Zoom todos los impuestos y tarifas aplicables.
+Usted es el único responsable de pagar todos los impuestos y tarifas adeudados como resultado de la prestación de los Servicios por parte de Zoom.
+Si debe pagar impuestos y tarifas, deberá pagar dichos montos sin reducción ni compensación en los montos pagaderos a Zoom en virtud del presente y pagará y soportará dicho monto adicional, según sea necesario para que Zoom reciba el monto total del pago requerido como si no se requiriera dicha reducción o compensación.
+IVA a cargo del cliente.
+En el caso de que usted deba pagar impuestos y tarifas a las autoridades tributarias en lugar de Zoom, a través del cobro revertido u otro mecanismo similar, proporcionará a Zoom toda la evidencia apropiada para que Zoom demuestre su naturaleza comercial, como un número de registro de IVA válido (o información similar requerida según las leyes de IVA pertinentes).
+Zoom se reserva el derecho de revisar y validar su número de registro de IVA.
+En caso de que el número de registro de IVA no sea válido, Zoom se reserva el derecho de cobrarle el IVA aplicable.
+Para evitar dudas, si usted debe pagar el IVA a una autoridad tributaria, a través de la inversión del sujeto pasivo u otro mecanismo similar, usted es el único responsable de pagar esos montos a la autoridad tributaria correspondiente de modo que Zoom reciba el monto total del pago requerido.
+Determinación de impuestos.
+La determinación de impuestos se basa principalmente en la ubicación donde el Cliente ha establecido su negocio con base en los Datos del Cliente, o para las personas donde esa persona reside permanentemente.
+Zoom definirá esto como su dirección "Vendido a".
+Zoom se reserva el derecho de comparar esta ubicación con otras pruebas disponibles para validar si su ubicación es precisa.
+En caso de que Su ubicación sea inexacta, Zoom se reserva el derecho de cobrarle los Impuestos y Tarifas pendientes.
+Uso y disfrute.
+Si compra Servicios de Zoom, y esos Servicios son utilizados y disfrutados por una subsidiaria suya en un país que es diferente a Su ubicación según lo determinado por la Sección 9(e) de estos TOS, Usted confirma que, cuando sea necesario, tratará esto como un suministro para Su subsidiaria.
+En caso de que Usted compre Servicios y esos Servicios sean utilizados y disfrutados por una sucursal o un individuo en un país diferente a Su ubicación según lo determinado por la Sección 9 (e) de estos TOS, Usted reconoce que informará a Zoom sobre los Servicios que se han asignado y reconoce que Zoom se reserva el derecho de cobrar Impuestos y Tarifas en función del uso y disfrute de esos Servicios.
+TERMINACIÓN.
+El sitio web de Zoom contiene información sobre cómo cancelar su cuenta.
+Si ha comprado un Servicio por un período específico, dicha terminación entrará en vigencia el último día del período vigente en ese momento.
+Su Formulario de pedido puede establecer que un Plazo de renovación comenzará automáticamente a menos que cualquiera de las partes notifique la terminación al menos treinta (30) días antes del comienzo del próximo Plazo de renovación.
+Si no cumple con alguna disposición de este Acuerdo, Zoom puede rescindir este Acuerdo de inmediato y retener las tarifas pagadas anteriormente por Usted.
+Las Secciones 1 y 3 a 22, inclusive, sobrevivirán a cualquier terminación de este Acuerdo.
+Tras la rescisión de este Acuerdo, deberá dejar de utilizar los Servicios.
+Si en algún momento no está satisfecho con los Servicios, su único recurso es dejar de utilizar los Servicios y seguir este proceso de terminación.
+DERECHOS DE PROPIEDAD.
+Zoom y/o sus proveedores, según corresponda, conservan la propiedad de todos los derechos de propiedad de los Servicios y de todos los nombres comerciales, marcas comerciales, marcas de servicio, logotipos y nombres de dominio (“Marcas de Zoom”) asociados o mostrados con los Servicios.
+No puede enmarcar ni utilizar técnicas de encuadre para incluir marcas de Zoom u otra información de propiedad exclusiva (incluidas imágenes, texto, diseño de página o formulario) de Zoom sin el consentimiento expreso por escrito.
+No puede utilizar metaetiquetas ni ningún otro “texto oculto” utilizando marcas de Zoom sin el consentimiento expreso por escrito de Zoom.
+CONFIDENCIALIDAD.
+Cada parte acepta considerar y preservar como confidencial toda la información no pública proporcionada por la otra parte relacionada con el negocio, los sistemas, las operaciones, los planes estratégicos, los clientes, los precios (incluidos, entre otros, los términos de precios aquí establecidos), los métodos, los procesos, los datos financieros, los programas y/o los productos de la otra parte en cualquier forma, que se designen como "confidenciales", o que una persona razonable sepa o razonablemente debería entender que es confidencial (en este documento, "Información Confidencial").
+Para los fines del Acuerdo, Su información confidencial incluirá Sus datos y cualquier información que usted haya revelado a Zoom en relación con su negocio, sistemas, operaciones, planes estratégicos, clientes, precios, métodos, procesos, datos financieros, programas y/o productos suyos.
+Cada parte acepta limitar la divulgación de la Información Confidencial de la otra parte a la menor cantidad de personas posible y solo a aquellas personas que necesitan saber que son su personal o el de sus Afiliados y están sujetas a la obligación de mantener dicha información confidencial.
+Excepto cuando sea necesario para cumplir con sus respectivas obligaciones en virtud del Acuerdo, ninguna de las partes, sin obtener primero el consentimiento previo por escrito de la otra parte, revelará a ninguna persona, firma o empresa, salvo que se permita expresamente en este documento, ni utilizará para su propio beneficio, o el beneficio de un tercero, la Información Confidencial de la otra parte.
+Exclusiones. “
+Información confidencial" no incluirá Contenido o información que (a) ya sea legítimamente conocida por una parte en el momento en que se obtiene de la otra parte, libre de cualquier obligación de mantener dicha información confidencial; (b) es o llega a ser públicamente conocida o disponible a través de ningún acto ilícito de una parte; (c) se recibe legítimamente de un tercero sin restricciones y sin incumplimiento de estos TOS; o (d) es desarrollado por una parte sin el uso de ninguna información de propiedad privada proporcionada por el otra parte en virtud del Acuerdo.
+Excepción.
+Cualquiera de las partes puede divulgar Información Confidencial cuando así lo requiera la ley, reglamento u orden judicial, siempre que la parte sujeta a dicha ley, reglamento u orden judicial, cuando esté permitido, notifique a la otra parte de dicho uso o requisito antes de la divulgación para brindarle a dicha otra parte la oportunidad de solicitar una orden de protección para evitar o limitar la divulgación de la información a terceros.
+Plazo de Confidencialidad y Obligaciones.
+Las obligaciones de confidencialidad establecidas en esta sección de los TOS permanecerán vigentes por un período de cinco (5) años a partir de la divulgación de la información.
+Ambas partes acuerdan (a) tomar medidas razonables para proteger la Información Confidencial de la otra parte, y estas medidas deben ser al menos tan protectoras como las que toma la parte receptora para proteger su propia Información Confidencial, y no menos que un estándar de cuidado razonable; (b) notificar a la parte divulgadora con prontitud al descubrir cualquier uso o divulgación no autorizados de Información Confidencial; y (c) en caso de cualquier divulgación no autorizada por parte de una parte receptora, cooperar con la parte divulgadora para ayudar a recuperar el control de la Información Confidencial y evitar un mayor uso o divulgación no autorizados de la misma.
+DERECHOS DE AUTOR.
+No puede publicar, modificar, distribuir o reproducir de ninguna manera material protegido por derechos de autor, marcas comerciales, derechos de publicidad u otros derechos de propiedad sin obtener el consentimiento previo por escrito del propietario de dichos derechos de propiedad.
+Zoom puede negar el acceso a los Servicios a cualquier Usuario que presuntamente infrinja los derechos de autor de otra parte.
+Sin limitar lo anterior, si cree que se han infringido sus derechos de autor, notifique a Zoom como se especifica aquí.
+RESTRICCIONES DE EXPORTACIÓN. Usted reconoce que los Servicios, o una parte de los mismos, están sujetos a las Regulaciones de Administración de Exportaciones, 15 C.F.R. Partes 730-774, de los Estados Unidos y puede estar sujeto a las leyes de sanciones comerciales y control de exportaciones aplicables de otros países (“Leyes de sanciones y control de exportaciones”).
+Zoom proporcionará las clasificaciones de exportación de EE. UU. aplicables a sus Servicios previa solicitud.
+Usted y sus Usuarios finales no pueden acceder, usar, exportar, reexportar, desviar, transferir o divulgar ninguna parte de los Servicios o cualquier información o materiales técnicos relacionados, directa o indirectamente, en violación de las Leyes de Sanciones y Control de Exportaciones.
+Usted declara y garantiza que: (i) Usted y Sus Usuarios finales (a) no son ciudadanos ni se encuentran dentro de un país o territorio que esté sujeto a sanciones comerciales de los EE. UU. u otras restricciones comerciales importantes (incluidos, entre otros, Cuba, Irán, Corea del Norte, Siria y las regiones de Crimea, Donetsk y Luhansk de Ucrania) y que Usted y Sus Usuarios finales no accederán ni utilizarán los Servicios, ni exportarán, reexportarán, desviarán ni transferirán los Servicios. en o hacia dichos países o territorios; (b) no son personas, o no son propiedad del 50% o más, individualmente o en conjunto de personas, identificadas en la Lista de Nacionales Especialmente Designados y Personas Bloqueadas del Departamento del Tesoro de los EE. UU. o en las Listas de Evasores de Sanciones Extranjeras; y (c) no son personas en la Lista de personas denegadas, en la Lista de entidades o en la Lista no verificada del Departamento de Comercio de los EE. UU., ni en las listas relacionadas con la proliferación del Departamento de Estado de los EE. UU.; (ii) Usted y sus Usuarios finales ubicados en China, Rusia o Venezuela no son Usuarios finales militares y no darán los Servicios de Zoom a un Uso final militar, tal como se define en 15 C.F.R. 744,21; (iii) ningún Contenido creado o enviado por Usted o Sus Usuarios finales está sujeto a restricciones de divulgación, transferencia, descarga, exportación o reexportación en virtud de las Leyes de Sanciones y Control de Exportaciones; y (iv) Usted y sus Usuarios finales no tomarán ninguna medida que constituya una violación o sea penalizada según las leyes antiboicot de los EE. UU. administradas por el Departamento de Comercio de los EE. UU. o el Departamento del Tesoro de los EE. UU.
+Usted es el único responsable de cumplir con las Leyes de Sanciones y Control de Exportaciones y de monitorearlas para detectar cualquier modificación.
+NO USO DE ALTO RIESGO.
+Los Servicios no están diseñados ni tienen licencia para su uso en entornos peligrosos que requieran controles a prueba de fallas, incluido, entre otros, el funcionamiento de instalaciones nucleares, sistemas de navegación/comunicación de aeronaves, control de tráfico aéreo y sistemas de armas o soporte vital.
+Los Servicios no se utilizarán para ni en ningún entorno de ALTO RIESGO.
+MEDIDA CORRECTIVA.
+Usted reconoce que cualquier uso de los Servicios contrario a este Acuerdo, o cualquier transferencia, sublicencia, copia o divulgación de información técnica o materiales relacionados con los Servicios, puede causar un daño irreparable a Zoom, sus Afiliados, proveedores y cualquier otra parte autorizada por Zoom para revender, distribuir o promover los Servicios ("Revendedores") y, en tales circunstancias, Zoom, sus Afiliados, proveedores y Revendedores tendrán derecho a una compensación equitativa. reparación, sin depositar fianza u otra garantía, incluyendo, entre otras, medidas cautelares preliminares y permanentes.
+SIN GARANTÍAS. USTED ENTIENDE Y ACEPTA QUE LOS SERVICIOS SE PROPORCIONAN “TAL CUAL” Y ZOOM, SUS AFILIADOS, PROVEEDORES Y REVENDEDORES RENUNCIA EXPRESAMENTE A TODA GARANTÍA DE CUALQUIER TIPO, EXPRESA O IMPLÍCITA, INCLUYENDO, SIN LIMITACIÓN, CUALQUIER GARANTÍA DE COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR O NO INFRACCIÓN.
+ZOOM, SUS AFILIADOS, PROVEEDORES Y REVENDEDORES NO OFRECEN NINGUNA GARANTÍA NI DECLARACIÓN CON RESPECTO A LOS RESULTADOS QUE PUEDAN OBTENERSE DEL USO DE LOS SERVICIOS, CON RESPECTO A LA EXACTITUD O CONFIABILIDAD DE CUALQUIER INFORMACIÓN OBTENIDA A TRAVÉS DE LOS SERVICIOS O QUE LOS SERVICIOS CUMPLIRÁN LOS REQUISITOS DE CUALQUIER USUARIO, O SERÁN ININTERRUMPIDOS, OPORTUNOS, SEGUROS O LIBRE DE ERRORES.
+EL USO DE LOS SERVICIOS ES BAJO SU PROPIO RIESGO.
+CUALQUIER MATERIAL Y/O DATOS DESCARGADOS U OBTENIDOS DE OTRA MANERA A TRAVÉS DEL USO DE LOS SERVICIOS ES BAJO SU PROPIA DISCRECIÓN Y RIESGO.
+USTED SERÁ EL ÚNICO RESPONSABLE DE CUALQUIER DAÑO QUE RESULTE DEL USO DE LOS SERVICIOS.
+TODO EL RIESGO QUE SURJA DEL USO O RENDIMIENTO DE LOS SERVICIOS PERMANECE CON USTED.
+ZOOM NO ASUME NINGUNA RESPONSABILIDAD POR LA RETENCIÓN DE NINGUNA INFORMACIÓN DEL USUARIO O COMUNICACIONES ENTRE USUARIOS.
+ZOOM NO PUEDE GARANTIZAR NI PROMETE NINGÚN RESULTADO ESPECÍFICO DEL USO DE LOS SERVICIOS.
+EL USO ES BAJO SU PROPIO RIESGO.
+INDEMNIZACIÓN.
+Usted acepta indemnizar, defender y eximir de responsabilidad a Zoom, sus afiliados, funcionarios, directores, empleados, consultores, agentes, proveedores y revendedores de todos y cada uno de los reclamos, responsabilidades, daños y/o costos de terceros (incluidos, entre otros, honorarios de abogados) que surjan de Su uso de los Servicios, Su violación de este Acuerdo o la infracción o violación por parte de Usted o de cualquier otro usuario de Su cuenta, de cualquier propiedad intelectual u otra derecho de cualquier persona o entidad o ley aplicable.
+LIMITACIÓN DE RESPONSABILIDAD. EN LA MEDIDA MÁXIMA PERMITIDA POR LA LEY APLICABLE, EN NINGÚN CASO ZOOM O SUS AFILIADOS, PROVEEDORES O REVENDEDORES SERÁN RESPONSABLES DE NINGÚN DAÑO ESPECIAL, INCIDENTAL, INDIRECTO, EJEMPLAR O CONSECUENTE (INCLUYENDO, SIN LIMITACIÓN, DAÑOS POR PÉRDIDA DE GANANCIAS COMERCIALES, INTERRUPCIÓN DE NEGOCIOS, PÉRDIDA DE INFORMACIÓN COMERCIAL O CUALQUIER OTRA PÉRDIDA O DAÑO PECUNIARIO) QUE SURJAN DEL USO O INCAPACIDAD DE UTILIZAR LOS SERVICIOS O EL PRESTACIÓN O FALTA DE PROPORCIÓN DE SERVICIOS DE SOPORTE TÉCNICO O DE OTRO TIPO, YA SEA QUE SURJA DE UN CONTRATO DE AGRAVIO (INCLUYENDO NEGLIGENCIA) O CUALQUIER OTRA TEORÍA LEGAL, INCLUSO SI ZOOM, SUS AFILIADOS, PROVEEDORES O REVENDEDORES HAN SIDO INFORMADOS DE LA POSIBILIDAD DE TALES DAÑOS.
+EN CUALQUIER CASO, LA RESPONSABILIDAD ACUMULATIVA MÁXIMA DE ZOOM, SUS AFILIADOS, PROVEEDORES Y REVENDEDORES Y SU RECURSO ÚNICO POR CUALQUIER RECLAMO QUE SURJA DE O RELACIONADO CON ESTE ACUERDO SE LIMITARÁ A LA CANTIDAD REALMENTE PAGADA POR USTED POR LOS SERVICIOS (SI LOS HAY) EN LOS DOCE (12) MESES ANTERIORES AL EVENTO O CIRCUNSTANCIAS QUE DARON LUGAR A TALES RECLAMACIONES.
+Debido a que algunos estados y jurisdicciones no permiten la exclusión o limitación de responsabilidad, es posible que la limitación anterior no se aplique a usted.
+ACUERDO DE ARBITRAJE; RENUNCIA A LA DEMANDA COLECTIVA.
+Si se encuentra en los Estados Unidos, acepta resolver disputas solo de forma individual, mediante arbitraje de conformidad con las disposiciones del Anexo A. Las partes renuncian expresamente a cualquier derecho de iniciar cualquier acción, demanda o procedimiento como acción colectiva o colectiva, acción de fiscal general privado o cualquier otro procedimiento en el que cualquiera de las partes actúe o se proponga actuar en calidad de representante.
+PRIVACIDAD Y OTRAS POLÍTICAS.
+El uso de los Servicios también está sujeto a la Declaración de privacidad de Zoom, cuyo enlace se puede encontrar seleccionando "Políticas legales y de privacidad" en el pie de página del sitio web de Zoom.
+La Declaración de Privacidad y todas las políticas mencionadas en www.zoom.us/legal se incorporan a este Acuerdo mediante esta referencia.
+Además, si su uso de los Servicios requiere que Zoom procese cualquier información de identificación personal (“PII” o “Datos personales”), Zoom deberá hacerlo en todo momento de conformidad con nuestro Anexo de procesamiento de datos global de Zoom https://zoom.us/docs/doc/Zoom_GLOBAL_DPA.pdf está incorporado en estos Términos de servicio.
+Además, comprende y acepta que Zoom puede comunicarse con usted por correo electrónico o de otro modo con información relevante para su uso de los Servicios, independientemente de si ha optado por no recibir comunicaciones o avisos de marketing.
+MISCELÁNEAS
+Elección de Ley y Foro.
+Este Acuerdo se regirá e interpretará según las leyes del Estado de California, EE. UU., según se apliquen a los acuerdos celebrados y ejecutados en California por residentes de California.
+Salvo lo dispuesto en el Anexo A, las Partes aceptan la jurisdicción y competencia exclusivas de los tribunales estatales ubicados y que prestan servicios en el condado de Santa Clara, California, y los tribunales federales en el Distrito Norte de California.
+Entidad Contratante.
+En caso de que su cuenta de Zoom refleje una factura/venta a una dirección en la India, la entidad contratante según estos TOS será la filial de Zoom, ZVC India Pvt. Limitado.
+Limitado.
+Renuncia y Divisibilidad.
+El hecho de que cualquiera de las Partes no ejerza cualquiera de sus derechos en virtud de este Acuerdo o no haga cumplir cualquier disposición del mismo no se considerará una renuncia o pérdida de dichos derechos o de la capacidad de hacer cumplir dicha disposición.
+Si un tribunal de jurisdicción competente considera que alguna disposición de este Acuerdo es ilegal, inválida o inaplicable, esa disposición se modificará para lograr lo más cerca posible el mismo efecto económico de la disposición original y el resto de este Acuerdo permanecerá en pleno vigor y efecto.
+Disposiciones Generales.
+Este Acuerdo representa el entendimiento y acuerdo completo entre las Partes con respecto al tema de este Acuerdo y reemplaza todos y cada uno de los entendimientos y acuerdos anteriores entre las Partes con respecto a dicho tema, excepto que si Usted o Su empresa han ejecutado un acuerdo escrito separado o han firmado un formulario de pedido que hace referencia a un acuerdo separado que rige su uso de los Servicios, entonces dicho acuerdo prevalecerá en la medida en que cualquier disposición de este Acuerdo entre en conflicto con los términos de dicho acuerdo.
+Zoom puede optar por cambiar o complementar los términos de este Acuerdo de vez en cuando a su exclusivo criterio.
+Zoom realizará todos los esfuerzos comerciales comercialmente razonables para notificarle cualquier cambio importante en este Acuerdo.
+Dentro de los diez (10) días hábiles posteriores a la publicación de los cambios en este Acuerdo (o diez (10) días hábiles a partir de la fecha de la notificación, si se proporciona), serán vinculantes para usted.
+Si no está de acuerdo con los cambios, debe dejar de utilizar los Servicios.
+Si continúa utilizando los Servicios después de dicho período de diez días hábiles, se considerará que ha aceptado los cambios a los términos de este Acuerdo.
+Para participar en ciertos Servicios, es posible que se le notifique que debe descargar software y/o aceptar términos y condiciones adicionales.
+A menos que se establezca expresamente en dichos términos y condiciones adicionales, esos términos adicionales se incorporan por el presente a este Acuerdo.
+Este Acuerdo ha sido preparado en el idioma inglés y dicha versión prevalecerá en todos los aspectos y cualquier versión no inglesa de este Acuerdo es únicamente para fines de alojamiento.
+Anexo A Arbitraje vinculante
+Este Anexo A de los TOS describe las disposiciones adicionales que se aplican al Arbitraje Vinculante y la Renuncia a Demanda Colectiva.
+Disputas.
+Una disputa es cualquier controversia entre usted y Zoom con respecto a los Servicios, cualquier software relacionado con los Servicios, el precio de los Servicios, Su cuenta, la publicidad, el marketing o las comunicaciones de Zoom, Su transacción de compra o facturación, o cualquier término de este Acuerdo, bajo cualquier teoría legal, incluidos contratos, garantías, agravios, estatutos o regulaciones, excepto disputas relacionadas con la aplicación o validez de sus derechos de propiedad intelectual o los de Zoom.
+Como parte del proceso de mejores esfuerzos para resolver disputas, y antes de iniciar el procedimiento de arbitraje, cada parte acepta notificar la disputa a la otra parte, incluida una descripción de la disputa, qué esfuerzos se han hecho para resolverla y qué solicita la parte en disputa como resolución, a legal@zoom.us.
+Tribunal de reclamos menores disponible.
+Puede iniciar una acción en su tribunal de reclamos menores local si cumple con los requisitos del tribunal.
+Sin embargo, si dicho reclamo se transfiere, elimina o apela ante un tribunal diferente, Zoom se reserva el derecho de solicitar arbitraje.
+Procedimiento de arbitraje.
+Las disputas que no se resuelvan de conformidad con la Sección A o B se resolverán mediante arbitraje.
+La Asociación Estadounidense de Arbitraje (“AAA”) llevará a cabo cualquier arbitraje conforme a sus Reglas de Arbitraje Comercial.
+Para obtener más información, consulte www.adr.org.
+Las audiencias de arbitraje se llevarán a cabo en el distrito judicial federal de su ubicación comercial principal.
+Se nombrará un árbitro único.
+El árbitro debe: (a) seguir todas las leyes sustantivas aplicables; (b) seguir los estatutos de limitaciones aplicables; (c) honrar reclamos válidos de privilegios; (d) emitir una decisión por escrito incluyendo los motivos de la adjudicación.
+El árbitro puede otorgar daños y perjuicios, medidas cautelares o declaratorias y costas (incluidos los honorarios razonables de los abogados).
+Cualquier laudo arbitral puede ejecutarse (por ejemplo, mediante sentencia) en cualquier tribunal con jurisdicción.
+Según las Reglas de la AAA, el árbitro decide sobre su propia jurisdicción, incluida la arbitrabilidad de cualquier reclamo; sin embargo, un tribunal tiene autoridad exclusiva para hacer cumplir la prohibición del arbitraje a nivel colectivo o en calidad de representante.
+Honorarios de arbitraje.
+Si no puede pagar los costos del arbitraje, Zoom le adelantará esos costos, sujeto a la determinación del árbitro si los costos deben reembolsarse a Zoom si Zoom prevalece.
+Para disputas que involucren más de $75,000, las reglas de la AAA regirán el pago de las tarifas de presentación y los honorarios y gastos de la AAA y del árbitro.
+Conflicto con las reglas AAA.
+Este Acuerdo rige si hay un conflicto con las Reglas de Arbitraje Comercial de la AAA.
+Requisito de presentación dentro de un año.
+Sin perjuicio de cualquier otro estatuto de limitaciones, un reclamo o disputa en virtud de este Acuerdo debe presentarse ante el Tribunal de reclamos menores o notificarse para arbitraje dentro de un año de la fecha en que pudo presentarse por primera vez, o dicho reclamo quedará permanentemente prohibido.
+Divisibilidad.
+Si se determina que la renuncia a la demanda colectiva es ilegal o inaplicable en cuanto a todas o algunas partes de una disputa, entonces esas partes no serán arbitradas sino que se resolverán en los tribunales, y el resto se resolverá mediante arbitraje.
+Si se determina que alguna disposición de este Anexo A es ilegal o inaplicable, dicha disposición será eliminada; sin embargo, las disposiciones restantes seguirán aplicándose y se interpretarán para lograr lo más cerca posible la intención original de este Anexo, incluida la disposición eliminada.

@@ -1,0 +1,9 @@
+pandas
+matplotlib
+numpy
+scikit-learn 
+lightning 
+torchmetrics 
+fastapi 
+deep-translator 
+tqdm

@@ -1,0 +1,159 @@
+Condiciones de servicio de Dropbox
+Publicado: 17 de abril de 2018
+En vigor: 25 de mayo de 2018. Puede ver nuestros Términos de servicio anteriores aquí.
+¡Gracias por usar Dropbox!
+Estos términos de servicio ("Términos") cubren su uso y acceso a nuestros servicios, software de cliente y sitios web ("Servicios").
+Si reside fuera de los Estados Unidos de América, Canadá y México (“Norteamérica”), su acuerdo es con Dropbox International Unlimited Company, y si reside en América del Norte, su acuerdo es con Dropbox, Inc. Nuestra Política de Privacidad explica cómo recopilamos y utilizamos su información, mientras que nuestra Política de Uso Aceptable describe sus responsabilidades al utilizar nuestros Servicios.
+Al utilizar nuestros Servicios, usted acepta estar sujeto a estos Términos, nuestra Política de privacidad y nuestra Política de uso aceptable.
+Si utiliza nuestros Servicios para una organización, acepta estos Términos en nombre de esa organización.
+Tus cosas y tus permisos
+Cuando utiliza nuestros Servicios, nos proporciona cosas como sus archivos, contenido, mensajes, contactos, etc. (“Sus cosas”).
+Tus cosas son tuyas.
+Estos Términos no nos otorgan ningún derecho sobre Sus Cosas, excepto los derechos limitados que nos permiten ofrecer los Servicios.
+Necesitamos su permiso para hacer cosas como alojar sus cosas, realizar copias de seguridad y compartirlas cuando nos lo solicite.
+Nuestros Servicios también le brindan funciones como miniaturas de fotografías, vistas previas de documentos, comentarios, clasificación, edición, uso compartido y búsqueda fáciles.
+Estas y otras funciones pueden requerir que nuestros sistemas accedan, almacenen y escaneen Sus cosas.
+Usted nos da permiso para hacer esas cosas, y este permiso se extiende a nuestros afiliados y terceros de confianza con los que trabajamos.
+Compartiendo tus cosas
+Nuestros Servicios le permiten compartir Sus Cosas con otras personas, así que piense detenidamente en lo que comparte.
+Tus responsabilidades
+Eres responsable de tu conducta.
+Tus Cosas y tú debes cumplir con nuestra Política de Uso Aceptable.
+El contenido de los Servicios puede estar protegido por derechos de propiedad intelectual de terceros.
+No copie, cargue, descargue ni comparta contenido a menos que tenga derecho a hacerlo.
+Podemos revisar su conducta y contenido para verificar el cumplimiento de estos Términos y nuestra Política de uso aceptable.
+Dicho esto, no tenemos ninguna obligación de hacerlo.
+No somos responsables del contenido que las personas publican y comparten a través de los Servicios.
+Ayúdanos a mantenerte informado y tus cosas protegidas.
+Proteja su contraseña para los Servicios y mantenga actualizada la información de su cuenta.
+No comparta las credenciales de su cuenta ni dé acceso a otros a su cuenta.
+Puede utilizar nuestros Servicios solo según lo permita la ley aplicable, incluidas las leyes y regulaciones de control de exportaciones.
+Finalmente, para utilizar nuestros Servicios, debes tener al menos 13 años o, en algunos casos, incluso más.
+Si vives en Francia, Alemania o los Países Bajos, debes tener al menos 16 años.
+Consulte su legislación local para conocer la edad de consentimiento digital.
+Si no cumple con estos requisitos de edad, no podrá utilizar los Servicios.
+Software
+Algunos de nuestros Servicios le permiten descargar software de cliente (“Software”) que puede actualizarse automáticamente.
+Siempre que cumpla con estos Términos, le otorgamos una licencia limitada, no exclusiva, intransferible y revocable para usar el Software, únicamente para acceder a los Servicios.
+En la medida en que cualquier componente del Software pueda ofrecerse bajo una licencia de código abierto, pondremos esa licencia a su disposición y las disposiciones de esa licencia pueden anular expresamente algunos de estos Términos.
+A menos que las siguientes restricciones estén prohibidas por ley, usted acepta no realizar ingeniería inversa ni descompilar los Servicios, intentar hacerlo ni ayudar a nadie a hacerlo.
+Servicios beta
+A veces lanzamos productos y funciones que todavía estamos probando y evaluando.
+Esos Servicios se han marcado como beta, vista previa, acceso temprano o evaluación (o con palabras o frases con significados similares) y pueden no ser tan confiables como los otros servicios de Dropbox, así que téngalo en cuenta.
+Nuestras cosas
+Los Servicios están protegidos por derechos de autor, marcas comerciales y otras leyes estadounidenses y extranjeras.
+Estos Términos no le otorgan ningún derecho, título o interés sobre los Servicios, el contenido de otros en los Servicios, las marcas comerciales, logotipos y otras características de la marca de Dropbox.
+Agradecemos sus comentarios, pero tenga en cuenta que podemos utilizar comentarios o sugerencias sin ninguna obligación hacia usted.
+Derechos de autor
+Respetamos la propiedad intelectual de otros y le pedimos que usted también lo haga.
+Respondemos a los avisos de presunta infracción de derechos de autor si cumplen con la ley, y dichos avisos deben informarse utilizando nuestra Política de derechos de autor.
+Nos reservamos el derecho de eliminar o deshabilitar el contenido que presuntamente infringe y cancelar las cuentas de los infractores reincidentes.
+Nuestro agente designado para notificaciones de presuntas infracciones de derechos de autor en los Servicios es:
+Agente de derechos de autor
+Dropbox, Inc.
+333 Calle Brannan
+San Francisco, CA 94107
+copyright@dropbox.com
+Cuentas Pagadas
+Facturación.
+Puede aumentar su espacio de almacenamiento y agregar funciones pagas a su cuenta (convirtiendo su cuenta en una "Cuenta Paga").
+Le facturaremos automáticamente desde la fecha en que se convierta a una Cuenta Paga y en cada renovación periódica hasta la cancelación.
+Si tiene un plan anual, le enviaremos un aviso por correo electrónico recordándole que su plan está a punto de renovarse dentro de un período de tiempo razonable antes de la fecha de renovación.
+Usted es responsable de todos los impuestos aplicables y le cobraremos impuestos cuando sea necesario.
+Algunos países tienen leyes locales obligatorias con respecto a sus derechos de cancelación y este párrafo no anula estas leyes.
+Sin reembolsos.
+Puedes cancelar tu cuenta paga de Dropbox en cualquier momento.
+Los reembolsos sólo se emiten si así lo exige la ley.
+Por ejemplo, los usuarios que viven en la Unión Europea tienen derecho a cancelar sus suscripciones a cuentas pagas dentro de los 14 días posteriores al registro, la actualización o la renovación de una cuenta paga.
+Degradaciones.
+Su Cuenta Paga permanecerá vigente hasta que se cancele o finalice según estos Términos.
+Si no paga su Cuenta Paga a tiempo, nos reservamos el derecho de suspenderla o reducir su almacenamiento a niveles de espacio libre.
+Cambios.
+Podemos cambiar las tarifas vigentes, pero le avisaremos con anticipación de estos cambios mediante un mensaje a la dirección de correo electrónico asociada con su cuenta.
+Equipos de Dropbox
+Dirección de correo electrónico.
+Si se registra para obtener una cuenta de Dropbox con una dirección de correo electrónico proporcionada por su organización, es posible que su organización pueda bloquear su uso de Dropbox hasta que realice la transición a una cuenta en un equipo de Dropbox (por ejemplo, planes Dropbox Business o Dropbox Education) o asocie su cuenta de Dropbox con una dirección de correo electrónico personal.
+Usando equipos de Dropbox.
+Si te unes a un equipo de Dropbox, debes usarlo de conformidad con los términos y políticas de tu organización.
+Tenga en cuenta que las cuentas del equipo de Dropbox están sujetas al control de su organización.
+Es posible que tus administradores puedan acceder, divulgar, restringir o eliminar información en o desde tu cuenta de equipo de Dropbox.
+También podrán restringir o cancelar su acceso a una cuenta de equipo de Dropbox.
+Si convierte una cuenta de Dropbox existente en parte de un equipo de Dropbox, sus administradores pueden impedirle desasociar su cuenta del equipo de Dropbox más adelante.
+Terminación
+Eres libre de dejar de utilizar nuestros Servicios en cualquier momento.
+Nos reservamos el derecho de suspender o cancelar su acceso a los Servicios con previo aviso si: (a) incumple estos Términos, (b) está utilizando los Servicios de una manera que causaría un riesgo real de daño o pérdida para nosotros o para otros usuarios, o (c) no tiene una Cuenta Paga y no ha accedido a nuestros Servicios durante 12 meses consecutivos.
+Le avisaremos con una antelación razonable a través de la dirección de correo electrónico asociada a su cuenta para remediar la actividad que nos llevó a comunicarnos con usted y brindarle la oportunidad de exportar Sus cosas desde nuestros Servicios.
+Si después de dicha notificación no sigue los pasos que le solicitamos, cancelaremos o suspenderemos su acceso a los Servicios.
+No le daremos aviso antes de la terminación cuando: (a) usted infrinja sustancialmente estos Términos, (b) hacerlo nos causaría responsabilidad legal o comprometería nuestra capacidad de proporcionar los Servicios a nuestros otros usuarios, o (c) la ley nos prohíbe hacerlo.
+Interrupción de Servicios
+Podemos decidir interrumpir los Servicios en respuesta a circunstancias imprevistas fuera del control de Dropbox o para cumplir con un requisito legal.
+Si lo hacemos, le avisaremos con una antelación razonable para que pueda exportar sus cosas desde nuestros sistemas.
+Si discontinuamos los Servicios de esta manera antes del final de cualquier plazo fijo o mínimo por el que nos haya pagado, le reembolsaremos la parte de las tarifas que pagó por adelantado pero por las que no recibió los Servicios.
+Servicios “TAL CUAL”
+Nos esforzamos por brindar excelentes Servicios, pero hay ciertas cosas que no podemos garantizar.
+EN LA MEDIDA MÁXIMA PERMITIDA POR LA LEY, DROPBOX Y SUS AFILIADOS, PROVEEDORES Y DISTRIBUIDORES NO OFRECEN GARANTÍAS, YA SEA EXPRESAS O IMPLÍCITAS, SOBRE LOS SERVICIOS.
+LOS SERVICIOS SE PROPORCIONAN "TAL CUAL".
+TAMBIÉN RECHAZAMOS CUALQUIER GARANTÍA DE COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN.
+Algunos lugares no permiten las exenciones de responsabilidad de este párrafo, por lo que es posible que no se apliquen a usted.
+Limitación de responsabilidad
+NO EXCLUYEMOS NI LIMITAMOS NUESTRA RESPONSABILIDAD HACIA USTED CUANDO SERÍA ILEGAL HACERLO; ESTO INCLUYE CUALQUIER RESPONSABILIDAD POR EL FRAUDE O LA DECLARACIÓN FALSA FRAUDULENTA DE DROPBOX O SUS AFILIADOS AL PRESTAR LOS SERVICIOS.
+EN LOS PAÍSES DONDE NO SE PERMITEN LOS SIGUIENTES TIPOS DE EXCLUSIONES, SOMOS RESPONSABLES ANTE USTED ÚNICAMENTE POR LAS PÉRDIDAS Y DAÑOS QUE SON RAZONABLEMENTE PREVISIBLES RESULTADO DE NUESTRA FALTA DE UTILIZAR EL CUIDADO Y HABILIDAD RAZONABLES O DE NUESTRO INCUMPLIMIENTO DE NUESTRO CONTRATO CON USTED.
+ESTE PÁRRAFO NO AFECTA LOS DERECHOS DEL CONSUMIDOR A LOS QUE NO PUEDEN SER RENUNCIADOS O LIMITADOS POR NINGÚN CONTRATO O ACUERDO.
+EN PAÍSES DONDE SE PERMITEN EXCLUSIONES O LIMITACIONES DE RESPONSABILIDAD, DROPBOX, SUS AFILIADOS, PROVEEDORES O DISTRIBUIDORES NO SERÁN RESPONSABLES DE: i. CUALQUIER DAÑO INDIRECTO, ESPECIAL, INCIDENTAL, PUNITIVO, EJEMPLAR O CONSECUENTE, O ii.
+CUALQUIER PÉRDIDA DE USO, DATOS, NEGOCIO O GANANCIAS, INDEPENDIENTEMENTE DE LA TEORÍA JURÍDICA.
+ESTAS EXCLUSIONES O LIMITACIONES SE APLICARÁN INDEPENDIENTEMENTE DE SI DROPBOX O CUALQUIERA DE SUS AFILIADOS HAYAN SIDO ADVERTIDOS DE LA POSIBILIDAD DE TALES DAÑOS.
+SI USTED UTILIZA LOS SERVICIOS PARA CUALQUIER FIN COMERCIAL, NEGOCIO O REVENTA, DROPBOX, SUS AFILIADOS, PROVEEDORES O DISTRIBUIDORES NO TENDRÁN RESPONSABILIDAD ANTE USTED POR NINGUNA PÉRDIDA DE GANANCIAS, PÉRDIDA DE NEGOCIO, INTERRUPCIÓN DE NEGOCIO O PÉRDIDA DE OPORTUNIDAD DE NEGOCIO.
+DROPBOX Y SUS AFILIADOS NO SON RESPONSABLES DE LA CONDUCTA, YA SEA EN LÍNEA O FUERA DE LÍNEA, DE CUALQUIER USUARIO DE LOS SERVICIOS.
+APARTE DE LOS TIPOS DE RESPONSABILIDAD QUE NO PODEMOS LIMITAR POR LEY (COMO SE DESCRIBEN EN ESTA SECCIÓN), LIMITAMOS NUESTRA RESPONSABILIDAD HACIA USTED AL MAYOR DE $20 USD O EL 100% DE CUALQUIER CANTIDAD QUE HAYA PAGADO SEGÚN SU PLAN DE SERVICIO ACTUAL CON DROPBOX.
+Resolución de disputas
+Intentemos arreglar las cosas primero.
+Queremos abordar sus inquietudes sin necesidad de un caso legal formal.
+Antes de presentar un reclamo contra Dropbox, acepta intentar resolver la disputa de manera informal comunicándose con disputa-notice@dropbox.com.
+Intentaremos resolver la disputa de manera informal comunicándonos con usted por correo electrónico.
+Si una disputa no se resuelve dentro de los 15 días posteriores al envío, usted o Dropbox pueden iniciar un procedimiento formal.
+Foro judicial para las controversias.
+Tú y Dropbox acuerdan que cualquier procedimiento judicial para resolver reclamos relacionados con estos Términos o los Servicios se llevará a cabo en los tribunales federales o estatales del condado de San Francisco, California, sujeto a las disposiciones de arbitraje obligatorio a continuación.
+Tanto usted como Dropbox aceptan la competencia y la jurisdicción personal de dichos tribunales.
+Si reside en un país (por ejemplo, estados miembros de la Unión Europea) con leyes que otorgan a los consumidores el derecho de presentar disputas en sus tribunales locales, este párrafo no afecta esos requisitos.
+SI ES RESIDENTE DE LOS EE. UU., TAMBIÉN ACEPTA LAS SIGUIENTES DISPOSICIONES DE ARBITRAJE OBLIGATORIO:
+Ambos aceptamos arbitrar.
+Tú y Dropbox acuerdan resolver cualquier reclamo relacionado con estos Términos o los Servicios mediante un arbitraje final y vinculante realizado por un único árbitro, excepto lo establecido en Excepciones al acuerdo de arbitraje a continuación.
+Esto incluye disputas que surjan de o estén relacionadas con la interpretación o aplicación de esta sección de “Disposiciones de arbitraje obligatorias”, incluida su aplicabilidad, revocabilidad o validez.
+Optar por no aceptar el acuerdo de arbitraje.
+Puede rechazar este acuerdo de arbitraje haciendo clic aquí y enviando el formulario de exclusión dentro de los 30 días posteriores al registro de su cuenta por primera vez.
+Sin embargo, si aceptó una versión anterior de estos Términos que le permitía optar por no participar en el arbitraje, su elección anterior de optar o no participar sigue siendo vinculante.
+Procedimientos de arbitraje.
+La Asociación Estadounidense de Arbitraje (AAA) administrará el arbitraje conforme a sus Reglas de Arbitraje Comercial y los Procedimientos Suplementarios para Disputas Relacionadas con el Consumidor.
+El arbitraje se llevará a cabo en el condado de los Estados Unidos donde usted vive o trabaja, San Francisco (CA) o cualquier otro lugar que acordemos.
+Honorarios e incentivos de arbitraje.
+Las reglas de la AAA regirán el pago de todos los honorarios de arbitraje.
+Dropbox pagará todos los honorarios de arbitraje individual para reclamos inferiores a $75,000.
+Si recibe un laudo arbitral que es más favorable que cualquier oferta que hagamos para resolver el reclamo, le pagaremos $1,000 además del laudo.
+Dropbox no reclamará los honorarios y costos de sus abogados en el arbitraje a menos que el árbitro determine que su reclamo es frívolo.
+Excepciones al acuerdo de arbitraje.
+Tanto tú como Dropbox pueden presentar reclamos, si califican, en el tribunal de reclamos menores de San Francisco (CA) o de cualquier condado de los Estados Unidos donde viva o trabaje.
+Cualquiera de las partes puede entablar una demanda únicamente para obtener medidas cautelares para detener el uso no autorizado o el abuso de los Servicios, o la infracción de la propiedad intelectual (por ejemplo, marca registrada, secreto comercial, derechos de autor o derechos de patente) sin participar primero en el arbitraje o el proceso informal de resolución de disputas descrito anteriormente.
+Si se determina que el acuerdo de arbitraje no se aplica a usted o a su reclamo, usted acepta la jurisdicción exclusiva de los tribunales estatales y federales del condado de San Francisco, California, para resolver su reclamo.
+NO HAY ACCIONES COLECTIVAS.
+Solo puede resolver disputas con nosotros de forma individual y no puede presentar un reclamo como demandante o miembro de un grupo en una acción colectiva, consolidada o representativa.
+No se permiten arbitrajes colectivos, demandas colectivas, acciones de fiscales generales privados ni la consolidación con otros arbitrajes.
+Si este párrafo específico se considera inaplicable, entonces la totalidad de esta sección de “Disposiciones de arbitraje obligatorias” se considerará nula.
+Ley de control
+Estos Términos se regirán por las leyes de California, excepto por sus principios de conflicto de leyes.
+Sin embargo, algunos países (incluidos los de la Unión Europea) tienen leyes que exigen que los acuerdos se rijan por las leyes locales del país del consumidor.
+Este párrafo no anula esas leyes.
+Acuerdo completo
+Estos Términos constituyen el acuerdo completo entre usted y Dropbox con respecto al tema de estos Términos, y reemplazan y reemplazan cualquier otro acuerdo anterior o contemporáneo, o términos y condiciones aplicables al tema de estos Términos.
+Estos Términos no crean derechos de terceros beneficiarios.
+Renuncia, Divisibilidad y Cesión
+El hecho de que Dropbox no haga cumplir una disposición no constituye una renuncia a su derecho a hacerlo más adelante.
+Si una disposición se considera inaplicable, las disposiciones restantes de los Términos permanecerán en pleno efecto y se sustituirá por un término ejecutable que refleje nuestra intención lo más fielmente posible.
+No puede ceder ninguno de sus derechos según estos Términos y dicho intento será nulo.
+Dropbox puede ceder sus derechos a cualquiera de sus afiliados o subsidiarias, o a cualquier sucesor en interés de cualquier negocio asociado con los Servicios.
+Modificaciones
+Podemos revisar estos Términos de vez en cuando para reflejar mejor: (a) cambios en la ley, (b) nuevos requisitos regulatorios o (c) mejoras o mejoras realizadas en nuestros Servicios.
+Si una actualización afecta su uso de los Servicios o sus derechos legales como usuario de nuestros Servicios, se lo notificaremos antes de la fecha de entrada en vigor de la actualización enviándole un correo electrónico a la dirección de correo electrónico asociada con su cuenta o mediante una notificación en el producto.
+Estos términos actualizados entrarán en vigor al menos 30 días después de que se lo notifiquemos.
+Si no está de acuerdo con las actualizaciones que realizamos, cancele su cuenta antes de que entren en vigencia.
+Cuando corresponda, le ofreceremos un reembolso prorrateado según los montos que haya pagado por adelantado por los Servicios y la fecha de cancelación de su cuenta.
+Al continuar usando o accediendo a los Servicios después de que las actualizaciones entren en vigencia, usted acepta estar sujeto a los Términos revisados.

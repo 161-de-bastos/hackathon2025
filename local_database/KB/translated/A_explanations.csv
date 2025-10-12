@@ -1,0 +1,9 @@
+﻿Unnamed: 0,Id,Tag,Explanation
+0,optar por no participar,a2,ya que el consumidor primero debe optar por que el arbitraje no sea obligatorio
+1,arb_obligatorio,a2,"ya que todas las disputas deben resolverse mediante arbitraje, en lugar de un tribunal de justicia, y los derechos y obligaciones de la parte serán decididos por un árbitro en lugar de un juez o jurado."
+2,consentimiento_tos,a2,ya que el usuario está obligado por la cláusula de arbitraje por el hecho de aceptar los ToS
+3,fuera_domicilio,a3,ya que el arbitraje se llevará a cabo en un país diferente al del domicilio del consumidor.
+4,excepciones_aplicar,a2,"dado que el arbitraje es obligatorio, aunque la cláusula contiene excepciones en las que el arbitraje no es obligatorio o no se aplica en determinadas circunstancias; esto incluye presentar ciertos reclamos en un tribunal de reclamos menores."
+5,a menos que esté prohibido,a2,ya que el arbitraje es obligatorio a menos que lo prohíba la ley aplicable.
+6,redirección_soft,a2,"ya que las disputas que no se resuelven de manera informal, a través de un tribunal de reclamos menores o de otro modo, pueden someterse a arbitraje."
+7,reglas_extralegales,a3,"ya que el consumidor está obligado a someterse a normas de resolución de litigios no previstas por la ley; esto incluye cualquier norma sobre arbitraje acuñada por un organismo arbitral, cámara, asociación u otro tipo de organización."
