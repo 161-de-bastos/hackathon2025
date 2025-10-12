@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir \
       fastapi uvicorn[standard] httpx \
       prometheus-client prometheus-fastapi-instrumentator
 
-COPY main.py /app/main.py
+COPY server.py /app/server.py
 
 EXPOSE 8000
 HEALTHCHECK --interval=20s --timeout=5s --retries=5 \
