@@ -7,7 +7,7 @@ import requests
 import os, json, uuid, time, math
 from html import escape
 
-
+KB_CATEGORIES = ("A", "CH", "CR", "LTD", "TER")
 API_URL  = os.getenv("API_URL", "http://api:8000")
 
 def to_ui_payload(dl_json):
@@ -48,14 +48,22 @@ def to_ui_payload(dl_json):
                 label = 1 if prob >= 0.5 else 0
 
             # detectar "texto similar" si viene de per_category/rationales
-            similar_text = None
-            per_cat = item.get("per_category") or {}
-            if isinstance(per_cat, dict):
-                for cat in per_cat.values():
-                    rats = (cat or {}).get("rationales") or []
-                    if rats:
-                        similar_text = rats[0].get("text")
-                        break
+            similar_text = []
+            per_cat = item.get("per_category")
+            for cat in KB_CATEGORIES:
+                pc = per_cat[cat]
+                if pc["pred"] == 1 and pc["rationales"]:
+                    top = pc["rationales"]
+                    for j in range(0,3):
+                        similar_text += [
+                            f" * {cat} -> ({top[j]['idx']}, {top[j]['id']}): {top[j]['text']}"
+                        ]
+                    break
+
+            if not similar_text:
+                similar_text = None
+            else:
+                similar_text = '\n'.join(similar_text)
 
             out.append({
                 "idx": i,
