@@ -4,6 +4,7 @@ import pandas as pd
 from html import escape
 import random
 import math
+import time
 
 # -------------------------------------------------------------------
 # Configuración general
@@ -17,18 +18,17 @@ if "results" not in st.session_state:
     st.session_state.results = []
 if "focus_idx" not in st.session_state:
     st.session_state.focus_idx = None
-if "notes" not in st.session_state:
-    st.session_state.notes = {}
 if "page" not in st.session_state:
     st.session_state.page = 1
 if "filter" not in st.session_state:
     st.session_state.filter = "Todas"
+if "view" not in st.session_state:
+    st.session_state.view = "input"  # input / results
 
 # -------------------------------------------------------------------
 # Función dummy simulando la API FastAPI (/v1/predict)
 # -------------------------------------------------------------------
 def fake_predict(text: str):
-    """Simula el comportamiento del endpoint /v1/predict"""
     sentences = [s.strip() for s in text.replace("\n", ". ").split(".") if s.strip()]
     simulated_results = []
     for i, s in enumerate(sentences):
@@ -76,116 +76,162 @@ h1, h2, h3, h4 { color: #7a0b0b; }
 }
 .small-muted { color: #6b7280; font-size: 0.9rem; }
 .divider { margin-top: 15px; margin-bottom: 15px; border-bottom: 1px solid #ddd; }
+
+/* 🔴 Botones activos personalizados */
+div[data-testid="column"]:has(button.active) button {
+  background-color: #b30000 !important;
+  color: white !important;
+  border: none !important;
+}
+
+/* Loader bonito */
+.loader {
+  margin: 20px auto;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #7a0b0b;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 🔵 Botón azul "Procesar otro texto" */
+.stButton > button.process-btn {
+  background-color: #0066cc !important;
+  color: white !important;
+  border-radius: 6px;
+  padding: 6px 20px;
+  font-weight: 500;
+  width: auto !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
 # -------------------------------------------------------------------
-# Layout principal
+# VISTA 1: Entrada de texto
 # -------------------------------------------------------------------
-st.title("⚖️ Clasificador de cláusulas: Justas / Injustas")
+if st.session_state.view == "input":
 
-with st.container():
-    left, right = st.columns([2, 1], gap="large")
+    # Encabezado centrado con emoji y subtítulo
+    st.markdown("""
+    <div style="text-align:center; margin-top:30px;">
+        <div style="font-size:80px;">⚖️</div>
+        <h1 style="margin-bottom:5px;">Detector de Cláusulas Injustas</h1>
+        <p style="color:gray; font-size:1.1rem;">Luchamos por tus derechos</p>
+    </div>
+    """, unsafe_allow_html=True)
 
-    # ------------------- COLUMNA IZQUIERDA -------------------
-    with left:
-        st.subheader("Texto de entrada")
-        demo = """As such, the Services may change from time to time, at our discretion.
-We may stop (permanently or temporarily) providing the Services or any features.
-We also retain the right to create limits on use at our sole discretion.
-We may remove content or terminate users without liability to you.
-As such, the Services may change from time to time, at our discretion.
+    st.subheader("Texto de entrada")
+    demo = """As such, the Services may change from time to time, at our discretion.
 We may stop (permanently or temporarily) providing the Services or any features.
 We also retain the right to create limits on use at our sole discretion.
 We may remove content or terminate users without liability to you."""
-        txt = st.text_area("Pega el texto a analizar", value=demo, height=180)
+    txt = st.text_area("Pega el texto a analizar", value=demo, height=180)
 
-        if st.button("🔍 Analizar", type="primary", use_container_width=True):
-            st.session_state.focus_idx = None
-            st.session_state.notes = {}
+    if st.button("🔍 Analizar texto", type="primary", use_container_width=True):
+        st.session_state.focus_idx = None
+        st.session_state.page = 1
+        st.session_state.filter = "Todas"
+
+        with st.spinner("🧠 Analizando el texto... por favor espera unos segundos..."):
+            st.markdown("<div class='loader'></div>", unsafe_allow_html=True)
+            time.sleep(2.5)  # Simula tiempo de espera
+            payload = fake_predict(txt)
+            st.session_state.results = payload.get("sentences", [])
+            st.session_state.view = "results"
+        st.rerun()
+
+# -------------------------------------------------------------------
+# VISTA 2: Resultados
+# -------------------------------------------------------------------
+elif st.session_state.view == "results":
+    st.title("📊 Resultados del análisis")
+
+    left, right = st.columns([2, 1], gap="large")
+
+    with left:
+        # 🔵 Botón azul arriba a la izquierda
+        col_btn, _ = st.columns([1, 4])
+        with col_btn:
+            if st.button("🔁 Procesar otro texto", key="btn_new", use_container_width=False):
+                st.session_state.view = "input"
+                st.rerun()
+
+        st.subheader("Resultados por oración")
+
+        # --- Filtros horizontales ---
+        col1, col2, col3 = st.columns(3)
+        for name, label in zip(["Todas", "Justas", "Injustas"], ["Todas", "Justas 🟢", "Injustas 🔴"]):
+            with eval(f"col{['Todas','Justas','Injustas'].index(name)+1}"):
+                if st.button(label, use_container_width=True, key=f"f_{name}",
+                             type=("primary" if st.session_state.filter == name else "secondary")):
+                    st.session_state.filter = name
+                    st.session_state.page = 1
+
+        # --- Aplicar filtro ---
+        filtered = st.session_state.results
+        if st.session_state.filter == "Justas":
+            filtered = [x for x in filtered if x["label"] == 0]
+        elif st.session_state.filter == "Injustas":
+            filtered = [x for x in filtered if x["label"] == 1]
+
+        # --- Paginación ---
+        n_por_pagina = st.number_input("Oraciones por página:", 5, 20, 8, step=1)
+        total_items = len(filtered)
+        total_paginas = max(1, math.ceil(total_items / n_por_pagina))
+
+        if st.session_state.page > total_paginas:
             st.session_state.page = 1
-            with st.spinner("Analizando texto..."):
-                payload = fake_predict(txt)
-                st.session_state.results = payload.get("sentences", [])
-            if not st.session_state.results:
-                st.info("No se detectaron oraciones en el texto.")
 
-        # ------------------- Filtros y paginación -------------------
-        if st.session_state.results:
-            st.subheader("Resultados por oración")
+        colp1, colp2, colp3 = st.columns(3)
+        with colp1:
+            if st.button("⬅️ Anterior", disabled=st.session_state.page <= 1):
+                st.session_state.page -= 1
+        with colp2:
+            st.markdown(
+                f"<div style='text-align:center;'>Página {st.session_state.page} de {total_paginas}</div>",
+                unsafe_allow_html=True
+            )
+        with colp3:
+            if st.button("Siguiente ➡️", disabled=st.session_state.page >= total_paginas):
+                st.session_state.page += 1
 
-            # --- Filtros horizontales ---
-            col1, col2, col3 = st.columns(3)
-            with col1:
-                if st.button("Todas", use_container_width=True, type=("primary" if st.session_state.filter == "Todas" else "secondary")):
-                    st.session_state.filter = "Todas"
-                    st.session_state.page = 1
-            with col2:
-                if st.button("Justas 🟢", use_container_width=True, type=("primary" if st.session_state.filter == "Justas" else "secondary")):
-                    st.session_state.filter = "Justas"
-                    st.session_state.page = 1
-            with col3:
-                if st.button("Injustas 🔴", use_container_width=True, type=("primary" if st.session_state.filter == "Injustas" else "secondary")):
-                    st.session_state.filter = "Injustas"
-                    st.session_state.page = 1
+        # --- Paginación efectiva ---
+        start = (st.session_state.page - 1) * n_por_pagina
+        end = start + n_por_pagina
+        page_items = filtered[start:end]
 
-            # --- Aplicar filtro ---
-            filtered = st.session_state.results
-            if st.session_state.filter == "Justas":
-                filtered = [x for x in filtered if x["label"] == 0]
-            elif st.session_state.filter == "Injustas":
-                filtered = [x for x in filtered if x["label"] == 1]
+        # --- Render de chips ---
+        if page_items:
+            for item in page_items:
+                idx = item["idx"]
+                label = item["label"]
+                text = escape(item["text"])
+                icon = "🔴" if label == 1 else "🟢"
+                if st.button(f"{icon} {text}", key=f"chip_{idx}", use_container_width=True):
+                    st.session_state.focus_idx = idx
+        else:
+            st.info("No hay oraciones que coincidan con el filtro.")
 
-            # --- Paginación ---
-            n_por_pagina = st.number_input("Oraciones por página:", 5, 20, 8, step=1)
-            total_items = len(filtered)
-            total_paginas = max(1, math.ceil(total_items / n_por_pagina))
+        # --- Tabla + Exportación con scroll ---
+        with st.expander("📄 Ver tabla y exportar"):
+            df = pd.DataFrame(st.session_state.results)
+            st.markdown("""
+                <div style='overflow-x:auto; overflow-y:auto; max-height:400px; border:1px solid #ddd; border-radius:8px;'>
+            """, unsafe_allow_html=True)
+            st.dataframe(df, use_container_width=True, hide_index=True)
+            st.markdown("</div>", unsafe_allow_html=True)
+            st.download_button(
+                "💾 Descargar CSV",
+                df.to_csv(index=False).encode("utf-8"),
+                file_name="resultados.csv",
+                mime="text/csv"
+            )
 
-            if st.session_state.page > total_paginas:
-                st.session_state.page = 1
-
-            colp1, colp2, colp3 = st.columns(3)
-            with colp1:
-                if st.button("⬅️ Anterior", disabled=st.session_state.page <= 1):
-                    st.session_state.page -= 1
-            with colp2:
-                st.markdown(
-                    f"<div style='text-align:center;'>Página {st.session_state.page} de {total_paginas}</div>",
-                    unsafe_allow_html=True
-                )
-            with colp3:
-                if st.button("Siguiente ➡️", disabled=st.session_state.page >= total_paginas):
-                    st.session_state.page += 1
-
-            # --- Paginación efectiva ---
-            start = (st.session_state.page - 1) * n_por_pagina
-            end = start + n_por_pagina
-            page_items = filtered[start:end]
-
-            # --- Render de chips ---
-            if page_items:
-                for item in page_items:
-                    idx = item["idx"]
-                    label = item["label"]
-                    text = escape(item["text"])
-                    icon = "🔴" if label == 1 else "🟢"
-                    if st.button(f"{icon} {text}", key=f"chip_{idx}", use_container_width=True):
-                        st.session_state.focus_idx = idx
-            else:
-                st.info("No hay oraciones que coincidan con el filtro.")
-
-            # --- Tabla + Exportación ---
-            with st.expander("📄 Ver tabla y exportar"):
-                df = pd.DataFrame(st.session_state.results)
-                st.dataframe(df, use_container_width=True)
-                st.download_button(
-                    "💾 Descargar CSV",
-                    df.to_csv(index=False).encode("utf-8"),
-                    file_name="resultados.csv",
-                    mime="text/csv"
-                )
-
-    # ------------------- COLUMNA DERECHA -------------------
     with right:
         st.subheader("Detalles de la oración")
         if st.session_state.focus_idx is None:
@@ -207,4 +253,4 @@ We may remove content or terminate users without liability to you."""
                 if sim:
                     st.markdown("**Texto similar (disparador):**")
                     st.code(sim)
-
+                st.markdown("</div>", unsafe_allow_html=True)

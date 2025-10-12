@@ -3,6 +3,7 @@ import streamlit as st
 import pandas as pd
 from html import escape
 import random
+import math
 
 # -------------------------------------------------------------------
 # Configuración general
@@ -16,14 +17,15 @@ if "results" not in st.session_state:
     st.session_state.results = []
 if "focus_idx" not in st.session_state:
     st.session_state.focus_idx = None
-if "notes" not in st.session_state:
-    st.session_state.notes = {}
+if "page" not in st.session_state:
+    st.session_state.page = 1
+if "filter" not in st.session_state:
+    st.session_state.filter = "Todas"
 
 # -------------------------------------------------------------------
 # Función dummy simulando la API FastAPI (/v1/predict)
 # -------------------------------------------------------------------
 def fake_predict(text: str):
-    """Simula el comportamiento del endpoint /v1/predict"""
     sentences = [s.strip() for s in text.replace("\n", ". ").split(".") if s.strip()]
     simulated_results = []
     for i, s in enumerate(sentences):
@@ -45,7 +47,6 @@ def fake_predict(text: str):
             "similar_text": similar_text
         })
     return {"sentences": simulated_results}
-
 
 # -------------------------------------------------------------------
 # Estilos visuales
@@ -72,6 +73,13 @@ h1, h2, h3, h4 { color: #7a0b0b; }
 }
 .small-muted { color: #6b7280; font-size: 0.9rem; }
 .divider { margin-top: 15px; margin-bottom: 15px; border-bottom: 1px solid #ddd; }
+
+/* 🔴 Botones activos personalizados */
+div[data-testid="column"]:has(button.active) button {
+  background-color: #b30000 !important;
+  color: white !important;
+  border: none !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -81,7 +89,7 @@ h1, h2, h3, h4 { color: #7a0b0b; }
 st.title("⚖️ Clasificador de cláusulas: Justas / Injustas")
 
 with st.container():
-    left, right = st.columns([2,1], gap="large")
+    left, right = st.columns([2, 1], gap="large")
 
     # ------------------- COLUMNA IZQUIERDA -------------------
     with left:
@@ -94,32 +102,79 @@ We may remove content or terminate users without liability to you."""
 
         if st.button("🔍 Analizar", type="primary", use_container_width=True):
             st.session_state.focus_idx = None
-            st.session_state.notes = {}
-
-            # ✅ Llamada simulada a la API interna
+            st.session_state.page = 1
             with st.spinner("Analizando texto..."):
                 payload = fake_predict(txt)
                 st.session_state.results = payload.get("sentences", [])
-
             if not st.session_state.results:
                 st.info("No se detectaron oraciones en el texto.")
 
-        # ------------------- Resultados -------------------
+        # ------------------- Filtros y paginación -------------------
         if st.session_state.results:
             st.subheader("Resultados por oración")
 
-            for item in st.session_state.results:
-                idx = item["idx"]
-                label = item["label"]  # 0=justa, 1=injusta
-                text = escape(item["text"])
-                css = "s-injusta" if label == 1 else "s-justa"
-                icon = "🔴" if label == 1 else "🟢"
-                if st.button(f"{icon} {text}", key=f"chip_{idx}", use_container_width=True):
-                    st.session_state.focus_idx = idx
+            # --- Filtros horizontales ---
+            col1, col2, col3 = st.columns(3)
+            for name, label in zip(["Todas", "Justas", "Injustas"], ["Todas", "Justas 🟢", "Injustas 🔴"]):
+                with eval(f"col{['Todas','Justas','Injustas'].index(name)+1}"):
+                    if st.button(label, use_container_width=True, key=f"f_{name}",
+                                 type=("primary" if st.session_state.filter == name else "secondary")):
+                        st.session_state.filter = name
+                        st.session_state.page = 1
 
+            # --- Aplicar filtro ---
+            filtered = st.session_state.results
+            if st.session_state.filter == "Justas":
+                filtered = [x for x in filtered if x["label"] == 0]
+            elif st.session_state.filter == "Injustas":
+                filtered = [x for x in filtered if x["label"] == 1]
+
+            # --- Paginación ---
+            n_por_pagina = st.number_input("Oraciones por página:", 5, 20, 8, step=1)
+            total_items = len(filtered)
+            total_paginas = max(1, math.ceil(total_items / n_por_pagina))
+
+            if st.session_state.page > total_paginas:
+                st.session_state.page = 1
+
+            colp1, colp2, colp3 = st.columns(3)
+            with colp1:
+                if st.button("⬅️ Anterior", disabled=st.session_state.page <= 1):
+                    st.session_state.page -= 1
+            with colp2:
+                st.markdown(
+                    f"<div style='text-align:center;'>Página {st.session_state.page} de {total_paginas}</div>",
+                    unsafe_allow_html=True
+                )
+            with colp3:
+                if st.button("Siguiente ➡️", disabled=st.session_state.page >= total_paginas):
+                    st.session_state.page += 1
+
+            # --- Paginación efectiva ---
+            start = (st.session_state.page - 1) * n_por_pagina
+            end = start + n_por_pagina
+            page_items = filtered[start:end]
+
+            # --- Render de chips ---
+            if page_items:
+                for item in page_items:
+                    idx = item["idx"]
+                    label = item["label"]
+                    text = escape(item["text"])
+                    icon = "🔴" if label == 1 else "🟢"
+                    if st.button(f"{icon} {text}", key=f"chip_{idx}", use_container_width=True):
+                        st.session_state.focus_idx = idx
+            else:
+                st.info("No hay oraciones que coincidan con el filtro.")
+
+            # --- Tabla + Exportación con scroll ---
             with st.expander("📄 Ver tabla y exportar"):
                 df = pd.DataFrame(st.session_state.results)
-                st.dataframe(df, use_container_width=True)
+                st.markdown("""
+                    <div style='overflow-x:auto; overflow-y:auto; max-height:400px; border:1px solid #ddd; border-radius:8px;'>
+                """, unsafe_allow_html=True)
+                st.dataframe(df, use_container_width=True, hide_index=True)
+                st.markdown("</div>", unsafe_allow_html=True)
                 st.download_button(
                     "💾 Descargar CSV",
                     df.to_csv(index=False).encode("utf-8"),
@@ -149,6 +204,4 @@ We may remove content or terminate users without liability to you."""
                 if sim:
                     st.markdown("**Texto similar (disparador):**")
                     st.code(sim)
-
-
-
+                st.markdown("</div>", unsafe_allow_html=True)
