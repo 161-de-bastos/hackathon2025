@@ -1,0 +1,108 @@
+Términos de uso de sitios web y comunicaciones
+23 de junio de 2016
+Condiciones de uso
+1.
+Introducción
+Lea atentamente los términos de este documento completo (“Términos”) porque explica sus derechos y responsabilidades cuando visita cualquiera de los sitios web de Mozilla (“Sitios web”), o feeds, redes sociales, boletines informativos, repositorios de código fuente y correos electrónicos relacionados (junto con los Sitios web, estos se denominan colectivamente “Comunicaciones”).
+Al acceder o registrarse para recibir Comunicaciones, usted acepta estar sujeto a estos Términos.
+Nuestros sitios web incluyen múltiples dominios como mozilla.org, mozillians.org, firefox.com, mozillafestival.org, openstandard.com, openbadges.org y webmaker.org.
+También puede reconocer nuestros sitios web por apodos como Bugzilla@Mozilla, BMO, MozWiki, MoPad, MozReps, MDN, Marketplace, One and Done, SUMO y AMO.
+Algunos de nuestros sitios web lo conectan con enlaces, aplicaciones o complementos proporcionados por otras partes y están sujetos a Términos separados.
+2.
+Registro de cuenta
+Algunos sitios web requieren que usted se registre para obtener una cuenta para poder acceder a funciones adicionales de un sitio web u otro servicio de Mozilla.
+Si corresponde, se le presentarán términos adicionales.
+Usted es responsable de todas las actividades realizadas en su cuenta.
+Algunos sitios web le permiten crear un nombre de usuario durante el registro.
+El uso de un nombre de usuario debe cumplir con nuestra Política de uso aceptable.
+3.
+Licencia de contenido
+Nuestras Comunicaciones incluyen contenido como artículos, imágenes, fotografías, comentarios, código de software, clips de audio y video y otros materiales (colectivamente, "Contenido").
+El contenido es escrito por Mozilla, los contribuyentes a los proyectos de Mozilla y otras fuentes.
+El contenido creado por Mozilla generalmente está disponible para compartir y reutilizar públicamente a través de licencias abiertas como Creative Commons (para material expresivo) o la Licencia Pública de Mozilla (para código de software).
+En la mayoría de los casos, solicitamos a los contribuyentes de Mozilla que publiquen Contenido bajo licencias abiertas.
+Parte del Contenido de nuestras Comunicaciones se adquiere de fuentes que prohíben el uso posterior de su Contenido sin permiso previo.
+Cuando sea posible, el pie de página del Contenido o del Sitio web mostrará un aviso con la licencia aplicable.
+Usted acepta cumplir con dichos avisos.
+Tenga en cuenta los siguientes detalles:
+Parte del Contenido indica expresamente que el autor no tiene la intención de que se aplique una licencia abierta.
+Debe comunicarse con el autor o el agente del autor para obtener permiso para utilizar dicho Contenido.
+Las preguntas sobre el contenido creado por Mozilla se pueden enviar a: licensing@mozilla.org.
+Parte del Contenido contiene marcas comerciales, imágenes comerciales, logotipos y activos de marca de Mozilla y otras partes (“Marcas comerciales”).
+Excepto en algunas circunstancias limitadas, las marcas comerciales no se pueden utilizar sin el permiso previo por escrito del propietario de la marca comercial.
+Obtenga más información sobre las marcas comerciales de Mozilla.
+El software utilizado en nuestros sitios web tiene licencia MPL o licencias de código abierto igualmente permisivas.
+Para obtener más información sobre la licencia específica, consulte el código fuente correspondiente o el repositorio de GitHub.
+4.
+Envíos de contenido
+Usted puede contribuir con Contenido al interactuar con nuestras Comunicaciones, lo que incluye, entre otros, comentar un artículo, escribir un blog, contribuir con código o contribuir con gráficos o material escrito (cada uno de ellos, un “Envío”).
+A menos que su Envío se realice bajo un acuerdo separado con Mozilla, en cuyo caso ese acuerdo regirá, entonces
+Para envíos a proyectos de código abierto de Mozilla:
+Usted acepta licenciar su Envío según los términos de la licencia correspondiente del proyecto de código abierto en particular al que está contribuyendo.
+Para obtener más información sobre la licencia específica, consulte el código fuente correspondiente o el repositorio de GitHub.
+Para todos los demás Envíos, usted acepta lo siguiente en relación con cada uno de ellos:
+Usted declara y garantiza que su Envío cumplirá con estos Términos, las Condiciones de uso de Mozilla y cualquier término adicional que pueda regir su Envío.
+Por la presente, usted nos otorga una licencia no exclusiva, libre de regalías, mundial y sublicenciable (para aquellos con quienes trabajamos) para usar su Envío en relación con las Comunicaciones y la promoción en línea y fuera de línea de la misión, los productos y los servicios de Mozilla.
+Usted reconoce que sus Envíos pueden ser accesibles por otros usuarios registrados del servicio aplicable o por el público.
+Si su Envío contiene material expresivo o código de software, usted acepta otorgarle una licencia de manera que sea compatible con el sitio web particular al que realiza el Envío.
+Usted declara y garantiza que tiene los derechos necesarios para otorgar los derechos otorgados en este documento y, además, que los usos contemplados en estos Términos no infringirán los derechos de propiedad intelectual o de propiedad de ningún tercero.
+Usted comprende y acepta que Mozilla se reserva el derecho, a su discreción, de revisar, modificar o eliminar cualquier Envío que considere objetable o que viole estos Términos.
+5.
+Política de privacidad y cookies
+El Aviso de privacidad de sitios web, comunicaciones y cookies de Mozilla describe cómo manejamos la información que recibimos de usted en relación con nuestras Comunicaciones.
+El Aviso de privacidad explica, por ejemplo, que colocamos determinadas cookies en nuestros sitios web y cómo puede optar por no participar.
+6.
+Comunicaciones y Eventos
+Si se suscribe para recibir nuestros boletines informativos o se registra para obtener una cuenta en relación con cualquiera de nuestros sitios web, puede recibir correos electrónicos transaccionales de nuestra parte en relación con su cuenta (por ejemplo, actualizaciones legales, de privacidad y de seguridad).
+Algunos de nuestros sitios web tienen herramientas en línea que le permiten enviar correos electrónicos a otras personas.
+Por ejemplo, puedes invitar a tus contactos a eventos en Mozillians.
+Acepta no hacer un uso indebido de las direcciones de correo electrónico de otras personas (por ejemplo, enviándoles spam).
+Otros sitios web, como MozReps, proporcionan herramientas que permiten a los usuarios organizar eventos físicos para que cualquiera pueda asistir.
+Tenga cuidado y buen juicio al asistir a eventos.
+7.
+Aviso de infracción reclamada
+Para obtener más información sobre cómo denunciar reclamos de infracción de derechos de autor o marca registrada, consulte: https://www.mozilla.org/about/legal/report-infringement/.
+8.
+Término; Terminación
+Estos Términos seguirán aplicándose hasta que usted o Mozilla los finalicen.
+Puede optar por finalizarlas en cualquier momento y por cualquier motivo interrumpiendo el uso de nuestras Comunicaciones y, si corresponde, eliminando su cuenta.
+Podemos suspender o cancelar su acceso a nuestras Comunicaciones en cualquier momento y por cualquier motivo, incluido, entre otros, si creemos razonablemente: (i) que ha violado estos Términos, nuestra Política de uso aceptable u otra política relevante; (ii) usted crea riesgo o posible exposición legal para nosotros; o (iii) nuestra entrega de las Comunicaciones a usted ya no es comercialmente viable.
+En todos estos casos, estos Términos terminarán, excepto que las siguientes secciones seguirán aplicándose: Indemnización, Descargo de responsabilidad; Limitación de responsabilidad, varios.
+9.
+Indemnización
+Usted acepta defender, indemnizar y eximir de responsabilidad a Mozilla, sus contratistas, contribuyentes, licenciantes y socios; y los respectivos directores, funcionarios, empleados y agentes de lo anterior ("Partes indemnizadas") de y contra todos y cada uno de los reclamos y gastos de terceros, incluidos los honorarios de abogados, que surjan de o estén relacionados con su uso de nuestras Comunicaciones (incluidos, entre otros, sus Envíos o su violación de cualquiera de estos Términos).
+10.
+Descargo de responsabilidad; Limitación de responsabilidad
+LAS COMUNICACIONES SE PROPORCIONAN "TAL CUAL" CON TODOS LOS FALLOS.
+EN LA MEDIDA EN QUE LO PERMITA LA LEY, MOZILLA Y LAS PARTES INDEMNIFICADAS POR EL PRESENTE RENUNCIA A TODAS LAS GARANTÍAS, YA SEA EXPRESAS O IMPLÍCITAS, INCLUYENDO, SIN LIMITACIÓN, LAS GARANTÍAS DE QUE LAS COMUNICACIONES ESTÁN LIBRES DE DEFECTOS, COMERCIABLES, ADECUADAS PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIONES.
+USTED ASUME TODO EL RIESGO EN CUANTO AL USO DE LAS COMUNICACIONES PARA SUS FINES Y EN CUANTO A LA CALIDAD Y RENDIMIENTO DE LAS COMUNICACIONES, INCLUYENDO, SIN LIMITACIÓN, EL RIESGO DE QUE SU HARDWARE, SOFTWARE O CONTENIDO SE BORRE O DAÑO, QUE ALGUIEN OTRA OBTENGA ACCESO NO AUTORIZADO A SU INFORMACIÓN, O QUE OTRO USUARIO HAGA UN MAL USO O SE APROPIE INDEBIDAMENTE SU PRESENTACIÓN.
+ESTA LIMITACIÓN SE APLICARÁ A PESAR DE QUE FALLA EL PROPÓSITO ESENCIAL DE CUALQUIER RECURSO.
+ALGUNAS JURISDICCIONES NO PERMITEN LA EXCLUSIÓN O LIMITACIÓN DE GARANTÍAS IMPLÍCITAS, POR LO QUE ESTA EXENCIÓN DE RESPONSABILIDAD PUEDE NO APLICARSE EN SU CASO.
+EXCEPTO LO EXIGIDO POR LA LEY, MOZILLA Y LAS PARTES INDEMNIZADAS NO SERÁN RESPONSABLES DE NINGÚN DAÑO INDIRECTO, ESPECIAL, INCIDENTAL, CONSECUENTE O EJEMPLAR QUE SURJA DE O DE ALGUNA MANERA RELACIONADO CON ESTOS TÉRMINOS O EL USO O LA INCAPACIDAD DE UTILIZAR LAS COMUNICACIONES, INCLUYENDO, SIN LIMITACIÓN, DAÑOS DIRECTOS E INDIRECTOS A PÉRDIDA DE BUENA VOLUNTAD, PARO DEL TRABAJO, PÉRDIDA DE BENEFICIOS, PÉRDIDA DE DATOS Y FALLA O MAL FUNCIONAMIENTO DE LA COMPUTADORA, INCLUSO SI SE ADVIERTE DE LA POSIBILIDAD DE TALES DAÑOS Y INDEPENDIENTEMENTE DE LA TEORÍA (CONTRATO, AGRAVIO O DE OTRA MANERA) EN LA QUE SE BASA DICHA RECLAMACIÓN.
+LA RESPONSABILIDAD COLECTIVA DE MOZILLA Y LAS PARTES INDEMNIZADAS BAJO ESTE ACUERDO NO EXCEDERÁ LOS $500 (QUINIENTOS DÓLARES).
+ALGUNAS JURISDICCIONES NO PERMITEN LA EXCLUSIÓN O LIMITACIÓN DE DAÑOS INCIDENTALES, CONSECUENCIALES O ESPECIALES, POR LO QUE ESTA EXCLUSIÓN Y LIMITACIÓN PUEDE NO APLICARSE EN SU CASO.
+11.
+Modificaciones a estos Términos
+Podemos actualizar estos Términos de vez en cuando para abordar una nueva característica de las Comunicaciones o para aclarar una disposición.
+Los Términos actualizados se publicarán en línea.
+Si los cambios son sustanciales, anunciaremos la actualización a través de nuestros canales habituales para dichos anuncios, como publicaciones de blogs, pancartas, correos electrónicos o foros.
+Su uso continuado de nuestras Comunicaciones después de la fecha de entrada en vigor de dichos cambios constituye su aceptación de dichos cambios.
+Para que su revisión sea más conveniente, publicaremos una fecha de vigencia en la parte superior de esta página.
+12.
+Misceláneas
+Estos Términos constituyen el acuerdo completo entre usted y Mozilla con respecto a nuestras Comunicaciones y reemplazan cualquier versión anterior de estos Términos.
+Las Comunicaciones y estos Términos se rigen por las leyes del estado de California, EE. UU., excluyendo sus disposiciones sobre conflicto de leyes.
+Todos los reclamos y disputas que surjan de las Comunicaciones o estos Términos se presentarán exclusivamente en los tribunales del condado de Santa Clara, California, y usted acepta la jurisdicción personal en esos tribunales.
+Si alguna parte de estos Términos se considera inválida o inaplicable, las partes restantes permanecerán en pleno vigor y efecto.
+En caso de conflicto entre una versión traducida de estos Términos y la versión en inglés, prevalecerá la versión en inglés.
+En caso de conflicto entre estos Términos y los términos adicionales relevantes, prevalecerán los términos adicionales.
+13.
+Contáctenos
+Mozilla
+A la atención de: Mozilla – Avisos legales
+331 E. Evelyn Ave.,
+Vista a la montaña, CA 94041
+EE.UU
+Teléfono: 650-903-0800
+Fax: 650-903-0875
+Avisos legales en mozilla.com
