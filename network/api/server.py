@@ -12,11 +12,6 @@ DL_PREDICT_PATH = os.getenv("DL_PREDICT_PATH", "/predict")
 TIMEOUT_SECS    = float(os.getenv("API_TIMEOUT", "30"))
 RETRIES         = int(os.getenv("API_RETRIES", "2"))
 
-# --- Esquemas ligeros (sin hints estrictos) ---
-class AnalyzeIn(BaseModel):
-    text = Field(..., min_length=1)
-    preprocess_kwargs = Field(default_factory=dict)
-    infer_kwargs = Field(default_factory=dict)
 
 # puedes devolver dict plano → no definimos response_model
 # class AnalyzeOut(BaseModel):
@@ -29,9 +24,6 @@ _client_lock = asyncio.Lock()
 @asynccontextmanager
 async def lifespan(app):
     global http_client
-    Instrumentator().instrument(app).expose(app)
-
-    # Un único httpx.AsyncClient para toda la app
     async with _client_lock:
         if http_client is None:
             http_client = httpx.AsyncClient(
@@ -40,14 +32,12 @@ async def lifespan(app):
                 limits=httpx.Limits(max_keepalive_connections=50, max_connections=200),
             )
     yield
-
-    # Cierre ordenado
     async with _client_lock:
         if http_client is not None:
             await http_client.aclose()
 
 app = FastAPI(title="API gateway → DL", version="1.0.0", lifespan=lifespan)
-
+Instrumentator().instrument(app).expose(app)
 # --- Utilidad: reintentos simples con backoff ---
 async def _post_predict(payload, request_id):
     backoff = 0.5
@@ -85,16 +75,16 @@ async def healthz():
         extra = {"error": str(e)}
     return {"ok": ok, "dl": extra, "dl_url": f"{DL_URL}{DL_PREDICT_PATH}"}
 
-@app.post("/analyze")  # devuelve dict plano del DL
-async def analyze(body: AnalyzeIn, x_request_id: str | None = Header(default=None), request: Request = None):
-    # request id para rastreo de punta a punta
-    rid = x_request_id or request.headers.get("X-Request-ID") or str(uuid.uuid4())
+@app.post("/analyze")
+async def analyze(request: Request, x_request_id: str | None = Header(default=None)):
+    body = await request.json()
+    text = (body.get("text") or "").strip()
+    if not text:
+        raise HTTPException(status_code=422, detail="Field 'text' is required")
+
     payload = {
-        "text": body.text,
-        "preprocess_kwargs": body.preprocess_kwargs or {},
-        "infer_kwargs": body.infer_kwargs or {},
+        "text": text
     }
+    rid = x_request_id or request.headers.get("X-Request-ID") or str(uuid.uuid4())
     out = await _post_predict(payload, rid)
-    # Puedes añadir metadata si quieres:
-    # out = {"_request_id": rid, **out}
     return out

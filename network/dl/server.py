@@ -4,8 +4,7 @@ import json
 import asyncio
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI, HTTPException, Depends, Header
-from pydantic import BaseModel, Field
+from fastapi import FastAPI, HTTPException, Depends, Header, Request
 from prometheus_fastapi_instrumentator import Instrumentator
 
 LOAD_ENTRYPOINT       = os.getenv("LOAD_ENTRYPOINT",       "malvaditos.api:load")
@@ -28,8 +27,6 @@ _lock = asyncio.Lock()
 
 @asynccontextmanager
 async def lifespan(app):
-    # métricas
-    Instrumentator().instrument(app).expose(app)
     # estado inicial
     app.state.lit = None
     app.state.tok = None
@@ -46,15 +43,7 @@ async def lifespan(app):
     # e.g., app.state.lit = app.state.tok = app.state.kb = None
 
 app = FastAPI(title="DL Inference (malvaditos)", version="1.0.0", lifespan=lifespan)
-
-class PredictIn(BaseModel):
-    text = Field(..., min_length=1)
-    preprocess_kwargs = Field(default_factory=dict)
-    infer_kwargs = Field(default_factory=dict)
-
-class PredictOut(BaseModel):
-    result = Field(...)
-
+Instrumentator().instrument(app).expose(app)
 
 @app.get("/healthz")
 def healthz():
@@ -76,13 +65,22 @@ async def reload_model():
         app.state.lit, app.state.tok, app.state.kb = t[0], t[1], t[2]
     return {"ok": True}
 
-@app.post("/predict", response_model=PredictOut)
-def predict(req: PredictIn):
+@app.post("/predict")
+async def predict(request: Request):
     if app.state.lit is None:
         raise HTTPException(status_code=503, detail="Model not loaded")
+
+    body = await request.json()
+    text = (body.get("text") or "").strip()
+    preprocess_kwargs = body.get("preprocess_kwargs") or {}
+    infer_kwargs      = body.get("infer_kwargs") or {}
+
+    if not text:
+        raise HTTPException(status_code=422, detail="Field 'text' is required")
+
     try:
-        idxin, sents = preprocess_fn(req.text, **(req.preprocess_kwargs or {}))
-        out = infer_fn(sents, app.state.lit, app.state.tok, app.state.kb, **(req.infer_kwargs or {}))
+        _, sents = preprocess_fn(text, **preprocess_kwargs)
+        out = infer_fn(sents, app.state.lit, app.state.tok, app.state.kb, **infer_kwargs)
+        return out  # ← dict plano, sin envolver
     except Exception as e:
         raise HTTPException(status_code=500, detail="predict failed: %s" % e)
-    return {"result": out}

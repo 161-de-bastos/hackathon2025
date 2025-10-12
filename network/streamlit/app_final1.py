@@ -1,4 +1,4 @@
-import streamlit as st
+import network.streamlit.server as st
 import pandas as pd
 from html import escape
 import random

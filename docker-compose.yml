@@ -18,7 +18,7 @@ services:
       - "--entrypoints.web.address=:80"
       - "--ping=true"
       - "--ping.entrypoint=web"
-
+      - --providers.docker.network=public
       - "--api.dashboard=true"
     ports:
       - "127.0.0.1:80:80"   
@@ -73,9 +73,9 @@ services:
       - /nvme/git/contest/hackathon2025/best/spa:/models:ro
       - /nvme/git/contest/hackathon2025/local_database/KB/translated:/kb:ro
     environment:
-      - LOAD_ENTRYPOINT=injustos.api:load
-      - PREPROCESS_ENTRYPOINT=injustos.api:preprocess
-      - INFER_ENTRYPOINT=injustos.api:infer
+      - LOAD_ENTRYPOINT=malvaditos.api:load
+      - PREPROCESS_ENTRYPOINT=malvaditos.api:preprocess
+      - INFER_ENTRYPOINT=malvaditos.api:infer
     networks: [internal]
     gpus: all
     restart: unless-stopped
@@ -88,11 +88,22 @@ services:
   # ---- MONITOREO ----
   prometheus:
     image: prom/prometheus:v2.55.0
-    command: ["--config.file=/etc/prometheus/prometheus.yml", "--storage.tsdb.retention=15d"]
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.retention=15d"
+      - "--web.external-url=/prometheus"
+      - "--web.route-prefix=/prometheus"
     volumes:
       - ./network/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
       - prometheus-data:/prometheus
-    networks: [internal]
+    networks: [internal, public]
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.prom.rule=PathPrefix(`/prometheus`)"
+      - "traefik.http.routers.prom.entrypoints=web"
+      - "traefik.http.routers.prom.priority=100"
+      # NO StripPrefix aquí
+      - "traefik.http.services.prom.loadbalancer.server.port=9090"
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://localhost:9090/-/healthy"]
@@ -103,18 +114,22 @@ services:
   grafana:
     image: grafana/grafana:11.2.0
     environment:
-      - GF_SECURITY_ADMIN_USER=${GRAFANA_ADMIN_USER:-admin}
-      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_ADMIN_PASSWORD:-admin}
-    volumes:
-      - grafana-data:/var/lib/grafana
+      - GF_SECURITY_ADMIN_USER=${GRAFANA_ADMIN_USER}
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_ADMIN_PASSWORD}
+      - GF_SERVER_SERVE_FROM_SUB_PATH=true
+      - GF_SERVER_ROOT_URL=%(protocol)s://%(domain)s/grafana/
     networks: [public, internal]
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.graf.rule=PathPrefix(`/grafana`)"
-      - "traefik.http.routers.graf.entrypoints=web"
-      - "traefik.http.middlewares.graf-strip.stripprefix.prefixes=/grafana"
-      - "traefik.http.routers.graf.middlewares=graf-strip"
-      - "traefik.http.services.graf.loadbalancer.server.port=3000"
+      # router por path
+      - "traefik.http.routers.grafana.rule=PathPrefix(`/grafana`)"
+      - "traefik.http.routers.grafana.entrypoints=web"
+      - "traefik.http.routers.grafana-secure.rule=PathPrefix(`/grafana`)"
+      - "traefik.http.routers.grafana-secure.entrypoints=websecure"
+      - "traefik.http.routers.grafana.priority=100"
+    # NO StripPrefix aquí
+      - "traefik.http.services.grafana.loadbalancer.server.port=3000"
+      - "traefik.http.routers.grafana-secure.tls=true"
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://localhost:3000/api/health"]
@@ -124,12 +139,20 @@ services:
 
   cadvisor:
     image: gcr.io/cadvisor/cadvisor:v0.49.1
-    networks: [internal]
+    networks: [internal, public]
     volumes:
       - /:/rootfs:ro
       - /var/run:/var/run:ro
       - /sys:/sys:ro
       - /var/lib/docker/:/var/lib/docker:ro
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.cadv.rule=PathPrefix(`/cadvisor`)"
+      - "traefik.http.routers.cadv.entrypoints=web"
+      - "traefik.http.routers.cadv.priority=100"
+      - "traefik.http.middlewares.cadv-stripprefix.stripprefix.prefixes=/cadvisor"
+      - "traefik.http.routers.cadv.middlewares=cadv-stripprefix"
+      - "traefik.http.services.cadv.loadbalancer.server.port=8080"
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://localhost:8080/metrics"]
@@ -152,6 +175,9 @@ services:
     image: nvidia/dcgm-exporter:3.3.7-3.5.0-ubuntu22.04
     networks: [internal]
     restart: unless-stopped
+    cap_add:
+    - SYS_ADMIN
+    gpus: all
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://localhost:9400/metrics"]
       interval: 30s

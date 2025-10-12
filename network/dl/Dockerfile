@@ -14,8 +14,11 @@ RUN pip install --upgrade pip && \
       "torch==2.4.0+cu124"
 
 RUN pip install --no-cache-dir \
-      fastapi uvicorn[standard] pydantic>=2 prometheus-client \
-      "injusToS @ git+https://github.com/161-de-bastos/hackathon2025@servidores"
+      fastapi uvicorn[standard] pydantic>=2 prometheus-client prometheus-fastapi-instrumentator  \
+      "malvaditos @ git+https://github.com/161-de-bastos/hackathon2025@servidores"
+
+COPY requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
 
 COPY server.py /app/server.py
 

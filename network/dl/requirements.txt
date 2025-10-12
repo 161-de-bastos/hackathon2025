@@ -2,8 +2,6 @@ pandas
 matplotlib
 numpy
 scikit-learn 
-torch
-torchvision
 lightning 
 torchmetrics 
 fastapi 
