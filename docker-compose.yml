@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  fastapi:
+    build:
+      context: ./fastapi
+    container_name: fastapi_proxy
+    env_file:
+      - .env
+    environment:
+      - MODEL_SERVER_URL=${MODEL_SERVER_URL}
+      - API_SECRET_KEY=${API_SECRET_KEY}
+    ports:
+      - "${FASTAPI_HOST_PORT}:8000"
+    networks:
+      - appnet
+
+  streamlit:
+    build:
+      context: ./streamlit
+    container_name: streamlit_ui
+    env_file:
+      - .env
+    environment:
+      - API_URL=${API_URL}
+      - API_SECRET_KEY=${API_SECRET_KEY}
+    ports:
+      - "${STREAMLIT_HOST_PORT}:8501"
+    networks:
+      - appnet
+
+networks:
+  appnet:
+    driver: bridge
