@@ -1,4 +1,4 @@
-FROM nvidia/cuda:12.5.0-runtime-ubuntu24.04
+FROM nvidia/cuda:12.1.1-runtime-ubuntu22.04
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git python3 python3-pip ca-certificates && \
@@ -28,7 +28,7 @@ RUN pip3 install --no-cache-dir \
       fastapi uvicorn[standard] pydantic==2.* prometheus-client
 
 
-COPY server.py /app/server.py
+COPY main.py /app/main.py
 RUN apt-get update && apt-get install -y --no-install-recommends curl && rm -rf /var/lib/apt/lists/*
 
 EXPOSE 9000
