@@ -181,7 +181,7 @@ if st.session_state.view == "input":
 
     st.subheader("Texto de entrada")
     demo = """ """
-    txt = st.text_area("Pega el texto a analizar", value=demo, height=180)
+    txt = st.text_area("Pega el texto a analizar (de momento, solo texto con salto de línea trabajable).", value=demo, height=180)
 
     if st.button("🔍 Analizar texto", type="primary", use_container_width=True):
         if not txt.strip():
