@@ -4,6 +4,7 @@ from html import escape
 import random
 import math
 import time
+import os
 
 # ---------------------------------------------------------------
 # Configuración general
@@ -152,14 +153,18 @@ div[data-testid="column"]:has(button.active) button {
 # ---------------------------------------------------------------
 # VISTA 1: Entrada de texto
 # ---------------------------------------------------------------
+# ---------------------------------------------------------------
 if st.session_state.view == "input":
-    st.markdown("""
-    <div style="text-align:center; margin-top:30px;">
-        <div style="font-size:80px;">⚖️</div>
-        <h1 style="margin-bottom:5px;">Detector de Cláusulas Injustas</h1>
-        <p style="color:gray; font-size:1.1rem;">Luchamos por tus derechos</p>
-    </div>
-    """, unsafe_allow_html=True)
+    # Centrar imagen con st.columns
+    import os
+    logo_path = os.path.join(os.path.dirname(__file__), "logo1.png")
+
+    if os.path.exists(logo_path):
+        col1, col2, col3 = st.columns([1, 2, 1])
+        with col2:
+            st.image(logo_path, width=1000)
+    else:
+        st.warning("⚠️ No se encontró el logo en la ruta esperada.")
 
     st.subheader("Texto de entrada")
     demo = """As such, the Services may change from time to time, at our discretion.
@@ -180,7 +185,7 @@ We may remove content or terminate users without liability to you."""
 
 
 # ---------------------------------------------------------------
-# VISTA 2: Resultados (idéntica a la original)
+# VISTA 2: Resultados
 # ---------------------------------------------------------------
 elif st.session_state.view == "results":
     st.title("📊 Resultados del análisis")
