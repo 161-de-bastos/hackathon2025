@@ -1,0 +1,54 @@
+version: "3.8"
+
+services:
+  model_server:
+    build:
+      context: ./model_server
+    container_name: model_server_gpu
+    env_file:
+      - .env
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    networks:
+      - appnet
+
+  fastapi:
+    build:
+      context: ./fastapi
+    container_name: fastapi_proxy
+    env_file:
+      - .env
+    environment:
+      - MODEL_SERVER_URL=${MODEL_SERVER_URL}
+      - API_SECRET_KEY=${API_SECRET_KEY}
+    depends_on:
+      - model_server
+    ports:
+      - "${FASTAPI_HOST_PORT}:8000"
+    restart: unless-stopped
+    networks:
+      - appnet
+
+  streamlit:
+    build:
+      context: ./streamlit
+    container_name: streamlit_ui
+    env_file:
+      - .env
+    environment:
+      - API_URL=${API_URL}
+      - API_SECRET_KEY=${API_SECRET_KEY}
+    depends_on:
+      - fastapi
+    ports:
+      - "${STREAMLIT_HOST_PORT}:8501"
+    restart: unless-stopped
+    networks:
+      - appnet
+
+networks:
+  appnet:
+    driver: bridge

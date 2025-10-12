@@ -1,0 +1,1 @@
+{"experimental_basic_memn2n_v2": {"embedding_dim": 64, "hidden_dim": 64, "dropout": 0.1, "partial_supervision_info": {"value": {"flag": true, "coefficient": 1.0, "margin": 0.5}}}}
