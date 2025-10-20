@@ -67,7 +67,7 @@ services:
     build:
       context: ./network/dl
       args:
-        GIT_REF: main
+        GIT_REF: servidores
         REPO_URL: https://github.com/161-de-bastos/hackathon2025.git
     volumes:
       - /nvme/git/contest/hackathon2025/best/eng:/models:ro
