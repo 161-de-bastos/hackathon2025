@@ -70,7 +70,7 @@ services:
         GIT_REF: main
         REPO_URL: https://github.com/161-de-bastos/hackathon2025.git
     volumes:
-      - /nvme/git/contest/hackathon2025/best/spa:/models:ro
+      - /nvme/git/contest/hackathon2025/best/eng:/models:ro
       - /nvme/git/contest/hackathon2025/local_database/KB/translated:/kb:ro
     environment:
       - LOAD_ENTRYPOINT=malvaditos.api:load

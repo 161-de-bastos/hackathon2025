@@ -58,7 +58,7 @@ def cross_validate(
 def load():
     import torch
     from .utils.config_loader import load_model_and_tokenizer
-    CKPT     = "/models/spa.ckpt"
+    CKPT     = "/models/eng.ckpt"
     KB_DIR   = "/kb"
     MAX_LEN  = 128
     DEVICE   = "cuda" if torch.cuda.is_available() else "cpu"
